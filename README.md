@@ -1,6 +1,6 @@
 # Como trabajar
 
-1. Ir al repositorio y hacer click en "Fork"
+1. Ir al repositorio y hacer click en **Fork**
 2. Descargar tu fork con `git clone https://github.com/<username>/progressus-back`
 3. Ingresar al repositorio local `cd progressus-back`
 4. Crear una rama `git checkout -b <feature-username>`
