@@ -332,5 +332,33 @@ namespace ProgressusWebApi.Services.AuthServices
                 return new BadRequestObjectResult(ex.Message);
             }
         }
+
+
+        public async Task<IActionResult> EliminarUsuario(string userId)
+        {
+            try
+            {
+                var user = await _userManager.FindByIdAsync(userId);
+
+                if (user == null)
+                {
+                    return new NotFoundObjectResult("Usuario no encontrado.");
+                }
+
+                var result = await _userManager.DeleteAsync(user);
+
+                if (!result.Succeeded)
+                {
+                    return new BadRequestObjectResult("No se pudo eliminar el usuario. " +
+                                                      string.Join(", ", result.Errors.Select(e => e.Description)));
+                }
+
+                return new OkObjectResult("Usuario eliminado correctamente.");
+            }
+            catch (Exception ex)
+            {
+                return new StatusCodeResult(StatusCodes.Status500InternalServerError);
+            }
+        }
     }
 }

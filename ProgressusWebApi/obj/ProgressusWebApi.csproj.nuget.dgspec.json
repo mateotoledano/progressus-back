@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fcapo\\Downloads\\ULTIMA\\ProgressusWebApi (1)\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi.csproj": {}
+    "C:\\Users\\Dell\\Desktop\\ProgressusAPI\\ProgressusWebApi\\ProgressusWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fcapo\\Downloads\\ULTIMA\\ProgressusWebApi (1)\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi.csproj": {
+    "C:\\Users\\Dell\\Desktop\\ProgressusAPI\\ProgressusWebApi\\ProgressusWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fcapo\\Downloads\\ULTIMA\\ProgressusWebApi (1)\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\ProgressusAPI\\ProgressusWebApi\\ProgressusWebApi.csproj",
         "projectName": "ProgressusWebApi",
-        "projectPath": "C:\\Users\\fcapo\\Downloads\\ULTIMA\\ProgressusWebApi (1)\\ProgressusWebApi\\ProgressusWebApi\\ProgressusWebApi.csproj",
-        "packagesPath": "C:\\Users\\fcapo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fcapo\\Downloads\\ULTIMA\\ProgressusWebApi (1)\\ProgressusWebApi\\ProgressusWebApi\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\Desktop\\ProgressusAPI\\ProgressusWebApi\\ProgressusWebApi.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\Desktop\\ProgressusAPI\\ProgressusWebApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fcapo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

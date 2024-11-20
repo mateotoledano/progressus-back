@@ -280,6 +280,22 @@
   },
   {
     "ContainingType": "ProgressusWebApi.Controllers.AuthControllers.AuthController",
+    "Method": "EliminarUsuario",
+    "RelativePath": "api/Auth/usuario/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.AuthControllers.AuthController",
     "Method": "ObtenerTodosLosUsuarios",
     "RelativePath": "api/Auth/usuarios",
     "HttpMethod": "GET",

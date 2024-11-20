@@ -85,6 +85,12 @@ namespace ProgressusWebApi.Controllers.AuthControllers
         {
             return await _usuarioService.ActualizarUsuario(userId, actualizarUsuarioDto.NuevoRol);
         }
+
+        [HttpDelete("usuario/{userId}")]
+        public async Task<IActionResult> EliminarUsuario(string userId)
+        {
+            return await _usuarioService.EliminarUsuario(userId);
+        }
     }
 
 }
