@@ -1,0 +1,1053 @@
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\appsettings.Development.json
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\appsettings.json
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.exe
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.deps.json
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.runtimeconfig.json
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.pdb
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Azure.Core.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Azure.Identity.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Humanizer.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Scrutor.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.CodeDom.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.csproj.AssemblyReference.cache
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.AssemblyInfoInputs.cache
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.AssemblyInfo.cs
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.csproj.CoreCompileInputs.cache
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.MvcApplicationPartsAssemblyInfo.cs
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.build.json
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.development.json
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.ProgressusWebApi.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.build.ProgressusWebApi.props
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProgressusWebApi.props
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProgressusWebApi.props
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\scopedcss\bundle\ProgressusWebApi.styles.css
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\Progress.BE479D2C.Up2Date
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\refint\ProgressusWebApi.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.pdb
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.genruntimeconfig.cache
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ref\ProgressusWebApi.dll
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.sourcelink.json
+D:\Ingeniería en Sistemas\Proyecto Final\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\MercadoPago.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\appsettings.json
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.exe
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.deps.json
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.runtimeconfig.json
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.pdb
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Humanizer.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\MercadoPago.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Scrutor.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.csproj.AssemblyReference.cache
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.AssemblyInfoInputs.cache
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.AssemblyInfo.cs
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.csproj.CoreCompileInputs.cache
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.sourcelink.json
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\scopedcss\bundle\ProgressusWebApi.styles.css
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.ProgressusWebApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.build.ProgressusWebApi.props
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProgressusWebApi.props
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProgressusWebApi.props
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\Progress.BE479D2C.Up2Date
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\refint\ProgressusWebApi.dll
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.pdb
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.genruntimeconfig.cache
+C:\Users\franj\OneDrive\Escritorio\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ref\ProgressusWebApi.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\appsettings.json
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.exe
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.deps.json
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.runtimeconfig.json
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.pdb
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Humanizer.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\MercadoPago.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Scrutor.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.csproj.AssemblyReference.cache
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.AssemblyInfoInputs.cache
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.AssemblyInfo.cs
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.csproj.CoreCompileInputs.cache
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.sourcelink.json
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.ProgressusWebApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.build.ProgressusWebApi.props
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProgressusWebApi.props
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProgressusWebApi.props
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\scopedcss\bundle\ProgressusWebApi.styles.css
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\Progress.BE479D2C.Up2Date
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\refint\ProgressusWebApi.dll
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.pdb
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.genruntimeconfig.cache
+C:\Users\fcapo\Downloads\BACKPROGESSUS\BACKPROGESSUS\ProgressusWebApi\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ref\ProgressusWebApi.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\refint\ProgressusWebApi.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.pdb
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.csproj.AssemblyReference.cache
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.AssemblyInfoInputs.cache
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.AssemblyInfo.cs
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\appsettings.json
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.exe
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.deps.json
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.runtimeconfig.json
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.pdb
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\MercadoPago.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Scrutor.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.ProgressusWebApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.build.ProgressusWebApi.props
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProgressusWebApi.props
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProgressusWebApi.props
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\scopedcss\bundle\ProgressusWebApi.styles.css
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\Progress.BE479D2C.Up2Date
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.genruntimeconfig.cache
+C:\Users\Dell\Downloads\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ref\ProgressusWebApi.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\appsettings.json
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.exe
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.deps.json
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.runtimeconfig.json
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.pdb
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Humanizer.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\MercadoPago.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Scrutor.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.csproj.AssemblyReference.cache
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.AssemblyInfoInputs.cache
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.AssemblyInfo.cs
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.csproj.CoreCompileInputs.cache
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.ProgressusWebApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.build.ProgressusWebApi.props
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProgressusWebApi.props
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProgressusWebApi.props
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\scopedcss\bundle\ProgressusWebApi.styles.css
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\Progress.BE479D2C.Up2Date
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\refint\ProgressusWebApi.dll
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.pdb
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.genruntimeconfig.cache
+C:\Users\fcapo\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ref\ProgressusWebApi.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\appsettings.json
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.exe
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.deps.json
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.runtimeconfig.json
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.pdb
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\MercadoPago.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Scrutor.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.csproj.AssemblyReference.cache
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.AssemblyInfoInputs.cache
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.AssemblyInfo.cs
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.ProgressusWebApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.build.ProgressusWebApi.props
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProgressusWebApi.props
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProgressusWebApi.props
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\scopedcss\bundle\ProgressusWebApi.styles.css
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\Progress.BE479D2C.Up2Date
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\refint\ProgressusWebApi.dll
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.pdb
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.genruntimeconfig.cache
+C:\Users\Dell\Downloads\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ref\ProgressusWebApi.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\appsettings.json
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.exe
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.deps.json
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.runtimeconfig.json
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ProgressusWebApi.pdb
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Humanizer.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\MercadoPago.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Scrutor.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.csproj.AssemblyReference.cache
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.AssemblyInfoInputs.cache
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.AssemblyInfo.cs
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.csproj.CoreCompileInputs.cache
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.ProgressusWebApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.build.ProgressusWebApi.props
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProgressusWebApi.props
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProgressusWebApi.props
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\scopedcss\bundle\ProgressusWebApi.styles.css
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\Progress.BE479D2C.Up2Date
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\refint\ProgressusWebApi.dll
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.pdb
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ProgressusWebApi.genruntimeconfig.cache
+C:\Users\fcapo\Downloads\ULTIMA\ProgressusWebApi (1)\ProgressusWebApi\ProgressusWebApi\obj\Debug\net8.0\ref\ProgressusWebApi.dll
