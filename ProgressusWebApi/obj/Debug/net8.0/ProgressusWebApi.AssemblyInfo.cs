@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProgressusWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c389fe6dfbde2d08e991573952800de980c1d03")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+646d40948798fc084c7cde0737b6b043f235dc79")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProgressusWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProgressusWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

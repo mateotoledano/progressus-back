@@ -345,12 +345,20 @@ namespace ProgressusWebApi.Services.AuthServices
                     return new NotFoundObjectResult("Usuario no encontrado.");
                 }
 
-                var result = await _userManager.DeleteAsync(user);
+                // Verificar y eliminar referencias relacionadas en la tabla socios
+                var socio = await _progressusDataContext.Socios.FirstOrDefaultAsync(s => s.UserId == userId);
+                if (socio != null)
+                {
+                    _progressusDataContext.Socios.Remove(socio);
+                    await _progressusDataContext.SaveChangesAsync();
+                }
 
+                // Eliminar el usuario en AspNetUsers
+                var result = await _userManager.DeleteAsync(user);
                 if (!result.Succeeded)
                 {
-                    return new BadRequestObjectResult("No se pudo eliminar el usuario. " +
-                                                      string.Join(", ", result.Errors.Select(e => e.Description)));
+                    return new BadRequestObjectResult($"No se pudo eliminar el usuario. " +
+                                                      $"{string.Join(", ", result.Errors.Select(e => e.Description))}");
                 }
 
                 return new OkObjectResult("Usuario eliminado correctamente.");
