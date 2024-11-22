@@ -345,6 +345,14 @@ namespace ProgressusWebApi.Services.AuthServices
                     return new NotFoundObjectResult("Usuario no encontrado.");
                 }
 
+                // Eliminar todas las reservas asociadas al usuario
+                var reservas = _progressusDataContext.Reservas.Where(r => r.UserId == userId);
+                if (reservas.Any())
+                {
+                    _progressusDataContext.Reservas.RemoveRange(reservas);
+                    await _progressusDataContext.SaveChangesAsync();
+                }
+
                 // Verificar y eliminar referencias relacionadas en la tabla socios
                 var socio = await _progressusDataContext.Socios.FirstOrDefaultAsync(s => s.UserId == userId);
                 if (socio != null)
