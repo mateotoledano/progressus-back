@@ -345,6 +345,14 @@ namespace ProgressusWebApi.Services.AuthServices
                     return new NotFoundObjectResult("Usuario no encontrado.");
                 }
 
+                // Eliminar todos los logs de asistencia asociados al usuario
+                var asistenciaLogs = _progressusDataContext.AsistenciaLogs.Where(a => a.UserId == userId);
+                if (asistenciaLogs.Any())
+                {
+                    _progressusDataContext.AsistenciaLogs.RemoveRange(asistenciaLogs);
+                    await _progressusDataContext.SaveChangesAsync();
+                }
+
                 // Eliminar todas las reservas asociadas al usuario
                 var reservas = _progressusDataContext.Reservas.Where(r => r.UserId == userId);
                 if (reservas.Any())
