@@ -16,7 +16,7 @@ namespace ProgressusWebApi.Controllers.PlanEntrenamientoControllers
             _objetivoDelPlanService = objetivoDelPlanService;
         }
 
-        [HttpPost("CrearEjercicio")]
+        [HttpPost("CrearObjetivoDePlan")]
         public async Task<IActionResult> Crear([FromBody] CrearObjetivoDePlanDto objetivoDePlanDto)
         {
             var objetivoCreado = await _objetivoDelPlanService.Crear(objetivoDePlanDto);

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
+﻿using MercadoPago.Resource.User;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProgressusWebApi.DataContext;
@@ -147,6 +148,20 @@ namespace ProgressusWebApi.Repositories.MembresiaRepositories
             };
 
             return new OkObjectResult(vigenciaDto);
+        }
+
+        public async Task<IActionResult> ObtenerTodasLasSolicitudesDeUnSocio(string identityUserId)
+        {
+            var solicitud = await _context.SolicitudDePagos
+                .Where(s => s.IdentityUserId == identityUserId.ToString())
+                .Include(s => s.HistorialSolicitudDePagos) // Incluye el historial completo
+                    .ThenInclude(h => h.EstadoSolicitud)    // Incluye también el EstadoSolicitud de cada historial
+                .Include(s => s.TipoDePago)
+                .Include(s => s.Membresia)
+                .OrderByDescending(h => h.FechaCreacion)
+                .ToListAsync();
+
+            return new OkObjectResult(solicitud);
         }
     }
 }

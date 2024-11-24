@@ -1,5 +1,6 @@
 ﻿using MercadoPago.Client.Preference;
 using MercadoPago.Resource.Preference;
+using ProgressusWebApi.Models.MembresiaModels;
 using WebApiMercadoPago.Repositories.Interface;
 using WebApiMercadoPago.Services.Interface;
 
@@ -16,7 +17,8 @@ namespace WebApiMercadoPago.Services
 
         public async Task<Preference> CreatePreferenceAsync(PreferenceRequest preference)
         {
-            return await _mercadoPagoRepository.CreatePreferenceAsync(preference);
+            SolicitudDePago solicitud = new SolicitudDePago();
+            return await _mercadoPagoRepository.CreatePreferenceAsync(solicitud);
         }
     }
 }

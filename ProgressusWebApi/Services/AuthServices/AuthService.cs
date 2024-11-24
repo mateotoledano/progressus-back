@@ -67,7 +67,7 @@ namespace ProgressusWebApi.Services.AuthServices
             {
                 return new BadRequestObjectResult(ex);
             }
-  
+
         }
 
         public async Task<IActionResult?> ConfirmarCorreo(CodigoDeVerificacionDto codigoDeVerificacion)
@@ -215,7 +215,7 @@ namespace ProgressusWebApi.Services.AuthServices
         {
             IdentityUser usuario = await _userManager.FindByEmailAsync(email);
             var socio = await _progressusDataContext.Socios.FirstOrDefaultAsync(e => e.UserId == usuario.Id);
-            if (socio == null) 
+            if (socio == null)
             {
                 var entrenador = await _progressusDataContext.Entrenadores.FirstOrDefaultAsync(e => e.UserId == usuario.Id);
                 DatosUsuarioDto datosDelEntrenador = new DatosUsuarioDto()
@@ -226,7 +226,7 @@ namespace ProgressusWebApi.Services.AuthServices
                     Telefono = entrenador.Telefono,
                     Roles = _userManager.GetRolesAsync(usuario).Result.ToList(),
                     Email = email,
-                   
+
                 };
                 return new OkObjectResult(datosDelEntrenador);
             }
@@ -239,7 +239,7 @@ namespace ProgressusWebApi.Services.AuthServices
                 Roles = _userManager.GetRolesAsync(usuario).Result.ToList(),
                 Email = email,
             };
-            
+
             return new OkObjectResult(datosDelSocio);
         }
 

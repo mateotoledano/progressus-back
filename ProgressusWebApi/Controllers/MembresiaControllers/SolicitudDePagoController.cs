@@ -32,6 +32,15 @@ public class SolicitudDePagoController : ControllerBase
         return Ok(solicitudExistente); // Retornar la solicitud actualizada
     }
 
+    [HttpPut("RegistrarPagoConMercadoPago")]
+    public async Task<IActionResult> RegistrarPagoConMercadoPago(int idSolicitudDePago)
+    {
+        var pref = await _solicitudDePagoService.RegistrarPagoConMercadoPago(idSolicitudDePago);
+        if (pref == null)
+            return NotFound(); // Retornar 404 si no se encuentra la solicitud
+        return Ok(pref); // Retornar la solicitud actualizada
+    }
+
     [HttpPut("CancelarSolicitudDePago")]
     public async Task<IActionResult> CancelarSolicitudDePago(int idSolicitudDePago)
     {
@@ -63,5 +72,11 @@ public class SolicitudDePagoController : ControllerBase
     public async Task<IActionResult> ConsultarVigenciaDeMembresia(string identityUserId)
     {
         return new OkObjectResult(await _solicitudDePagoService.ConsultarVigenciaDeMembresia(identityUserId));
+    }
+
+    [HttpGet("ObtenerTodasLasSolicitudesDeUnSocio")]
+    public async Task<IActionResult> ObtenerTodasLasSolicitudesDeUnSocio(string identityUserId)
+    {
+        return new OkObjectResult(await _solicitudDePagoService.ObtenerTodasLasSolicitudesDeUnSocio(identityUserId));
     }
 }   

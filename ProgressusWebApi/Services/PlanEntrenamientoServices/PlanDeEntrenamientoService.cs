@@ -131,9 +131,22 @@ namespace ProgressusWebApi.Services.PlanEntrenamientoServices
             return await _planEntrenamientoRepository.ObtenerPlantillasDePlanes();
         }
 
-        public async Task<PlanDeEntrenamiento> ObtenerPorId(int id)
+        public async Task<IActionResult> ObtenerPorId(int id)
         {
-            return await _planEntrenamientoRepository.ObtenerPorId(id);
+            var plan = _planEntrenamientoRepository.ObtenerPorIdSimplificado(id).Result;
+            return new OkObjectResult(plan);
+        }
+
+        public async Task<List<PlanDeEntrenamiento>> ObtenerPlanesDelUsuario(string identityUser)
+        {
+            var planes = await _planEntrenamientoRepository.ObtenerPlanesDelUsuario(identityUser);
+            return planes;
+        }
+
+        public async Task<List<PlanDeEntrenamiento>> ObtenerTodosLosPlanes()
+        {
+            var planes = await _planEntrenamientoRepository.ObtenerTodosLosPlanes();
+            return planes;
         }
     }
 }

@@ -25,6 +25,7 @@ namespace ProgressusWebApi.Repositories.MembresiaRepositories.Interfaces
         Task<IActionResult> ObtenerSolicitudDePagoDeSocio(string identityUserId);
         Task<IActionResult> ObtenerTiposDePagos();
 
+        Task<IActionResult> ObtenerTodasLasSolicitudesDeUnSocio(string identityUserId);
         Task<IActionResult> ConsultarVigenciaDeMembresia(string id);
     }
 }

@@ -62,19 +62,6 @@ namespace ProgressusWebApi.Controllers.PlanEntrenamientoControllers
             return Ok();
         }
 
-        [HttpGet("ObtenerPorNombre")]
-        public async Task<IActionResult> ObtenerPorNombre(string nombre)
-        {
-            List<PlanDeEntrenamiento> planes = await _planDeEntrenamientoService.ObtenerPorNombre(nombre);
-            return Ok(planes);
-        }
-
-        [HttpGet("ObtenerPorObjetivoDePlan")]
-        public async Task<IActionResult> ObtenerPorObjetivoDePlan(int objetivoDePlanId )
-        {
-            List<PlanDeEntrenamiento> planes = await _planDeEntrenamientoService.ObtenerPorObjetivo(objetivoDePlanId);
-            return Ok(planes);
-        }
 
         [HttpGet("ObtenerPlanesPlantillas")]
         public async Task<IActionResult> ObtenerPlanesPlantillas()
@@ -83,10 +70,24 @@ namespace ProgressusWebApi.Controllers.PlanEntrenamientoControllers
             return Ok(planes);
         }
 
+        [HttpGet("ObtenerPlanesDelUsuario")]
+        public async Task<IActionResult> ObtenerPlanesDelUsuario(string identityUser)
+        {
+            List<PlanDeEntrenamiento?> planes = await _planDeEntrenamientoService.ObtenerPlanesDelUsuario(identityUser);
+            return Ok(planes);
+        }
+
+        [HttpGet("ObtenerTodosLosPlanes")]
+        public async Task<IActionResult> ObtenerTodosLosPlanes()
+        {
+            List<PlanDeEntrenamiento?> planes = await _planDeEntrenamientoService.ObtenerTodosLosPlanes();
+            return Ok(planes);
+        }
+
         [HttpGet("ObtenerPlanPorId")]
         public async Task<IActionResult> ObtenerPlanPorId(int id)
         {
-            PlanDeEntrenamiento plan = await _planDeEntrenamientoService.ObtenerPorId(id);
+            var plan = _planDeEntrenamientoService.ObtenerPorId(id).Result;
             return Ok(plan);
         }
     }

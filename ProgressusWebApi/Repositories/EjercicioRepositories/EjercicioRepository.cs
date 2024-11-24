@@ -54,7 +54,10 @@ namespace ProgressusWebApi.Repositories.EjercicioRepositories
 
         public async Task<Ejercicio?> ObtenerPorId(int id)
         {
-            return await _context.Ejercicios.Include(e => e.MusculosDeEjercicio)
+            return await _context.Ejercicios
+                .Include(e => e.MusculosDeEjercicio)
+                    .ThenInclude(e => e.Musculo)
+                    .ThenInclude(m => m.GrupoMuscular)
                                  .FirstOrDefaultAsync(e => e.Id == id);
         }
 
@@ -69,9 +72,28 @@ namespace ProgressusWebApi.Repositories.EjercicioRepositories
 
         public async Task<List<Ejercicio>> ObtenerTodos()
         {
-            return await _context.Ejercicios.Include(e => e.MusculosDeEjercicio)
-                                 .ToListAsync();
+            return await _context.Ejercicios
+                .Select(e => new Ejercicio
+                {
+                    Id = e.Id,
+                    Nombre = e.Nombre,
+                    Descripcion = e.Descripcion,
+                    ImagenMaquina = e.ImagenMaquina,
+                    VideoEjercicio = e.VideoEjercicio,
+                    MusculosDeEjercicio = e.MusculosDeEjercicio
+                        .Select(mde => new MusculoDeEjercicio
+                        {
+                            EjercicioId = mde.EjercicioId,
+                            MusculoId = mde.MusculoId,
+                            Musculo = new Musculo
+                            {
+                                Id = mde.Musculo.Id,
+                                Nombre = mde.Musculo.Nombre // Solo el nombre
+                            }
+                        }).ToList()
+                })
+                .ToListAsync();
         }
-
+         
     }
 }
