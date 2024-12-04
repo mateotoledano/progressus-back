@@ -26,7 +26,16 @@ namespace ProgressusWebApi.Repositories.PlanEntrenamientoRepositories
                .Where(e => e.DiaDePlanId == diaDelPlanId)
                .ToListAsync();
         }
+        public async Task<EjercicioEnDiaDelPlan?> QuitarUnEjercicioDelPlan(EjercicioEnDiaDelPlan dto)
+        {
+            EjercicioEnDiaDelPlan ejercicioDelPlan = await _progressusDataContext.EjerciciosDelDia
+                  .Where(e => e.DiaDePlanId == dto.DiaDePlanId & e.EjercicioId == dto.EjercicioId)
+                  .FirstAsync();
 
+            _progressusDataContext.EjerciciosDelDia.Remove(ejercicioDelPlan);
+            await _progressusDataContext.SaveChangesAsync();
+            return ejercicioDelPlan;
+        }
         public async Task QuitarEjerciciosDelPlan(int planId)
         {
             // Obtiene los ejercicios a eliminar

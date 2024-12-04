@@ -1,6 +1,6 @@
 ﻿using MercadoPago.Client.Preference;
 
-namespace WebApiMercadoPago.Dto.SolicitudDePagoDto
+namespace ProgressusWebApi.Dtos.MercadoPagoDto
 {
     public class CreatePreferenceRequestDto
     {

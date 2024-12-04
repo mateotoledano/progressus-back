@@ -11,22 +11,24 @@ namespace ProgressusWebApi.Services.PlanEntrenamientoServices
    public class AsignacionDePlanService : IAsignacionDePlanService
 {
     private readonly IAsignacionDePlanRepository _asignacionDePlanRepository;
-    private readonly ProgressusDataContext _progressusDataContext;
+
 
     public AsignacionDePlanService(IAsignacionDePlanRepository asignacionDePlanRepository)
     {
         _asignacionDePlanRepository = asignacionDePlanRepository;
     }
 
-    public async Task<ObtenerAsignacionDePlanDto?> AsignarPlan(string socioId, int planId)
-    {
-        ObtenerAsignacionDePlanDto? planActual =  this.ObtenerPlanAsignado(socioId).Result;
-        this.QuitarAsignacionDePlan(socioId, planActual.PlanDeEntrenamientoId);
-        var asignacion = await _asignacionDePlanRepository.AsignarPlan(socioId, planId);
-        return asignacion != null ? MapToDto(asignacion) : null;
-    }
-
-    public async Task<List<ObtenerAsignacionDePlanDto>> ObtenerHistorialDePlanes(string socioId)
+        public async Task<ObtenerAsignacionDePlanDto?> AsignarPlan(string socioId, int planId)
+        {
+            ObtenerAsignacionDePlanDto? planActual = this.ObtenerPlanAsignado(socioId).Result;
+            if (planActual != null)
+            {
+                await this.QuitarAsignacionDePlan(socioId, planActual.PlanDeEntrenamientoId);
+            }
+            var asignacion = await _asignacionDePlanRepository.AsignarPlan(socioId, planId);
+            return asignacion != null ? MapToDto(asignacion) : null;
+        }
+        public async Task<List<ObtenerAsignacionDePlanDto>> ObtenerHistorialDePlanes(string socioId)
     {
         var historial = await _asignacionDePlanRepository.ObtenerHistorialDePlanesAsignados(socioId);
         return historial.Select(MapToDto).ToList();

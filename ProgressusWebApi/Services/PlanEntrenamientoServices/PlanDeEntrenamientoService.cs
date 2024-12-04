@@ -69,7 +69,7 @@ namespace ProgressusWebApi.Services.PlanEntrenamientoServices
 
             if (plan == null) throw new Exception("Plan de entrenamiento no encontrado.");
 
-            _ejercicioDePlanRepository.QuitarEjerciciosDelPlan(planId);
+            await _ejercicioDePlanRepository.QuitarEjerciciosDelPlan(planId);
 
             foreach (var ejercicio in ejerciciosEnPlanDto.Ejercicios)
             {
@@ -131,9 +131,9 @@ namespace ProgressusWebApi.Services.PlanEntrenamientoServices
             return await _planEntrenamientoRepository.ObtenerPlantillasDePlanes();
         }
 
-        public async Task<IActionResult> ObtenerPorId(int id)
-        {
-            var plan = _planEntrenamientoRepository.ObtenerPorIdSimplificado(id).Result;
+
+        public async Task<IActionResult> ObtenerPorId(int id)  {
+            var plan = await _planEntrenamientoRepository.ObtenerPorIdSimplificado(id);
             return new OkObjectResult(plan);
         }
 
@@ -148,5 +148,44 @@ namespace ProgressusWebApi.Services.PlanEntrenamientoServices
             var planes = await _planEntrenamientoRepository.ObtenerTodosLosPlanes();
             return planes;
         }
+
+        public async Task<PlanDeEntrenamiento> AgregarEjercicioDePlan(AgregarQuitarUnSoloEjercicioDto dto)
+        {
+            var plan = await _planEntrenamientoRepository.ObtenerPorId(dto.PlanId);
+            if (plan == null) throw new Exception("Plan de entrenamiento no encontrado.");
+            DiaDePlan diaDePlan = await _diaDePlanRepository.ObtenerDiaDePlan(dto.PlanId, dto.DiaDePlan);
+            EjercicioEnDiaDelPlan ejercicioEnDiaDelPlan = new EjercicioEnDiaDelPlan()
+            {
+                EjercicioId = dto.EjercicioId,
+                DiaDePlanId = diaDePlan.Id,
+                OrdenDeEjercicio = dto.Orden,
+                Series = dto.Series,
+                Repeticiones = dto.Repes,
+                DiaDePlan = diaDePlan
+            };
+            await _ejercicioDePlanRepository.AgregarEjercicioADiaDelPlan(ejercicioEnDiaDelPlan);
+            return plan;
+        }
+
+        public async Task<PlanDeEntrenamiento> QuitarEjercicioDePlan(AgregarQuitarUnSoloEjercicioDto dto)
+        {
+            var plan = await _planEntrenamientoRepository.ObtenerPorId(dto.PlanId);
+            if (plan == null) throw new Exception("Plan de entrenamiento no encontrado.");
+            DiaDePlan diaDePlan = await _diaDePlanRepository.ObtenerDiaDePlan(dto.PlanId, dto.DiaDePlan);
+            EjercicioEnDiaDelPlan ejercicioEnDiaDelPlan = new EjercicioEnDiaDelPlan()
+            {
+                EjercicioId = dto.EjercicioId,
+                DiaDePlanId = diaDePlan.Id,
+                OrdenDeEjercicio = dto.Orden,
+                Series = dto.Series,
+                Repeticiones = dto.Repes,
+                DiaDePlan = diaDePlan
+            };
+            await _ejercicioDePlanRepository.QuitarUnEjercicioDelPlan(ejercicioEnDiaDelPlan);
+            return plan;
+        }
+
+
+
     }
 }

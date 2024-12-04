@@ -22,10 +22,13 @@ namespace ProgressusWebApi.Repositories.MembresiaRepositories.Interfaces
         Task<HistorialSolicitudDePago> CrearHistorialSolicitudDePagoAsync(HistorialSolicitudDePago historial);
         Task<IEnumerable<HistorialSolicitudDePago>> ObtenerTodoElHistorialDeUnaSolicitudAsync(int solicitudId);
         Task<HistorialSolicitudDePago> ObtenerUltimoHistorialDeUnaSolicitudAsync(int solicitudId);
-        Task<IActionResult> ObtenerSolicitudDePagoDeSocio(string identityUserId);
+        Task<SolicitudDePago> ObtenerSolicitudDePagoDeSocio(string identityUserId);
         Task<IActionResult> ObtenerTiposDePagos();
 
         Task<IActionResult> ObtenerTodasLasSolicitudesDeUnSocio(string identityUserId);
         Task<IActionResult> ConsultarVigenciaDeMembresia(string id);
+     
+        Task<SolicitudDePago> ActualizarSolicitud(SolicitudDePago solicitudDePago);
+
     }
 }

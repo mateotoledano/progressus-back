@@ -20,5 +20,10 @@ namespace ProgressusWebApi.Services.PlanEntrenamientoServices.Interfaces
         Task<List<PlanDeEntrenamiento>> ObtenerPorNombre(string nombre);
         Task<List<PlanDeEntrenamiento>> ObtenerPlanesDelUsuario(string identityUser);
         Task<List<PlanDeEntrenamiento>> ObtenerTodosLosPlanes();
+        Task<PlanDeEntrenamiento> AgregarEjercicioDePlan(AgregarQuitarUnSoloEjercicioDto dto);
+
+        Task<PlanDeEntrenamiento> QuitarEjercicioDePlan(AgregarQuitarUnSoloEjercicioDto dto);
+
+
     }
 }

@@ -87,8 +87,22 @@ namespace ProgressusWebApi.Controllers.PlanEntrenamientoControllers
         [HttpGet("ObtenerPlanPorId")]
         public async Task<IActionResult> ObtenerPlanPorId(int id)
         {
-            var plan = _planDeEntrenamientoService.ObtenerPorId(id).Result;
+            var plan =  _planDeEntrenamientoService.ObtenerPorId(id).Result;
             return Ok(plan);
         }
+        [HttpPost("AgregarEjercicioAPlan")]
+        public async Task<IActionResult> AgregarEjercicioAPlan(AgregarQuitarUnSoloEjercicioDto dto)
+        {
+            PlanDeEntrenamiento planActualizado = await _planDeEntrenamientoService.AgregarEjercicioDePlan(dto);
+            return Ok(planActualizado);
+        }
+
+        [HttpDelete("QuitarEjercicioAPlan")]
+        public async Task<IActionResult> QuitarEjercicioAPlan(AgregarQuitarUnSoloEjercicioDto dto)
+        {
+            PlanDeEntrenamiento planActualizado = await _planDeEntrenamientoService.QuitarEjercicioDePlan(dto);
+            return Ok(planActualizado);
+        }
+
     }
 }

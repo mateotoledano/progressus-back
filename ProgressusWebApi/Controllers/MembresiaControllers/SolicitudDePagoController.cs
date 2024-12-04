@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ProgressusWebApi.DataContext;
 using ProgressusWebApi.Dtos.MembresiaDtos;
 using ProgressusWebApi.Models.MembresiaModels;
 using ProgressusWebApi.Services.MembresiaServices;
@@ -10,10 +12,12 @@ using ProgressusWebApi.Services.MembresiaServices.Interfaces;
 public class SolicitudDePagoController : ControllerBase
 {
     private readonly ISolicitudDePagoService _solicitudDePagoService;
+    private readonly ProgressusDataContext _context;
 
-    public SolicitudDePagoController(ISolicitudDePagoService solicitudDePagoService)
+    public SolicitudDePagoController(ISolicitudDePagoService solicitudDePagoService, ProgressusDataContext context)
     {
         _solicitudDePagoService = solicitudDePagoService;
+        _context = context;
     }
 
     [HttpPost("CrearSolicitudDePago")]
@@ -35,10 +39,10 @@ public class SolicitudDePagoController : ControllerBase
     [HttpPut("RegistrarPagoConMercadoPago")]
     public async Task<IActionResult> RegistrarPagoConMercadoPago(int idSolicitudDePago)
     {
-        var pref = await _solicitudDePagoService.RegistrarPagoConMercadoPago(idSolicitudDePago);
-        if (pref == null)
+        var solicitud = await _solicitudDePagoService.RegistrarPagoConMercadoPago(idSolicitudDePago);
+        if (solicitud == null)
             return NotFound(); // Retornar 404 si no se encuentra la solicitud
-        return Ok(pref); // Retornar la solicitud actualizada
+        return Ok(solicitud); // Retornar la solicitud actualizada
     }
 
     [HttpPut("CancelarSolicitudDePago")]
@@ -79,4 +83,74 @@ public class SolicitudDePagoController : ControllerBase
     {
         return new OkObjectResult(await _solicitudDePagoService.ObtenerTodasLasSolicitudesDeUnSocio(identityUserId));
     }
-}   
+
+    [HttpGet("pagos-efectivo-confirmados")]
+    public async Task<IActionResult> ObtenerPagosEfectivoConfirmadosAsync()
+    {
+        var pagosEfectivo = await _context.SolicitudDePagos
+            .Where(s => s.TipoDePagoId == 1) // Filtra por pagos en efectivo
+            .Join(
+                _context.HistorialSolicitudDePagos,
+                solicitud => solicitud.Id,
+                historial => historial.SolicitudDePagoId,
+                (solicitud, historial) => new { solicitud, historial }
+            )
+            .Where(joined => joined.historial.EstadoSolicitudId == 2) // Filtra por estado confirmado
+            .Select(joined => new PagoEfectivoConfirmadoDto
+            {
+                TipoMembresiaId = joined.solicitud.MembresiaId,
+                FechaPago = joined.historial.FechaCambioEstado
+            })
+            .ToListAsync();
+
+        if (!pagosEfectivo.Any())
+        {
+            return NotFound("No se encontraron pagos en efectivo confirmados.");
+        }
+
+        return Ok(pagosEfectivo);
+    }
+
+
+    [HttpGet("pagos-efectivo-Usuario")]
+    public async Task<IActionResult> ObtenerPagosEfectivoConfirmadosUsuario()
+    {
+        var pagosEfectivo = await _context.SolicitudDePagos
+              .Where(s => s.TipoDePagoId == 1) // Filtra por pagos en efectivo
+              .Join(
+                  _context.HistorialSolicitudDePagos,
+                  solicitud => solicitud.Id,
+                  historial => historial.SolicitudDePagoId,
+                  (solicitud, historial) => new { solicitud, historial }
+              )
+              .Join(
+                  _context.Socios, // Tabla de Socios
+                  joined => joined.solicitud.IdentityUserId,
+                  socio => socio.UserId, // Relación entre UserId de SolicitudDePagos y Socio
+                  (joined, socio) => new
+                  {
+                      joined.solicitud,
+                      joined.historial,
+                      socio
+                  }
+              )
+              .Where(joined => joined.historial.EstadoSolicitudId == 2) // Filtra por estado confirmado
+              .Select(joined => new PagoEfectivoUserConfirmadoDto
+              {
+                  TipoMembresiaId = joined.solicitud.MembresiaId,
+                  FechaPago = joined.historial.FechaCambioEstado,
+                  IdentityUserId = joined.socio.UserId,
+                  Nombre = joined.socio.Nombre,
+                  Apellido = joined.socio.Apellido
+              })
+              .ToListAsync();
+
+        if (!pagosEfectivo.Any())
+        {
+            return NotFound("No se encontraron pagos en efectivo confirmados.");
+        }
+
+        return Ok(pagosEfectivo);
+    }
+
+}

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProgressusWebApi.Dtos.RerservaDto;
+using ProgressusWebApi.Models.AsistenciaModels;
 
 namespace ProgressusWebApi.Services.ReservaService.cs.interfaces
 {
@@ -12,6 +13,9 @@ namespace ProgressusWebApi.Services.ReservaService.cs.interfaces
         // Agregar el método EliminarReserva
         Task<IActionResult> EliminarReservaAsync(string userId);
 
+        // Agregar el método EliminarReserva
+        Task<IActionResult> EliminarReservaAsyncID(int idReserva);
+
         // Método para obtener reservas por fecha y hora de inicio
         Task<IActionResult> ObtenerReservasPorHorarioAsync(DateTime fecha, TimeSpan horaInicio);
 
@@ -23,5 +27,18 @@ namespace ProgressusWebApi.Services.ReservaService.cs.interfaces
         Task<IActionResult> ObtenerEstadisticasReservasAsync();
         Task<IActionResult> ObtenerEstadisticasPorDiaSemanaAsync();
 
-    }
+        Task<List<AsistenciaLog>> ObtenerAsistenciasPorHoraAsync(string hora);
+
+        Task<List<AsistenciaLog>> ObtenerAsistenciasPorUsuarioAsync(string userId);
+
+        Task<List<AsistenciaLog>> ObtenerTodasLasAsistenciasAsync();
+        Task<List<AsistenciasPorDia>> ObtenerNumeroDeAsistenciasPorDiaDeSemanaAsync();
+
+        Task<List<AsistenciasPorMesYDia>> ObtenerAsistenciasPorMesYDiaAsync();
+
+        Task<List<AsistenciasPorMes>> ObtenerAsistenciasPorMesAsync();
+        
+
+
+        }
 }

@@ -7,5 +7,8 @@ namespace ProgressusWebApi.Repositories.PlanEntrenamientoRepositories.Interfaces
         Task<List<EjercicioEnDiaDelPlan>> ObtenerEjerciciosDelDia(int diaDelPlanId);
         Task<EjercicioEnDiaDelPlan?> AgregarEjercicioADiaDelPlan(EjercicioEnDiaDelPlan ejercicioEnDiaDelPlan);
         Task QuitarEjerciciosDelPlan(int planId);
+
+        Task<EjercicioEnDiaDelPlan?> QuitarUnEjercicioDelPlan(EjercicioEnDiaDelPlan ejercicioEnDiaDelPlan);
+
     }
 }

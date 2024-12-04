@@ -12,5 +12,7 @@ namespace ProgressusWebApi.Models.MembresiaModels
         public Membresia Membresia { get; set; }
         public List<HistorialSolicitudDePago> HistorialSolicitudDePagos { get; set; }
         public DateTime FechaCreacion {  get; set; }
+        //public string EstadoActual { get; set; }
+        //public string preferenceIdMercadoPago { get; set; }
     }
 }

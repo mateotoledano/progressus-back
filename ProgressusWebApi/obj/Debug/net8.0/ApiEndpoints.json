@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "ProgressusWebApi.Controllers.MembresiaControllers.AAMercadoPagoController",
+    "Method": "ObtenerRequestMercadoPago",
+    "RelativePath": "api/AAMercadoPago/ObtenerRequestMercadoPago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.MembresiaControllers.AAMercadoPagoController",
+    "Method": "Prueba",
+    "RelativePath": "api/AAMercadoPago/Prueba",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "res",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.AsignacionDePlanController",
     "Method": "AsignarPlanDeEntrenamiento",
     "RelativePath": "api/AsignacionDePlan/AsignarPlanDeEntrenamiento",
@@ -814,7 +846,7 @@
   {
     "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.ObjetivoDePlanController",
     "Method": "Crear",
-    "RelativePath": "api/ObjetivoDePlan/CrearEjercicio",
+    "RelativePath": "api/ObjetivoDePlan/CrearObjetivoDePlan",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -908,6 +940,22 @@
   },
   {
     "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
+    "Method": "AgregarEjercicioAPlan",
+    "RelativePath": "api/PlanDeEntrenamiento/AgregarEjercicioAPlan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ProgressusWebApi.Dtos.PlanDeEntrenamientoDtos.PlanDeEntrenamientoDto.AgregarQuitarUnSoloEjercicioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
     "Method": "ConvertirEnPlantilla",
     "RelativePath": "api/PlanDeEntrenamiento/ConvertirPlanEnPlantilla",
     "HttpMethod": "PUT",
@@ -956,6 +1004,22 @@
   },
   {
     "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
+    "Method": "ObtenerPlanesDelUsuario",
+    "RelativePath": "api/PlanDeEntrenamiento/ObtenerPlanesDelUsuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "identityUser",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
     "Method": "ObtenerPlanesPlantillas",
     "RelativePath": "api/PlanDeEntrenamiento/ObtenerPlanesPlantillas",
     "HttpMethod": "GET",
@@ -982,34 +1046,12 @@
   },
   {
     "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
-    "Method": "ObtenerPorNombre",
-    "RelativePath": "api/PlanDeEntrenamiento/ObtenerPorNombre",
+    "Method": "ObtenerTodosLosPlanes",
+    "RelativePath": "api/PlanDeEntrenamiento/ObtenerTodosLosPlanes",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "nombre",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
-    "Method": "ObtenerPorObjetivoDePlan",
-    "RelativePath": "api/PlanDeEntrenamiento/ObtenerPorObjetivoDePlan",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "objetivoDePlanId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -1024,6 +1066,22 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.PlanEntrenamientoControllers.PlanDeEntrenamientoController",
+    "Method": "QuitarEjercicioAPlan",
+    "RelativePath": "api/PlanDeEntrenamiento/QuitarEjercicioAPlan",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ProgressusWebApi.Dtos.PlanDeEntrenamientoDtos.PlanDeEntrenamientoDto.AgregarQuitarUnSoloEjercicioDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -1062,6 +1120,22 @@
   },
   {
     "ContainingType": "ProgressusWebApi.Controllers.ReservasTurnosController",
+    "Method": "EliminarReservaID",
+    "RelativePath": "api/ReservasTurnos/eliminarConId/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.ReservasTurnosController",
     "Method": "ObtenerEstadisticasPorDiaSemana",
     "RelativePath": "api/ReservasTurnos/EstadisticasPorDiaSemana",
     "HttpMethod": "GET",
@@ -1082,6 +1156,108 @@
   },
   {
     "ContainingType": "ProgressusWebApi.Controllers.ReservasTurnosController",
+    "Method": "ObtenerAsistenciasPorHora",
+    "RelativePath": "api/ReservasTurnos/ObtenerAsistenciasPorHora/{hora}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hora",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ProgressusWebApi.Models.AsistenciaModels.AsistenciaLog, ProgressusWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.ReservasTurnosController",
+    "Method": "ObtenerAsistenciasPorUsuario",
+    "RelativePath": "api/ReservasTurnos/ObtenerAsistenciasPorUsuario/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.ReservasTurnosController",
+    "Method": "ObtenerNumeroDeAsistenciasPorDiaDeSemana",
+    "RelativePath": "api/ReservasTurnos/ObtenerNumeroDeAsistenciasPorDiaDeSemana",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ProgressusWebApi.Models.AsistenciaModels.AsistenciasPorDia, ProgressusWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.ReservasTurnosController",
+    "Method": "ObtenerAAsistenciasPorMesYDia",
+    "RelativePath": "api/ReservasTurnos/ObtenerNumeroDeAsistenciasPorDiaMes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ProgressusWebApi.Models.AsistenciaModels.AsistenciasPorMesYDia, ProgressusWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.ReservasTurnosController",
+    "Method": "ObtenerAsistenciasPorMes",
+    "RelativePath": "api/ReservasTurnos/ObtenerNumeroDeAsistenciasPorMes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ProgressusWebApi.Models.AsistenciaModels.AsistenciasPorMes, ProgressusWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.ReservasTurnosController",
     "Method": "ObtenerReservasPorHorarioAsync",
     "RelativePath": "api/ReservasTurnos/ObtenerReservasPorHorario",
     "HttpMethod": "GET",
@@ -1099,6 +1275,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.ReservasTurnosController",
+    "Method": "ObtenerTodasLasAsistencias",
+    "RelativePath": "api/ReservasTurnos/ObtenerTodasLasAsistencias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -1247,6 +1433,58 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolicitudDePagoController",
+    "Method": "ObtenerTodasLasSolicitudesDeUnSocio",
+    "RelativePath": "api/SolicitudDePago/ObtenerTodasLasSolicitudesDeUnSocio",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "identityUserId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolicitudDePagoController",
+    "Method": "ObtenerPagosEfectivoConfirmadosAsync",
+    "RelativePath": "api/SolicitudDePago/pagos-efectivo-confirmados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolicitudDePagoController",
+    "Method": "ObtenerPagosEfectivoConfirmadosUsuario",
+    "RelativePath": "api/SolicitudDePago/pagos-efectivo-Usuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolicitudDePagoController",
+    "Method": "RegistrarPagoConMercadoPago",
+    "RelativePath": "api/SolicitudDePago/RegistrarPagoConMercadoPago",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idSolicitudDePago",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

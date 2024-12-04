@@ -92,16 +92,16 @@ namespace ProgressusWebApi.Repositories.MembresiaRepositories
             return  _context.TipoDePagos.FirstOrDefaultAsync(tp => tp.Id == id);
         }
 
-        public async Task<IActionResult> ObtenerSolicitudDePagoDeSocio(string identityUserId)
+        public async Task<SolicitudDePago> ObtenerSolicitudDePagoDeSocio(string identityUserId)
         {
-            var solicitud = await _context.SolicitudDePagos
+            SolicitudDePago? solicitud = await _context.SolicitudDePagos
                 .Include(s => s.HistorialSolicitudDePagos) // Incluye el historial completo
                 .ThenInclude(h => h.EstadoSolicitud)    // Incluye también el EstadoSolicitud de cada historial
                 .OrderByDescending(h => h.FechaCreacion)
                 .FirstOrDefaultAsync(tp => tp.IdentityUserId == identityUserId);
             solicitud.TipoDePago = this.ObtenerTipoDePagoPorIdAsync(solicitud.TipoDePagoId).Result;
             solicitud.Membresia =  _membresiaRepository.GetById(solicitud.MembresiaId).Result;
-            return new OkObjectResult(solicitud);
+            return solicitud;
         }
 
         public async Task<IActionResult> ObtenerTiposDePagos()
@@ -152,16 +152,24 @@ namespace ProgressusWebApi.Repositories.MembresiaRepositories
 
         public async Task<IActionResult> ObtenerTodasLasSolicitudesDeUnSocio(string identityUserId)
         {
-            var solicitud = await _context.SolicitudDePagos
-                .Where(s => s.IdentityUserId == identityUserId.ToString())
+            var solicitudes = await _context.SolicitudDePagos
+                .Where(s => s.IdentityUserId == identityUserId.ToString() &&
+                            s.HistorialSolicitudDePagos.Any(h => h.EstadoSolicitud.Nombre == "Confirmado")) // Filtra por historial con estado "Confirmado"
                 .Include(s => s.HistorialSolicitudDePagos) // Incluye el historial completo
-                    .ThenInclude(h => h.EstadoSolicitud)    // Incluye también el EstadoSolicitud de cada historial
+                    .ThenInclude(h => h.EstadoSolicitud)
                 .Include(s => s.TipoDePago)
                 .Include(s => s.Membresia)
-                .OrderByDescending(h => h.FechaCreacion)
+                .OrderByDescending(s => s.FechaCreacion) // Ordena por fecha de creación de la solicitud
                 .ToListAsync();
 
-            return new OkObjectResult(solicitud);
+            return new OkObjectResult(solicitudes);
+        }
+
+        public async Task<SolicitudDePago> ActualizarSolicitud(SolicitudDePago solicitudDePago)
+        {
+            _context.SolicitudDePagos.Update(solicitudDePago);
+            await _context.SaveChangesAsync();
+            return solicitudDePago;
         }
     }
 }

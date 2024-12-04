@@ -12,5 +12,7 @@ namespace ProgressusWebApi.Models.MembresiaModels
         public string? Telefono { get; set; }
         public IdentityUser? User { get; set; }
         public string? UserId { get; set; }
+
+        //public DateTime miembreHasta { get; set; }
     }
 }

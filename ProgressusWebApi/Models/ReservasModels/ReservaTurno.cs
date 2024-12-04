@@ -1,4 +1,5 @@
-﻿using ProgressusWebApi.Models.RerservasModels;
+﻿using ProgressusWebApi.Models.AsistenciaModels;
+using ProgressusWebApi.Models.RerservasModels;
 
 namespace ProgressusWebApi.Models.RerservasModels
 {
@@ -10,5 +11,8 @@ namespace ProgressusWebApi.Models.RerservasModels
         public TimeSpan HoraInicio { get; set; }
         public TimeSpan HoraFin { get; set; }
         public bool Confirmada { get; set; }
+
+
+   
     }
 }

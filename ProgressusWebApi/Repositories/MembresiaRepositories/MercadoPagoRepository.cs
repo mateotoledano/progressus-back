@@ -26,7 +26,7 @@ namespace WebApiMercadoPago.Repositories
 
         public async Task<Preference> CreatePreferenceAsync(SolicitudDePago solicitud)
         {
-            var client = new PreferenceClient();
+            PreferenceClient client = new PreferenceClient();
 
             var usuario = _userManager.FindByIdAsync(solicitud.IdentityUserId).Result;
 
@@ -53,13 +53,13 @@ namespace WebApiMercadoPago.Repositories
                 //Redirección del usuario según resultado del pago
                 BackUrls = new PreferenceBackUrlsRequest
                 {
-                    Success = "https://www.success.com",
-                    Failure = "https://www.failure.com",
-                    Pending = "https://www.pending.com"
+                    Success = "https://pages-mp.vercel.app/success",
+                    Failure = "https://pages-mp.vercel.app/failure",
+                    Pending = "https://pages-mp.vercel.app/pending"
                 },
 
                 //URL para recibir la información del pago        
-                NotificationUrl = "https://www.notification.com",
+                NotificationUrl = "https://www.progressuscenter.somee.com/api/AAMercadoPago/ObtenerRequestMercadoPago",
 
                 AutoReturn = "approved",
                 PaymentMethods = new PreferencePaymentMethodsRequest

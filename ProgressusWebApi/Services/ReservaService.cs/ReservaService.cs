@@ -102,6 +102,33 @@ namespace ProgressusWebApi.Services.ReservaServices
 
             return true;
         }
+        // Obtener asistencias por usuario
+        public async Task<List<AsistenciaLog>> ObtenerAsistenciasPorUsuarioAsync(string userId)
+        {
+            if (string.IsNullOrEmpty(userId))
+            {
+                throw new ArgumentException("El userId es requerido.", nameof(userId));
+            }
+
+            // Buscar las asistencias del usuario
+            var asistencias = await _context.AsistenciaLogs
+                .Where(a => a.UserId == userId)
+                .OrderByDescending(a => a.FechaAsistencia) // Ordenar por fecha descendente
+                .ToListAsync();
+
+            return asistencias;
+        }
+
+        // Obtener todas las asistencias
+        public async Task<List<AsistenciaLog>> ObtenerTodasLasAsistenciasAsync()
+        {
+            // Traer todas las asistencias
+            var asistencias = await _context.AsistenciaLogs
+                .OrderByDescending(a => a.FechaAsistencia) // Ordenar por fecha descendente
+                .ToListAsync();
+
+            return asistencias;
+        }
 
 
         public async Task RegistrarLogDeAsistenciaAsync(string userId, int reservaId)
@@ -175,5 +202,109 @@ namespace ProgressusWebApi.Services.ReservaServices
 
             return new OkObjectResult("Reserva eliminada exitosamente.");
         }
+        public async Task<IActionResult> EliminarReservaAsyncID(int idReserva)
+        {
+            // Buscar la reserva por ID
+            var reserva = await _context.Reservas.FirstOrDefaultAsync(r => r.Id == idReserva);
+            if (reserva == null)
+            {
+                return new NotFoundObjectResult("No se encontró la reserva especificada.");
+            }
+
+            // Eliminar la reserva
+            _context.Reservas.Remove(reserva);
+            await _context.SaveChangesAsync();
+
+            return new OkObjectResult("Reserva eliminada exitosamente.");
+        }
+
+
+        public async Task<List<AsistenciaLog>> ObtenerAsistenciasPorHoraAsync(string hora)
+        {
+            if (string.IsNullOrEmpty(hora))
+            {
+                throw new ArgumentException("La hora es requerida.", nameof(hora));
+            }
+
+            // Validar el formato de la hora (opcional)
+            if (!TimeSpan.TryParse(hora, out TimeSpan horaTimeSpan))
+            {
+                throw new ArgumentException("El formato de la hora no es válido. Ejemplo: 10:00:00.000", nameof(hora));
+            }
+
+            // Buscar las asistencias que coincidan con la hora específica
+            var asistencias = await _context.AsistenciaLogs
+                .Where(a => a.FechaAsistencia.TimeOfDay == horaTimeSpan)
+                .OrderByDescending(a => a.FechaAsistencia) // Ordenar por fecha descendente
+                .ToListAsync();
+
+            return asistencias;
+        }
+        public async Task<List<AsistenciasPorDia>> ObtenerNumeroDeAsistenciasPorDiaDeSemanaAsync()
+        {
+            // Trae todos los registros a memoria y realiza la agrupación en C#
+            var asistencias = await _context.AsistenciaLogs
+                .ToListAsync(); // Carga los datos desde la base de datos
+
+            var asistenciasPorDiaDeSemana = asistencias
+                .GroupBy(a => a.FechaAsistencia.DayOfWeek) // Agrupa por día de la semana
+                .Select(grupo => new AsistenciasPorDia
+                {
+                    DiaDeSemana = grupo.Key.ToString(), // Día de la semana como texto
+                    NumeroDeAsistencias = grupo.Count() // Cuenta las asistencias en ese día
+                })
+                .OrderBy(grupo => grupo.DiaDeSemana) // Ordena por día de la semana (opcional)
+                .ToList();
+
+            return asistenciasPorDiaDeSemana;
+        }
+
+        public async Task<List<AsistenciasPorMes>> ObtenerAsistenciasPorMesAsync()
+        {
+            // Trae todos los registros a memoria
+            var asistencias = await _context.AsistenciaLogs
+                .ToListAsync(); // Carga los datos desde la base de datos
+
+            var asistenciasPorMes = asistencias
+                .GroupBy(a => new { a.FechaAsistencia.Year, a.FechaAsistencia.Month }) // Agrupa por año y mes
+                .Select(grupo => new AsistenciasPorMes
+                {
+                    Anio = grupo.Key.Year, // Año de la asistencia
+                    Mes = grupo.Key.Month, // Mes de la asistencia
+                    NumeroDeAsistencias = grupo.Count() // Cuenta las asistencias en ese mes
+                })
+                .OrderBy(grupo => grupo.Anio).ThenBy(grupo => grupo.Mes) // Ordena por año y luego por mes
+                .ToList();
+
+            return asistenciasPorMes;
+        }
+        public async Task<List<AsistenciasPorMesYDia>> ObtenerAsistenciasPorMesYDiaAsync()
+        {
+            // Trae todos los registros a memoria
+            var asistencias = await _context.AsistenciaLogs
+                .ToListAsync(); // Carga los datos desde la base de datos
+
+            var asistenciasPorMesYDia = asistencias
+                .GroupBy(a => new { a.FechaAsistencia.Year, a.FechaAsistencia.Month, DiaDeSemana = a.FechaAsistencia.DayOfWeek }) // Agrupa por año, mes y día de la semana
+                .Select(grupo => new AsistenciasPorMesYDia
+                {
+                    Anio = grupo.Key.Year, // Año de la asistencia
+                    Mes = grupo.Key.Month, // Mes de la asistencia
+                    Dia = grupo.Key.DiaDeSemana.ToString(), // Día de la semana como texto (Lunes, Martes, etc.)
+                    NumeroDeAsistencias = grupo.Count() // Cuenta las asistencias en ese día de la semana
+                })
+                .OrderBy(grupo => grupo.Anio)  // Ordena por año
+                .ThenBy(grupo => grupo.Mes)   // Luego por mes
+                .ThenBy(grupo => Enum.GetValues(typeof(DayOfWeek)).Cast<DayOfWeek>().ToList().IndexOf(Enum.Parse<DayOfWeek>(grupo.Dia))) // Ordena por el día de la semana
+                .ToList();
+
+            return asistenciasPorMesYDia;
+        }
+
+
+
+
+
+
     }
 }

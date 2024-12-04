@@ -90,6 +90,9 @@ builder.Services.AddSwaggerGen(options =>
     options.OperationFilter<SecurityRequirementsOperationFilter>();
 });
 
+// Registrar IHttpClientFactory
+builder.Services.AddHttpClient();
+
 // Conexión a la base de datos
 builder.Services.AddDbContext<ProgressusDataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));

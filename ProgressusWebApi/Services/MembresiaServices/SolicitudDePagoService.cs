@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
+﻿using MercadoPago.Resource.Preference;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ProgressusWebApi.Dtos.MembresiaDtos;
 using ProgressusWebApi.Models.MembresiaModels;
 using ProgressusWebApi.Repositories.MembresiaRepositories.Interfaces;
@@ -13,6 +15,8 @@ namespace ProgressusWebApi.Services.MembresiaServices
     {
         private readonly ISolicitudDePagoRepository _repository;
         private readonly IMercadoPagoRepository _mercadoPagoRepository;
+      
+
 
         public SolicitudDePagoService(ISolicitudDePagoRepository repository, IMercadoPagoRepository mercadoPagoRepository)
         {
@@ -96,10 +100,10 @@ namespace ProgressusWebApi.Services.MembresiaServices
 
         }
 
-        public async Task<IActionResult> ObtenerSolicitudDePagoDeSocio(string identityUserId)
+        public async Task<SolicitudDePago> ObtenerSolicitudDePagoDeSocio(string identityUserId)
         {
-            var solicitud = await _repository.ObtenerSolicitudDePagoDeSocio(identityUserId);
-            return new OkObjectResult(solicitud);
+            SolicitudDePago solicitud = await _repository.ObtenerSolicitudDePagoDeSocio(identityUserId);
+            return solicitud;
         }
 
         public async Task<IActionResult> ObtenerTiposDePago()
@@ -117,7 +121,13 @@ namespace ProgressusWebApi.Services.MembresiaServices
         public async Task<IActionResult> RegistrarPagoConMercadoPago(int idSolicitudDePago)
         {
             SolicitudDePago solicitud = _repository.ObtenerSolicitudDePagoPorIdAsync(idSolicitudDePago).Result;
-            var pref = await _mercadoPagoRepository.CreatePreferenceAsync(solicitud);
+            Preference pref = await _mercadoPagoRepository.CreatePreferenceAsync(solicitud);
+            //solicitud.preferenceIdMercadoPago = pref.Id;
+            if (solicitud != null)
+            {
+               await _repository.ActualizarSolicitud(solicitud);
+            }
+            
             return new OkObjectResult(pref);
 
        }
@@ -125,6 +135,34 @@ namespace ProgressusWebApi.Services.MembresiaServices
         public async Task<IActionResult> ObtenerTodasLasSolicitudesDeUnSocio(string identityUserId)
         {
             return await _repository.ObtenerTodasLasSolicitudesDeUnSocio(identityUserId);
+        }
+
+        public async Task<SolicitudDePago> ConfirmarPagoConMercadoPago(int solicitudDePagoId)
+        {
+            if (solicitudDePagoId != null)
+            {
+                await this.RegistrarPagoEnEfectivo(solicitudDePagoId);
+            }
+
+            HistorialSolicitudDePago historialActual = _repository.ObtenerUltimoHistorialDeUnaSolicitudAsync(solicitudDePagoId).Result;
+            EstadoSolicitud estadoActual = _repository.ObtenerEstadoSolicitudPorIdAsync(historialActual.EstadoSolicitudId).Result;
+
+            if (estadoActual.Nombre != "Pendiente")
+            {
+                return null;
+            }
+            EstadoSolicitud estadoConfirmado = _repository.ObtenerEstadoSolicitudPorNombreAsync("Confirmado").Result;
+            HistorialSolicitudDePago historialSolicitudDePago = new HistorialSolicitudDePago()
+            {
+                FechaCambioEstado = DateTime.Now,
+                SolicitudDePagoId = solicitudDePagoId,
+                EstadoSolicitud = estadoConfirmado,
+                EstadoSolicitudId = estadoConfirmado.Id,
+                SolicitudDePago = await _repository.ObtenerSolicitudDePagoPorIdAsync(solicitudDePagoId),
+            };
+            HistorialSolicitudDePago historialConfirmado = _repository.CrearHistorialSolicitudDePagoAsync(historialSolicitudDePago).Result;
+            SolicitudDePago solicitud = await _repository.ObtenerSolicitudDePagoPorIdAsync(solicitudDePagoId);
+            return solicitud;
         }
     }
 }

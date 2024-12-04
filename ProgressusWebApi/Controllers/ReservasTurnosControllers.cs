@@ -3,6 +3,8 @@ using ProgressusWebApi.Services.ReservaService;
 using ProgressusWebApi.Dtos.RerservaDto;  // Corrección del nombre
 using ProgressusWebApi.Services.ReservaService.cs.interfaces;
 using ProgressusWebApi.Dtos.RerservaDto;
+using ProgressusWebApi.Models.AsistenciaModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProgressusWebApi.Controllers
 {
@@ -113,6 +115,115 @@ namespace ProgressusWebApi.Controllers
             return Ok("Reserva eliminada exitosamente.");
         }
 
+
+        // Endpoint para obtener asistencias por usuario
+        [HttpGet("ObtenerAsistenciasPorUsuario/{userId}")]
+        public async Task<IActionResult> ObtenerAsistenciasPorUsuario(string userId)
+        {
+            try
+            {
+                var asistencias = await _reservaService.ObtenerAsistenciasPorUsuarioAsync(userId);
+
+                if (asistencias == null || !asistencias.Any())
+                {
+                    return NotFound($"No se encontraron asistencias para el usuario con ID: {userId}");
+                }
+
+                return Ok(asistencias);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+            }
+        }
+
+        // Endpoint para obtener todas las asistencias
+        [HttpGet("ObtenerTodasLasAsistencias")]
+        public async Task<IActionResult> ObtenerTodasLasAsistencias()
+        {
+            try
+            {
+                var asistencias = await _reservaService.ObtenerTodasLasAsistenciasAsync();
+
+                if (asistencias == null || !asistencias.Any())
+                {
+                    return NotFound("No se encontraron asistencias registradas.");
+                }
+
+                return Ok(asistencias);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+            }
+        }
+        // Método para eliminar una reserva
+        [HttpDelete("eliminarConId/{id}")]
+        public async Task<IActionResult> EliminarReservaID(int id)
+        {
+            var resultado = await _reservaService.EliminarReservaAsyncID(id);
+            if (resultado == null)
+            {
+                return NotFound("No se encontró la reserva a eliminar.");
+            }
+
+            return Ok("Reserva eliminada exitosamente.");
+        }
+
+        [HttpGet("ObtenerAsistenciasPorHora/{hora}")]
+        public async Task<ActionResult<List<AsistenciaLog>>> ObtenerAsistenciasPorHora(string hora)
+        {
+            try
+            {
+                var asistencias = await _reservaService.ObtenerAsistenciasPorHoraAsync(hora);
+                return Ok(asistencias);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpGet("ObtenerNumeroDeAsistenciasPorDiaDeSemana")]
+        public async Task<ActionResult<List<AsistenciasPorDia>>> ObtenerNumeroDeAsistenciasPorDiaDeSemana()
+        {
+            try
+            {
+                var asistenciasPorDiaDeSemana = await _reservaService.ObtenerNumeroDeAsistenciasPorDiaDeSemanaAsync();
+                return Ok(asistenciasPorDiaDeSemana);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("ObtenerNumeroDeAsistenciasPorMes")]
+        public async Task<ActionResult<List<AsistenciasPorMes>>> ObtenerAsistenciasPorMes()
+        {
+            try
+            {
+                var asistenciasPorMes = await _reservaService.ObtenerAsistenciasPorMesAsync();
+                return Ok(asistenciasPorMes);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        
+        [HttpGet("ObtenerNumeroDeAsistenciasPorDiaMes")]
+        public async Task<ActionResult<List<AsistenciasPorMesYDia>>> ObtenerAAsistenciasPorMesYDia()
+        {
+            try
+            {
+                var asistenciasPorDiaMes = await _reservaService.ObtenerAsistenciasPorMesYDiaAsync();
+                return Ok(asistenciasPorDiaMes);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
     }
 }

@@ -5,17 +5,17 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIiLWgERQzkW/UEZUtfA1YwAAAAACAAAAAAADZgAAwAAAABAAAAAqY2vBfXlhHu7KUbCDAUjFAAAAAASAAACgAAAAEAAAALRmuvgznpgzwOPI50cjmcUgAAAAh1qEGMv35OWYCnKmf5IbEEfn/knOsUJgj/4QrZT5+PcUAAAA/PnM72c9jbVy7ZLJr1yeGvXHPuI=</EncryptedPassword>
-    <_PublishTargetUrl>ftp://155.254.244.40/www.progressuscenter.somee.com</_PublishTargetUrl>
-    <History>True|2024-11-23T01:13:05.4261510Z||;True|2024-11-22T21:40:45.8288603-03:00||;</History>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqK4f16PmB0qll7/Ox8/T+QAAAAACAAAAAAAQZgAAAAEAACAAAADQv41FKYp4j/8USwzNnHeLRzrsc2jbYe6MTAm+XHOXywAAAAAOgAAAAAIAACAAAAB7+hzlBP171V4LirNQbdQj0dIgamuSYAoqCbOj8qRDvyAAAABHP+OcYRTmDQo8DOf9bRc9AzqMKG3IBX5d8G6Cp+yrRUAAAADcOIyymQ4CCyyfc8V7xtBis4dEirkDAMbVzCoXDSxRh0Yxql7SXen7S6NaCpkuG7Fx/tpMkbjJhHhryDlUDKuH</EncryptedPassword>
+    <_PublishTargetUrl>ftp://155.254.244.27/www.progressuscenter.somee.com</_PublishTargetUrl>
+    <History>True|2024-12-03T23:30:13.3724122Z||;True|2024-12-02T15:27:33.1573122-03:00||;True|2024-12-02T10:30:19.2202991-03:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="appsettings.Development.json">
-      <publishTime>11/22/2024 19:21:41</publishTime>
+      <publishTime>11/28/2024 15:39:38</publishTime>
     </File>
     <File Include="appsettings.json">
-      <publishTime>11/22/2024 19:21:41</publishTime>
+      <publishTime>11/28/2024 15:39:38</publishTime>
     </File>
     <File Include="Azure.Core.dll">
       <publishTime>09/07/2023 14:50:30</publishTime>
@@ -111,19 +111,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/08/2023 04:09:54</publishTime>
     </File>
     <File Include="ProgressusWebApi.deps.json">
-      <publishTime>11/22/2024 22:07:41</publishTime>
+      <publishTime>12/03/2024 20:25:52</publishTime>
     </File>
     <File Include="ProgressusWebApi.dll">
-      <publishTime>11/22/2024 22:07:41</publishTime>
+      <publishTime>12/03/2024 20:25:51</publishTime>
     </File>
     <File Include="ProgressusWebApi.exe">
-      <publishTime>11/22/2024 22:07:41</publishTime>
+      <publishTime>12/03/2024 20:25:51</publishTime>
     </File>
     <File Include="ProgressusWebApi.pdb">
-      <publishTime>11/22/2024 22:07:41</publishTime>
+      <publishTime>12/03/2024 20:25:51</publishTime>
     </File>
     <File Include="ProgressusWebApi.runtimeconfig.json">
-      <publishTime>11/22/2024 20:47:29</publishTime>
+      <publishTime>12/02/2024 10:25:17</publishTime>
     </File>
     <File Include="runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll">
       <publishTime>01/26/2024 23:49:42</publishTime>
@@ -204,7 +204,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/22/2021 20:49:44</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>11/22/2024 22:07:41</publishTime>
+      <publishTime>12/03/2024 20:25:52</publishTime>
     </File>
   </ItemGroup>
 </Project>
