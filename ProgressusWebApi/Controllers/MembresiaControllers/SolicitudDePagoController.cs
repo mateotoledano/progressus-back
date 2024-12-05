@@ -167,6 +167,43 @@ public class SolicitudDePagoController : ControllerBase
         return Ok(pagosEfectivo);
     }
 
+    [HttpGet("solicitudes-confirmadas-por-mes")]
+    public async Task<IActionResult> ObtenerSolicitudesConfirmadasPorMesAsync()
+    {
+        // Obtener las solicitudes en estado confirmado y agruparlas por mes
+        var solicitudesPorMes = await _context.SolicitudDePagos
+            .Join(
+                _context.HistorialSolicitudDePagos,
+                solicitud => solicitud.Id,
+                historial => historial.SolicitudDePagoId,
+                (solicitud, historial) => new { solicitud, historial }
+            )
+            .Where(joined => joined.historial.EstadoSolicitudId == 2) // Filtrar por estado confirmado
+            .GroupBy(
+                joined => joined.historial.FechaCambioEstado.Month, // Agrupar por mes
+                joined => new
+                {
+                    joined.solicitud.Id,
+                    TipoMembresiaId = joined.solicitud.MembresiaId,
+                    FechaPago = joined.historial.FechaCambioEstado
+                }
+            )
+            .Select(grupo => new
+            {
+                Mes = grupo.Key, // Mes
+                Solicitudes = grupo.ToList() // Lista de solicitudes del mes
+            })
+            .OrderBy(grupo => grupo.Mes) // Ordenar por mes
+            .ToListAsync();
+
+        if (!solicitudesPorMes.Any())
+        {
+            return NotFound("No se encontraron solicitudes confirmadas agrupadas por mes.");
+        }
+
+        return Ok(solicitudesPorMes);
+    }
+
     [HttpGet("balance-ingresos/{mes}")]
     public async Task<IActionResult> ObtenerBalanceDeIngresosPorMesAsync(int mes)
     {
