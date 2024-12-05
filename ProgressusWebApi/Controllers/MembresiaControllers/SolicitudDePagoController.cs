@@ -134,10 +134,24 @@ public class SolicitudDePagoController : ControllerBase
                       socio
                   }
               )
+              .Join(
+                  _context.Membresias, // Tabla de Membresías
+                  joined => joined.solicitud.MembresiaId,
+                  membresia => membresia.Id, // Relación entre MembresiaId
+                  (joined, membresia) => new
+                  {
+                      joined.solicitud,
+                      joined.historial,
+                      joined.socio,
+                      membresia
+                  }
+              )
               .Where(joined => joined.historial.EstadoSolicitudId == 2) // Filtra por estado confirmado
               .Select(joined => new PagoEfectivoUserConfirmadoDto
               {
                   TipoMembresiaId = joined.solicitud.MembresiaId,
+                  NombreMembresia = joined.membresia.Nombre, // Nombre de la membresía
+                  PrecioMembresia = joined.membresia.Precio, // Precio de la membresía
                   FechaPago = joined.historial.FechaCambioEstado,
                   IdentityUserId = joined.socio.UserId,
                   Nombre = joined.socio.Nombre,
@@ -152,5 +166,61 @@ public class SolicitudDePagoController : ControllerBase
 
         return Ok(pagosEfectivo);
     }
+
+    [HttpGet("balance-ingresos/{mes}")]
+    public async Task<IActionResult> ObtenerBalanceDeIngresosPorMesAsync(int mes)
+    {
+        if (mes < 1 || mes > 12)
+        {
+            return BadRequest("El mes proporcionado no es válido. Debe estar entre 1 y 12.");
+        }
+
+        // Diccionario para los valores por TipoMembresiaId
+        var membresiaValores = new Dictionary<int, decimal>
+    {
+        { 9, 10000 },
+        { 10, 27000 },
+        { 11, 50000 },
+        { 12, 90000 }
+    };
+
+        // Filtrar los datos relevantes desde la base de datos
+        var ingresosDb = await _context.SolicitudDePagos
+            .Join(
+                _context.HistorialSolicitudDePagos,
+                solicitud => solicitud.Id,
+                historial => historial.SolicitudDePagoId,
+                (solicitud, historial) => new { solicitud, historial }
+            )
+            .Where(joined =>
+                joined.historial.EstadoSolicitudId == 2 && // Pagos confirmados
+                joined.historial.FechaCambioEstado.Month == mes // Filtrar por mes
+            )
+            .Select(joined => new
+            {
+                TipoMembresiaId = joined.solicitud.MembresiaId
+            })
+            .ToListAsync();
+
+        // Filtrar los registros relevantes y calcular el monto en memoria
+        var montoTotal = ingresosDb
+            .Where(ingreso => membresiaValores.ContainsKey(ingreso.TipoMembresiaId)) // Filtrar por membresías válidas
+            .Sum(ingreso => membresiaValores[ingreso.TipoMembresiaId]); // Calcular el total
+
+        if (montoTotal == 0)
+        {
+            return NotFound($"No se encontraron ingresos confirmados para el mes {mes}.");
+        }
+
+        return Ok(new
+        {
+            Mes = mes,
+            MontoTotal = montoTotal
+        });
+    }
+
+
+
+
 
 }

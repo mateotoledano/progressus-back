@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ProgressusWebApi.DataContext;
 using ProgressusWebApi.Dtos.AuthDtos;
+using ProgressusWebApi.Models.RolesUsuarioModels;
 using ProgressusWebApi.Services.AuthServices;
 using ProgressusWebApi.Services.AuthServices.Interfaces;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -13,10 +16,12 @@ namespace ProgressusWebApi.Controllers.AuthControllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _usuarioService;
+        private readonly ProgressusDataContext _context;
 
-        public AuthController(IAuthService usuarioService)
+        public AuthController(IAuthService usuarioService, ProgressusDataContext context)
         {
             _usuarioService = usuarioService;
+            _context = context;
         }
 
         [HttpPut("CambiarContraseña")]
@@ -91,6 +96,39 @@ namespace ProgressusWebApi.Controllers.AuthControllers
         {
             return await _usuarioService.EliminarUsuario(userId);
         }
+
+
+        [HttpPost("RegistrarRutinaFinalizada")]
+        public async Task<IActionResult> RegistrarRutinaFinalizada([FromBody] RutinasFinalizadasXUsuario rutina)
+        {
+            if (rutina == null || string.IsNullOrWhiteSpace(rutina.IdUser))
+            {
+                return BadRequest("Los datos enviados son inválidos o incompletos.");
+            }
+
+            // Verifica si el usuario existe en la tabla Socios
+            var userExists = await _context.Socios.AnyAsync(u => u.UserId == rutina.IdUser);
+            if (!userExists)
+            {
+                return NotFound($"No se encontró un usuario con el Id {rutina.IdUser}.");
+            }
+
+            try
+            {
+                // Agrega la rutina a la tabla
+                _context.RutinasFinalizadasXUsuarios.Add(rutina);
+
+                // Guarda los cambios en la base de datos
+                await _context.SaveChangesAsync();
+
+                return Ok("La rutina finalizada se registró exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error al registrar la rutina: {ex.Message}");
+            }
+        }
+
     }
 
 }

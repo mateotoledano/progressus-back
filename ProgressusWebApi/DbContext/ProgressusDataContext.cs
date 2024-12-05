@@ -10,7 +10,8 @@ using ProgressusWebApi.Models.PlanEntrenamientoModels;
 using ProgressusWebApi.Models.RerservasModels;
 using ProgressusWebApi.Models.InventarioModels;
 using ProgressusWebApi.Models.AsistenciaModels;
-
+using ProgressusWebApi.Models.AsistenciaModels;
+using ProgressusWebApi.Models.RolesUsuarioModels;
 
 namespace ProgressusWebApi.DataContext
 {
@@ -39,6 +40,7 @@ namespace ProgressusWebApi.DataContext
         public DbSet<Inventario> Inventario { get; set; }
         public DbSet<AsistenciaLog> AsistenciaLogs { get; set; }
 
+        public DbSet<RutinasFinalizadasXUsuario> RutinasFinalizadasXUsuarios { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -147,6 +149,10 @@ namespace ProgressusWebApi.DataContext
                 .WithMany()
                 .HasForeignKey(a => a.UserId) // Clave foránea
                 .HasConstraintName("FK_AsistenciaLog_Users");
+
+            modelBuilder.Entity<RutinasFinalizadasXUsuario>()
+                .ToTable("RutinasFinalizadasXUsuario");
+
 
 
         }
