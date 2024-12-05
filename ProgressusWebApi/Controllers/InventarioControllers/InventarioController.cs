@@ -75,5 +75,13 @@ namespace ProgressusWebApi.Controllers.InventarioControllers
             if (inventarioEliminado == null) return NotFound();
             return Ok(inventarioEliminado);
         }
+
+        // Obtener elementos del inventario de mantenimiento
+        [HttpGet("ObtenerInventarioMantenimiento")]
+        public async Task<IActionResult> ObtenerInventarioMantenimiento()
+        {
+            var inventariosMantenimiento = await _inventarioService.ObtenerInventarioMantenimientoAsync();
+            return Ok(inventariosMantenimiento);
+        }
     }
 }

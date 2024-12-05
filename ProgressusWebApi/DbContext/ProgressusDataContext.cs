@@ -13,6 +13,8 @@ using ProgressusWebApi.Models.AsistenciaModels;
 using ProgressusWebApi.Models.AsistenciaModels;
 using ProgressusWebApi.Models.RolesUsuarioModels;
 using ProgressusWebApi.Models.MerchModels;
+using ProgressusWebApi.Models.NotificacionModel;
+
 
 namespace ProgressusWebApi.DataContext
 {
@@ -41,6 +43,8 @@ namespace ProgressusWebApi.DataContext
         public DbSet<Inventario> Inventario { get; set; }
         public DbSet<AsistenciaLog> AsistenciaLogs { get; set; }
         public DbSet<Merch> Merch { get; set; }
+        public DbSet<Notificacion> Notificaciones { get; set; }
+
 
         public DbSet<RutinasFinalizadasXUsuario> RutinasFinalizadasXUsuarios { get; set; }
 

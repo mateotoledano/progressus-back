@@ -645,6 +645,16 @@
   },
   {
     "ContainingType": "ProgressusWebApi.Controllers.InventarioControllers.InventarioController",
+    "Method": "ObtenerInventarioMantenimiento",
+    "RelativePath": "api/Inventario/ObtenerInventarioMantenimiento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.InventarioControllers.InventarioController",
     "Method": "ObtenerPorId",
     "RelativePath": "api/Inventario/ObtenerPorId/{id}",
     "HttpMethod": "GET",

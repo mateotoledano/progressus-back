@@ -6,17 +6,23 @@ using ProgressusWebApi.DataContext;
 using ProgressusWebApi.Dtos.InventarioDtos;
 using ProgressusWebApi.Services.InventarioServices.Interfaces;
 using ProgressusWebApi.Models.InventarioModels;
+using ProgressusWebApi.Models.NotificacionModel;
 using Microsoft.AspNetCore.Mvc;
+using ProgressusWebApi.Services.AuthServices.Interfaces;
+using ProgressusWebApi.Services.AuthServices;
 
 namespace ProgressusWebApi.Services.InventarioServices
 {
     public class InventarioService : IInventarioService
     {
         private readonly ProgressusDataContext _context;
+        private readonly IAuthService _authService;
 
-        public InventarioService(ProgressusDataContext context)
+        public InventarioService(ProgressusDataContext context, IAuthService authService)
         {
             _context = context;
+            _authService = authService;
+
         }
 
         public async Task<IActionResult> CrearInventarioAsync(InventarioDtos inventarioDto)
@@ -59,12 +65,40 @@ namespace ProgressusWebApi.Services.InventarioServices
                 return new NotFoundObjectResult("Inventario no encontrado.");
             }
 
+            // Verificar si el estado cambia a "En Reparación/Mantenimiento"
+            bool estadoCambioAMantenimiento = inventario.Estado != "En Reparación/Mantenimiento"
+                                              && inventarioDto.Estado == "En Reparación/Mantenimiento";
+
             inventario.Nombre = inventarioDto.Nombre;
             inventario.Descripcion = inventarioDto.Descripcion;
             inventario.Estado = inventarioDto.Estado;
 
             _context.Inventario.Update(inventario);
             await _context.SaveChangesAsync();
+
+            // Crear notificaciones si el estado cambió a "En Reparación/Mantenimiento"
+            if (estadoCambioAMantenimiento)
+            {
+                var usuariosEntrenadores = await _authService.ObtenerUsuariosEntrenadoresAsync();
+                if (usuariosEntrenadores == null || !usuariosEntrenadores.Any())
+                {
+                    return new NotFoundObjectResult("No se encontraron usuarios con el rol de Entrenador para notificar.");
+                }
+
+                foreach (var usuario in usuariosEntrenadores)
+                {
+                    var notificacion = new Notificacion
+                    {
+                        UsuarioId = usuario.IdentityUserId,
+                        Mensaje = $"El objeto de inventario '{inventario.Nombre}' ha cambiado su estado a 'En Reparación/Mantenimiento'.",
+                        Estado = false
+                    };
+
+                    _context.Notificaciones.Add(notificacion);
+                }
+
+                await _context.SaveChangesAsync();
+            }
 
             return new OkObjectResult(inventario);
         }
@@ -87,6 +121,20 @@ namespace ProgressusWebApi.Services.InventarioServices
             await _context.SaveChangesAsync();
 
             return new OkObjectResult("Inventario eliminado.");
+        }
+
+        public async Task<IActionResult> ObtenerInventarioMantenimientoAsync()
+        {
+            var inventariosMantenimiento = await _context.Inventario
+                .Where(i => i.Estado == "En Reparación/Mantenimiento")
+                .ToListAsync();
+
+            if (inventariosMantenimiento == null || !inventariosMantenimiento.Any())
+            {
+                return new NotFoundObjectResult("No se encontraron inventarios en mantenimiento.");
+            }
+
+            return new OkObjectResult(inventariosMantenimiento);
         }
 
 
