@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fcapobianco\\Downloads\\progressus-back-master (3)\\progressus-back-master\\progressus-back-master\\ProgressusWebApi\\ProgressusWebApi.csproj": {}
+    "C:\\Users\\Dell\\Desktop\\repoPablo\\ProgressusWebApi\\ProgressusWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fcapobianco\\Downloads\\progressus-back-master (3)\\progressus-back-master\\progressus-back-master\\ProgressusWebApi\\ProgressusWebApi.csproj": {
+    "C:\\Users\\Dell\\Desktop\\repoPablo\\ProgressusWebApi\\ProgressusWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fcapobianco\\Downloads\\progressus-back-master (3)\\progressus-back-master\\progressus-back-master\\ProgressusWebApi\\ProgressusWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\repoPablo\\ProgressusWebApi\\ProgressusWebApi.csproj",
         "projectName": "ProgressusWebApi",
-        "projectPath": "C:\\Users\\Fcapobianco\\Downloads\\progressus-back-master (3)\\progressus-back-master\\progressus-back-master\\ProgressusWebApi\\ProgressusWebApi.csproj",
-        "packagesPath": "C:\\Users\\Fcapobianco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fcapobianco\\Downloads\\progressus-back-master (3)\\progressus-back-master\\progressus-back-master\\ProgressusWebApi\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\Desktop\\repoPablo\\ProgressusWebApi\\ProgressusWebApi.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\Desktop\\repoPablo\\ProgressusWebApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Fcapobianco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,7 +105,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
