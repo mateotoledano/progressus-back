@@ -291,6 +291,22 @@
   },
   {
     "ContainingType": "ProgressusWebApi.Controllers.AuthControllers.AuthController",
+    "Method": "RegistrarRutinaFinalizada",
+    "RelativePath": "api/Auth/RegistrarRutinaFinalizada",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rutina",
+        "Type": "ProgressusWebApi.Models.RolesUsuarioModels.RutinasFinalizadasXUsuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.AuthControllers.AuthController",
     "Method": "ActualizarUsuario",
     "RelativePath": "api/Auth/usuario/{userId}",
     "HttpMethod": "PUT",
@@ -726,6 +742,85 @@
     "ContainingType": "MembresiaController",
     "Method": "ObtenerTodas",
     "RelativePath": "api/Membresia/ObtenerTodas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.MerchControllers.MerchController",
+    "Method": "Crear",
+    "RelativePath": "api/Merch/Crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "merchDto",
+        "Type": "ProgressusWebApi.Dtos.MerchDtos.MerchDtos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.MerchControllers.MerchController",
+    "Method": "Editar",
+    "RelativePath": "api/Merch/Editar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "merchDto",
+        "Type": "ProgressusWebApi.Dtos.MerchDtos.MerchDtos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.MerchControllers.MerchController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Merch/Eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.MerchControllers.MerchController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/Merch/ObtenerPorId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.MerchControllers.MerchController",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/Merch/ObtenerTodos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1347,6 +1442,22 @@
   },
   {
     "ContainingType": "SolicitudDePagoController",
+    "Method": "ObtenerBalanceDeIngresosPorMesAsync",
+    "RelativePath": "api/SolicitudDePago/balance-ingresos/{mes}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mes",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolicitudDePagoController",
     "Method": "CancelarSolicitudDePago",
     "RelativePath": "api/SolicitudDePago/CancelarSolicitudDePago",
     "HttpMethod": "PUT",
@@ -1501,6 +1612,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolicitudDePagoController",
+    "Method": "ObtenerSolicitudesConfirmadasPorMesAsync",
+    "RelativePath": "api/SolicitudDePago/solicitudes-confirmadas-por-mes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

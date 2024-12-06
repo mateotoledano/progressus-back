@@ -226,26 +226,20 @@ namespace ProgressusWebApi.Services.ReservaServices
                 throw new ArgumentException("La hora es requerida.", nameof(hora));
             }
 
-            // Validar el formato de la hora
+            // Validar el formato de la hora (opcional)
             if (!TimeSpan.TryParse(hora, out TimeSpan horaTimeSpan))
             {
                 throw new ArgumentException("El formato de la hora no es válido. Ejemplo: 10:00:00.000", nameof(hora));
             }
 
-            // Definir el rango de tiempo
-            var horaInicio = horaTimeSpan;
-            var horaFin = horaTimeSpan.Add(TimeSpan.FromHours(1)).Subtract(TimeSpan.FromMilliseconds(1)); // Hasta el último milisegundo de la hora
-
-            // Buscar asistencias dentro del rango horario
+            // Buscar las asistencias que coincidan con la hora específica
             var asistencias = await _context.AsistenciaLogs
-                .Where(a => a.FechaAsistencia.TimeOfDay >= horaInicio && a.FechaAsistencia.TimeOfDay <= horaFin)
+                .Where(a => a.FechaAsistencia.TimeOfDay == horaTimeSpan)
                 .OrderByDescending(a => a.FechaAsistencia) // Ordenar por fecha descendente
                 .ToListAsync();
 
             return asistencias;
         }
-
-
         public async Task<List<AsistenciasPorDia>> ObtenerNumeroDeAsistenciasPorDiaDeSemanaAsync()
         {
             // Trae todos los registros a memoria y realiza la agrupación en C#
