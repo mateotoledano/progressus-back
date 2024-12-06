@@ -282,6 +282,42 @@ namespace ProgressusWebApi.Services.AuthServices
             }
         }
 
+        public async Task<List<DatosUsuarioDto>> ObtenerUsuariosEntrenadoresAsync()
+        {
+            // Materializar usuarios y socios desde la base de datos
+            var usuarios = await _progressusDataContext.Users.ToListAsync();
+            var socios = await _progressusDataContext.Socios.ToListAsync();
+
+            // Crear la lista de usuarios con detalles
+            var usuariosConDetalles = new List<DatosUsuarioDto>();
+
+            foreach (var user in usuarios)
+            {
+                // Buscar el socio correspondiente (si existe)
+                var socio = socios.FirstOrDefault(s => s.UserId == user.Id);
+
+                // Obtener roles del usuario
+                var roles = (await _userManager.GetRolesAsync(user)).ToList();
+
+                // Filtrar por rol de "Entrenador"
+                if (roles.Contains("ENTRENADOR"))
+                {
+                    usuariosConDetalles.Add(new DatosUsuarioDto
+                    {
+                        IdentityUserId = user.Id,
+                        Email = user.Email,
+                        Roles = roles,
+                        Nombre = socio?.Nombre,
+                        Apellido = socio?.Apellido,
+                        Telefono = socio?.Telefono
+                    });
+                }
+            }
+
+            return usuariosConDetalles;
+        }
+
+
         public async Task<IActionResult> ActualizarUsuario(string userId, string nuevoRol)
         {
             try

@@ -107,6 +107,32 @@
   },
   {
     "ContainingType": "ProgressusWebApi.Controllers.AuthControllers.AuthController",
+    "Method": "ObtenerMedicionPorIdUsuario",
+    "RelativePath": "api/Auth/{idUser}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUser",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProgressusWebApi.Models.RolesUsuarioModels.MedicionesUsuario, ProgressusWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.AuthControllers.AuthController",
     "Method": "CambiarContrase\u00F1a",
     "RelativePath": "api/Auth/CambiarContrase\u00F1a",
     "HttpMethod": "PUT",
@@ -291,6 +317,22 @@
   },
   {
     "ContainingType": "ProgressusWebApi.Controllers.AuthControllers.AuthController",
+    "Method": "RegistrarMendicionUsuario",
+    "RelativePath": "api/Auth/RegistrarMedicionUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "medicion",
+        "Type": "ProgressusWebApi.Models.RolesUsuarioModels.MedicionesUsuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.AuthControllers.AuthController",
     "Method": "RegistrarRutinaFinalizada",
     "RelativePath": "api/Auth/RegistrarRutinaFinalizada",
     "HttpMethod": "POST",
@@ -304,6 +346,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.AuthControllers.AuthController",
+    "Method": "ObtenerTodasLasMediciones",
+    "RelativePath": "api/Auth/TraerMedicionUsuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProgressusWebApi.Models.RolesUsuarioModels.MedicionesUsuario, ProgressusWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "ProgressusWebApi.Controllers.AuthControllers.AuthController",
@@ -645,6 +707,16 @@
   },
   {
     "ContainingType": "ProgressusWebApi.Controllers.InventarioControllers.InventarioController",
+    "Method": "ObtenerInventarioMantenimiento",
+    "RelativePath": "api/Inventario/ObtenerInventarioMantenimiento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.InventarioControllers.InventarioController",
     "Method": "ObtenerPorId",
     "RelativePath": "api/Inventario/ObtenerPorId/{id}",
     "HttpMethod": "GET",
@@ -803,6 +875,16 @@
   },
   {
     "ContainingType": "ProgressusWebApi.Controllers.MerchControllers.MerchController",
+    "Method": "ObtenerCategorias",
+    "RelativePath": "api/Merch/ObtenerCategorias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.MerchControllers.MerchController",
     "Method": "ObtenerPorId",
     "RelativePath": "api/Merch/ObtenerPorId/{id}",
     "HttpMethod": "GET",
@@ -936,6 +1018,38 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.NotificacionesControllers.NotificacionesController",
+    "Method": "MarcarComoLeida",
+    "RelativePath": "api/Notificaciones/MarcarComoLeida/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProgressusWebApi.Controllers.NotificacionesControllers.NotificacionesController",
+    "Method": "ObtenerPorUsuario",
+    "RelativePath": "api/Notificaciones/ObtenerPorUsuario/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

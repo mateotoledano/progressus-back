@@ -129,6 +129,60 @@ namespace ProgressusWebApi.Controllers.AuthControllers
             }
         }
 
+        [HttpPost("RegistrarMedicionUsuario")]
+        public async Task<IActionResult> RegistrarMendicionUsuario([FromBody] MedicionesUsuario medicion)
+        {
+            try
+            {
+                _context.MedicionesUsuario.Add(medicion);
+                await _context.SaveChangesAsync();
+
+                return Ok("Medicion agregado con exito");
+
+
+
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
+        }
+
+        [HttpGet("TraerMedicionUsuarios")]
+        public async Task<ActionResult<IEnumerable<MedicionesUsuario>>> ObtenerTodasLasMediciones()
+        {
+            try
+            {
+                var mediciones = await _context.MedicionesUsuario.ToListAsync();
+
+                return Ok(mediciones);
+
+
+
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest("No se hallaron mediciones para el usuario");
+            }
+        }
+        // GET: api/Mediciones/{idUser}
+        [HttpGet("{idUser}")]
+        public async Task<ActionResult<IEnumerable<MedicionesUsuario>>> ObtenerMedicionPorIdUsuario(string idUser)
+        {
+            var mediciones = await _context.MedicionesUsuario
+                .Where(m => m.IdUser == idUser)
+                .ToListAsync();
+
+            if (mediciones == null || !mediciones.Any())
+            {
+                return NotFound($"No se encontraron mediciones para el usuario con ID: {idUser}");
+            }
+
+            return Ok(mediciones);
+        }
+
     }
 
 }

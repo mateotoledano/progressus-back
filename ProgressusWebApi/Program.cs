@@ -31,6 +31,10 @@ using ProgressusWebApi.Services.ReservaService;
 using ProgressusWebApi.Services.ReservaServices;
 using ProgressusWebApi.Services.InventarioServices;
 using ProgressusWebApi.Services.InventarioServices.Interfaces;
+using ProgressusWebApi.Services.NotificacionesServices;
+using ProgressusWebApi.Services.NotificacionesServices.Interfaces;
+using ProgressusWebApi.Services.MerchServices;
+using ProgressusWebApi.Services.MerchServices.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 // Configuración de CORS para aceptar peticiones de cualquier origen
@@ -116,6 +120,9 @@ builder.Services.AddScoped<IMercadoPagoRepository, MercadoPagoRepository>();
 builder.Services.AddScoped<IMercadoPagoService, MercadoPagoService>(); MercadoPagoConfig.AccessToken = "APP_USR-2278733141716614-062815-583c9779901a7bbf32c8e8a73971e44c-1878150528";
 builder.Services.AddScoped<IReservaService, ReservaService>();
 builder.Services.AddScoped<IInventarioService, InventarioService>();
+builder.Services.AddScoped<INotificacionesService, NotificacionesService>();
+builder.Services.AddScoped<IMerchService, MerchService>();
+
 // Construir la aplicación con todas las configuraciones y servicios definidos en el objeto builder
 var app = builder.Build();
 

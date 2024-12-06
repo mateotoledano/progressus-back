@@ -19,5 +19,8 @@ namespace ProgressusWebApi.Services.InventarioServices.Interfaces
 
         // Eliminar un inventario
         Task<IActionResult> EliminarInventarioAsync(string id);
+
+        // Obtener todos los inventarios en Mantenimiento
+        Task<IActionResult> ObtenerInventarioMantenimientoAsync();
     }
 }

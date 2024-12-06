@@ -4,6 +4,7 @@ using ProgressusWebApi.Dtos.MerchDtos;
 using ProgressusWebApi.Models.MerchModels;
 using ProgressusWebApi.Services.MerchServices.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using ProgressusWebApi.Models.CategoriasMerch;
 
 namespace ProgressusWebApi.Services.MerchServices
 {
@@ -22,7 +23,13 @@ namespace ProgressusWebApi.Services.MerchServices
             {
                 Nombre = merchDto.Nombre,
                 Descripcion = merchDto.Descripcion,
-                Precio = merchDto.Precio
+                Categoria = merchDto.Categoria,
+                Marca = merchDto.Marca,
+                Stock = merchDto.Stock,
+                Talle = merchDto.Talle,
+                Popular = merchDto.Popular,
+                Precio = merchDto.Precio,
+                ImagenUrl = merchDto.ImagenUrl
             };
 
             _context.Merch.Add(merch);
@@ -58,7 +65,13 @@ namespace ProgressusWebApi.Services.MerchServices
 
             merch.Nombre = merchDto.Nombre;
             merch.Descripcion = merchDto.Descripcion;
+            merch.Categoria = merchDto.Categoria;
+            merch.Marca = merchDto.Marca;
+            merch.Stock = merchDto.Stock;
+            merch.Talle = merchDto.Talle;
+            merch.Popular = merchDto.Popular;
             merch.Precio = merchDto.Precio;
+            merch.ImagenUrl = merchDto.ImagenUrl;
 
             _context.Merch.Update(merch);
             await _context.SaveChangesAsync();
@@ -84,6 +97,11 @@ namespace ProgressusWebApi.Services.MerchServices
             await _context.SaveChangesAsync();
 
             return new OkObjectResult("Merch eliminado.");
+        }
+
+        public async Task<IEnumerable<CategoriasMerch>> ObtenerCategoriasAsync()
+        {
+            return await _context.CategoriasMerch.ToListAsync();
         }
 
 
