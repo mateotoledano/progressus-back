@@ -90,7 +90,7 @@ namespace ProgressusWebApi.Services.InventarioServices
                     var notificacion = new Notificacion
                     {
                         UsuarioId = usuario.IdentityUserId,
-                        Mensaje = $"El objeto de inventario '{inventario.Nombre}' ha cambiado su estado a 'En Reparación/Mantenimiento'.",
+                        Mensaje = $"El objeto de inventario '{inventario.Nombre}' id: '{inventario.Id}' ha cambiado su estado a 'En Reparación/Mantenimiento'.",
                         Estado = false
                     };
 

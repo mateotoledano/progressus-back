@@ -75,5 +75,13 @@ namespace ProgressusWebApi.Controllers.MerchControllers
                 if (merchEliminado == null) return NotFound();
                 return Ok(merchEliminado);
             }
-        }
+
+            // Endpoint para obtener todas las categorías de Merch
+            [HttpGet("ObtenerCategorias")]
+            public async Task<IActionResult> ObtenerCategorias()
+            {
+                var categorias = await _merchService.ObtenerCategoriasAsync();
+                return Ok(categorias);
+            }
+    }
 }

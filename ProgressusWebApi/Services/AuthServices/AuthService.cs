@@ -300,7 +300,7 @@ namespace ProgressusWebApi.Services.AuthServices
                 var roles = (await _userManager.GetRolesAsync(user)).ToList();
 
                 // Filtrar por rol de "Entrenador"
-                if (roles.Contains("Entrenador"))
+                if (roles.Contains("ENTRENADOR"))
                 {
                     usuariosConDetalles.Add(new DatosUsuarioDto
                     {

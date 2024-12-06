@@ -14,6 +14,7 @@ using ProgressusWebApi.Models.AsistenciaModels;
 using ProgressusWebApi.Models.RolesUsuarioModels;
 using ProgressusWebApi.Models.MerchModels;
 using ProgressusWebApi.Models.NotificacionModel;
+using ProgressusWebApi.Models.CategoriasMerch;
 
 
 namespace ProgressusWebApi.DataContext
@@ -44,6 +45,8 @@ namespace ProgressusWebApi.DataContext
         public DbSet<AsistenciaLog> AsistenciaLogs { get; set; }
         public DbSet<Merch> Merch { get; set; }
         public DbSet<Notificacion> Notificaciones { get; set; }
+        public DbSet<CategoriasMerch> CategoriasMerch { get; set; }
+        public DbSet<MedicionesUsuario> MedicionesUsuario { get; set; }
 
 
         public DbSet<RutinasFinalizadasXUsuario> RutinasFinalizadasXUsuarios { get; set; }
@@ -159,7 +162,8 @@ namespace ProgressusWebApi.DataContext
             modelBuilder.Entity<RutinasFinalizadasXUsuario>()
                 .ToTable("RutinasFinalizadasXUsuario");
 
-
+            modelBuilder.Entity<MedicionesUsuario>()
+                .ToTable("Mediciones");
 
         }
     }

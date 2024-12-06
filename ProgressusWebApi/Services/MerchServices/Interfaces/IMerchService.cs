@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProgressusWebApi.Dtos.MerchDtos;
+using ProgressusWebApi.Models.CategoriasMerch;
 
 namespace ProgressusWebApi.Services.MerchServices.Interfaces
 {
@@ -19,5 +20,8 @@ namespace ProgressusWebApi.Services.MerchServices.Interfaces
 
         // Eliminar un merch
         Task<IActionResult> EliminarMerchAsync(string id);
+        
+        // Obtener categorias merch
+        Task<IEnumerable<CategoriasMerch>> ObtenerCategoriasAsync();
     }
 }
