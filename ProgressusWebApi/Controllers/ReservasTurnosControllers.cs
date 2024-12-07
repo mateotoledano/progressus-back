@@ -5,6 +5,7 @@ using ProgressusWebApi.Services.ReservaService.cs.interfaces;
 using ProgressusWebApi.Dtos.RerservaDto;
 using ProgressusWebApi.Models.AsistenciaModels;
 using Microsoft.EntityFrameworkCore;
+using ProgressusWebApi.DataContext;
 
 namespace ProgressusWebApi.Controllers
 {
@@ -13,10 +14,12 @@ namespace ProgressusWebApi.Controllers
     public class ReservasTurnosController : ControllerBase
     {
         private readonly IReservaService _reservaService;
+        private readonly ProgressusDataContext _context;
 
-        public ReservasTurnosController(IReservaService reservaService)
+        public ReservasTurnosController(IReservaService reservaService, ProgressusDataContext context)
         {
             _reservaService = reservaService;
+            _context = context;
         }
 
         [HttpPost("crear")]
@@ -222,6 +225,41 @@ namespace ProgressusWebApi.Controllers
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("AsistenciasPorFranjaHoraria")]
+        public async Task<ActionResult<IEnumerable<AsistenciasPorFranjaHoraria>>> ObtenerAsistenciasPorFranjaHoraria()
+        {
+            try
+            {
+                var asistencias = await _context.AsistenciaLogs.ToListAsync();
+
+                // Definir franjas horarias de 7:00 a 22:59
+                var franjas = Enumerable.Range(7, 16) // Horas de 7 a 22
+                    .Select(h => new
+                    {
+                        Hora = h,
+                        Inicio = TimeSpan.FromHours(h),
+                        Fin = TimeSpan.FromHours(h + 1).Subtract(TimeSpan.FromMilliseconds(1)) // Hasta el último milisegundo
+                    });
+
+                // Agrupar las asistencias por franja horaria
+                var asistenciasPorFranja = franjas
+                    .Select(franja => new AsistenciasPorFranjaHoraria
+                    {
+                        FranjaHoraria = franja.Hora, // Solo el número de la hora
+                        NumeroDeAsistencias = asistencias.Count(a =>
+                            a.FechaAsistencia.TimeOfDay >= franja.Inicio &&
+                            a.FechaAsistencia.TimeOfDay <= franja.Fin)
+                    })
+                    .ToList();
+
+                return Ok(asistenciasPorFranja);
+            }
+            catch (Exception e)
+            {
+                return BadRequest($"Error al obtener asistencias por franja horaria: {e.Message}");
             }
         }
 

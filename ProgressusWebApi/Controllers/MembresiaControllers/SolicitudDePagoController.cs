@@ -256,6 +256,60 @@ public class SolicitudDePagoController : ControllerBase
         return Ok(solicitudesPorMes);
     }
 
+    [HttpGet("balance-ingresos")]
+    public async Task<IActionResult> ObtenerBalanceDeIngresosPorTodosLosMesesAsync()
+    {
+        // Diccionario para los valores por TipoMembresiaId
+        var membresiaValores = new Dictionary<int, decimal>
+ {
+     { 9, 10000 },
+     { 10, 27000 },
+     { 11, 50000 },
+     { 12, 90000 }
+ };
+
+        // Filtrar los datos relevantes desde la base de datos
+        var ingresosDb = await _context.SolicitudDePagos
+            .Join(
+                _context.HistorialSolicitudDePagos,
+                solicitud => solicitud.Id,
+                historial => historial.SolicitudDePagoId,
+                (solicitud, historial) => new { solicitud, historial }
+            )
+            .Where(joined =>
+                joined.historial.EstadoSolicitudId == 2 // Pagos confirmados
+            )
+            .Select(joined => new
+            {
+                TipoMembresiaId = joined.solicitud.MembresiaId,
+                Mes = joined.historial.FechaCambioEstado.Month
+            })
+            .ToListAsync();
+
+        // Calcular el monto por cada mes
+        var ingresosPorMes = ingresosDb
+            .Where(ingreso => membresiaValores.ContainsKey(ingreso.TipoMembresiaId)) // Filtrar por membresías válidas
+            .GroupBy(ingreso => ingreso.Mes) // Agrupar por mes
+            .Select(grupo => new
+            {
+                Mes = grupo.Key,
+                MontoTotal = grupo.Sum(ingreso => membresiaValores[ingreso.TipoMembresiaId]) // Sumar los valores
+            })
+            .ToList();
+
+        // Agregar meses sin ingresos con monto 0
+        var todosLosMeses = Enumerable.Range(1, 12)
+            .Select(mes => new
+            {
+                Mes = mes,
+                MontoTotal = ingresosPorMes.FirstOrDefault(i => i.Mes == mes)?.MontoTotal ?? 0
+            })
+            .OrderBy(m => m.Mes)
+            .ToList();
+
+        return Ok(todosLosMeses);
+    }
+
 
 
 
