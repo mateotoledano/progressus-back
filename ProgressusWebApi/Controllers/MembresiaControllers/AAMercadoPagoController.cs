@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using ProgressusWebApi.Dtos.AuthDtos;
 using ProgressusWebApi.Dtos.InventarioDtos;
 using ProgressusWebApi.Dtos.MembresiaDtos;
-using ProgressusWebApi.Dtos.MercadoPagoDto;
+using ProgressusWebApi.Dtos.MercadoPagoDtos;
 using ProgressusWebApi.Models.MembresiaModels;
 using ProgressusWebApi.Services.AuthServices.Interfaces;
 using ProgressusWebApi.Services.InventarioServices.Interfaces;
@@ -89,22 +89,13 @@ namespace ProgressusWebApi.Controllers.MembresiaControllers
                     var email = data.additional_info.payer.first_name.ToString();
                     var precio = data.additional_info.items[0].unit_price.ToString();
 
-                    InventarioDtos inventario = new InventarioDtos()
-                    {
-                        Nombre = "PaymentIdMercadoPago "+precio,
-                        Descripcion = email.ToString(),
-                        Estado = "PruebaMercadoPago"
-                    };
 
-                    await _inventarioService.CrearInventarioAsync(inventario);
-                 
-                    /*
                     IdentityUser? usuario = await _userManager.FindByEmailAsync(email);
                     SolicitudDePago? solicitud = await _solicituDePagoService.ObtenerSolicitudDePagoDeSocio(usuario.Id);
                     await _solicituDePagoService.RegistrarPagoEnEfectivo(solicitud.Id);
-                    */
+                    SolicitudDePago? solicitud2 = await _solicituDePagoService.ObtenerSolicitudDePagoDeSocio(usuario.Id);
 
-                    return Ok(inventario);
+                    return Ok(solicitud2);
                 }
                 else
                 {
