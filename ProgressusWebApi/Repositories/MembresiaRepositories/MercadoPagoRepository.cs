@@ -59,7 +59,7 @@ namespace WebApiMercadoPago.Repositories
                 },
 
                 //URL para recibir la información del pago        
-                NotificationUrl = "https://progressuscenter.azurewebsites.net/api/AAMercadoPago/ObtenerRequestMercadoPago",
+                NotificationUrl = "https://www.progressuscenter.somee.com/api/AAMercadoPago/ObtenerRequestMercadoPago",
 
                 AutoReturn = "approved",
                 PaymentMethods = new PreferencePaymentMethodsRequest
