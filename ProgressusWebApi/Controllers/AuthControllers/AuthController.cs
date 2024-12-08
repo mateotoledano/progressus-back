@@ -155,16 +155,16 @@ namespace ProgressusWebApi.Controllers.AuthControllers
             try
             {
                 var mediciones = await _context.MedicionesUsuario.ToListAsync();
+                if (mediciones == null || !mediciones.Any())
+                {
+                    return NotFound("No se encontraron mediciones.");
+                }
 
                 return Ok(mediciones);
-
-
-
             }
             catch (Exception e)
             {
-
-                return BadRequest("No se hallaron mediciones para el usuario");
+                return BadRequest($"Error: {e.Message}");
             }
         }
         // GET: api/Mediciones/{idUser}

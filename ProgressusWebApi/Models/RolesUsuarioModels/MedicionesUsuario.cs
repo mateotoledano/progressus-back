@@ -11,11 +11,11 @@ namespace ProgressusWebApi.Models.RolesUsuarioModels
 
         public string IdUser { get; set; }
 
-        public double Altura { get; set; }
+        public decimal Altura { get; set; }
 
-        public double Peso { get; set; }
+        public decimal Peso { get; set; }
 
-        public double PorcentajeDeGrasa { get; set; }
+        public decimal PorcentajeDeGrasa { get; set; }
 
         public DateTime Fecha { get; set; }
     }
