@@ -81,14 +81,13 @@ namespace ProgressusWebApi.Services.ReservaServices
         }
         public async Task<bool> RegistrarAsistenciaAsync(string userId)
         {
-            var ahora = DateTime.Now;
+            var ahora = DateTime.Now.TimeOfDay; // Obtener solo la hora actual
 
-            // Buscar una reserva válida para el usuario en la fecha y hora actual
+            // Buscar una reserva válida para el usuario dentro de la franja horaria
             var reserva = await _context.Reservas
                 .Where(r => r.UserId == userId
-                            && r.FechaReserva.Date == ahora.Date // La fecha debe coincidir
-                            && r.HoraInicio <= ahora.TimeOfDay   // La hora actual está dentro del rango
-                            && r.HoraFin >= ahora.TimeOfDay)
+                            && r.HoraInicio <= ahora   // La hora actual está dentro del rango
+                            && r.HoraFin >= ahora)
                 .FirstOrDefaultAsync();
 
             if (reserva == null)
