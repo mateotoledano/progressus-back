@@ -52,13 +52,13 @@ namespace ProgressusWebApi.DataContext
         public DbSet<MedicionesUsuario> MedicionesUsuario { get; set; }
         public DbSet<RutinasFinalizadasXUsuario> RutinasFinalizadasXUsuarios { get; set; }
         public DbSet<AsistenciasPorFranjaHoraria> AsistenciasPorFranjaHoraria { get; set; }
-		public DbSet<TipoNotificacion> TiposNotificaciones { get; set; }
-		public DbSet<EstadoNotificacion> EstadosNotificaciones { get; set; }
-		public DbSet<PlantillaNotificacion> PlantillasNotificaciones { get; set; }
-		public DbSet<Models.NotificacionesModel.Notificacion> NotificacionesUsuarios { get; set; }
+	public DbSet<TipoNotificacion> TiposNotificaciones { get; set; }
+	public DbSet<EstadoNotificacion> EstadosNotificaciones { get; set; }
+	public DbSet<PlantillaNotificacion> PlantillasNotificaciones { get; set; }
+	public DbSet<Models.NotificacionesModel.Notificacion> NotificacionesUsuarios { get; set; }
 
-		protected override void OnModelCreating(ModelBuilder modelBuilder)
         public DbSet<Alimento> Alimento { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
