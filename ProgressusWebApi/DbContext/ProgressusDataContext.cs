@@ -17,6 +17,7 @@ using ProgressusWebApi.Models.NotificacionModel;
 using ProgressusWebApi.Models.CategoriasMerch;
 using System.Collections.Generic;
 using ProgressusWebApi.Models.NotificacionesModel;
+using ProgressusWebApi.Models.AlimentosModels;
 
 
 namespace ProgressusWebApi.DataContext
@@ -57,6 +58,8 @@ namespace ProgressusWebApi.DataContext
 		public DbSet<Models.NotificacionesModel.Notificacion> NotificacionesUsuarios { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
+        public DbSet<Alimento> Alimento { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
@@ -173,6 +176,8 @@ namespace ProgressusWebApi.DataContext
             modelBuilder.Entity<AsistenciasPorFranjaHoraria>()
                 .HasNoKey();
 
+            modelBuilder.Entity<Alimento>()
+             .ToTable("AlimentosCalculo");
         }
     }
 }

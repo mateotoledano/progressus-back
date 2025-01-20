@@ -27,6 +27,7 @@ using ProgressusWebApi.Repositories.MembresiaRepositories;
 using ProgressusWebApi.Services.MembresiaServices.Interfaces;
 using ProgressusWebApi.Services.MembresiaServices;
 using ProgressusWebApi.Services.ReservaService.cs.interfaces;
+using ProgressusWebApi.Services.ReservaService;
 using ProgressusWebApi.Services.ReservaServices;
 using ProgressusWebApi.Services.InventarioServices;
 using ProgressusWebApi.Services.InventarioServices.Interfaces;
@@ -36,6 +37,7 @@ using ProgressusWebApi.Services.MerchServices;
 using ProgressusWebApi.Services.MerchServices.Interfaces;
 using ProgressusWebApi.Repositories.NotificacionesRepositories.Interfaces;
 using ProgressusWebApi.Repositories.NotificacionesRepositories;
+using ProgressusWebApi.Services.AlimentoServices;
 
 var builder = WebApplication.CreateBuilder(args);
 // Configuración de CORS para aceptar peticiones de cualquier origen
@@ -79,6 +81,8 @@ builder.Services.AddScoped<IMembresiaRepository, MembresiaRepository>();
 builder.Services.AddScoped<IMembresiaService, MembresiaService>();
 builder.Services.AddScoped<ISolicitudDePagoRepository, SolicitudDePagoRepository>();
 builder.Services.AddScoped<ISolicitudDePagoService, SolicitudDePagoService>();
+builder.Services.AddScoped<AlimentoCalculoService>();
+
 builder.Services.AddMemoryCache();
 
 // Permitir documentación y acceso de los endpoints con swagger
