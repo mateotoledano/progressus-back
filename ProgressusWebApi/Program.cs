@@ -27,7 +27,6 @@ using ProgressusWebApi.Repositories.MembresiaRepositories;
 using ProgressusWebApi.Services.MembresiaServices.Interfaces;
 using ProgressusWebApi.Services.MembresiaServices;
 using ProgressusWebApi.Services.ReservaService.cs.interfaces;
-using ProgressusWebApi.Services.ReservaService;
 using ProgressusWebApi.Services.ReservaServices;
 using ProgressusWebApi.Services.InventarioServices;
 using ProgressusWebApi.Services.InventarioServices.Interfaces;
@@ -35,7 +34,8 @@ using ProgressusWebApi.Services.NotificacionesServices;
 using ProgressusWebApi.Services.NotificacionesServices.Interfaces;
 using ProgressusWebApi.Services.MerchServices;
 using ProgressusWebApi.Services.MerchServices.Interfaces;
-using ProgressusWebApi.Services.AlimentoServices;
+using ProgressusWebApi.Repositories.NotificacionesRepositories.Interfaces;
+using ProgressusWebApi.Repositories.NotificacionesRepositories;
 
 var builder = WebApplication.CreateBuilder(args);
 // Configuración de CORS para aceptar peticiones de cualquier origen
@@ -79,8 +79,6 @@ builder.Services.AddScoped<IMembresiaRepository, MembresiaRepository>();
 builder.Services.AddScoped<IMembresiaService, MembresiaService>();
 builder.Services.AddScoped<ISolicitudDePagoRepository, SolicitudDePagoRepository>();
 builder.Services.AddScoped<ISolicitudDePagoService, SolicitudDePagoService>();
-builder.Services.AddScoped<AlimentoCalculoService>();
-
 builder.Services.AddMemoryCache();
 
 // Permitir documentación y acceso de los endpoints con swagger
@@ -125,6 +123,18 @@ builder.Services.AddScoped<IReservaService, ReservaService>();
 builder.Services.AddScoped<IInventarioService, InventarioService>();
 builder.Services.AddScoped<INotificacionesService, NotificacionesService>();
 builder.Services.AddScoped<IMerchService, MerchService>();
+
+//Notificaciones services - repository
+builder.Services.AddScoped<INotificacionesUsuariosService,NotificacionesUsuariosService>();
+builder.Services.AddScoped<IEstadosNotificacionesService,EstadosNotificacionesService>();
+builder.Services.AddScoped<IPlantillasService,PlantillasService>();
+builder.Services.AddScoped<ITiposNotificacionesService,TiposNotificacionesService>();
+
+builder.Services.AddScoped<IEstadoNotificacionRepository, EstadoNotificacionRepository>();
+builder.Services.AddScoped<INotificacionRepository, NotificacionRepository>();
+builder.Services.AddScoped<IPlantillaRepository, PlantillaRepository>();
+builder.Services.AddScoped<ITipoNotificacionRepository, TipoNotificacionRepository>();
+
 
 // Construir la aplicación con todas las configuraciones y servicios definidos en el objeto builder
 var app = builder.Build();

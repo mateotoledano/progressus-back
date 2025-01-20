@@ -25,7 +25,6 @@
 
   <ItemGroup>
     <Folder Include="Mappers\PlanEntrenamientoMappers\" />
-    <Folder Include="Services\AlimentoServices\Interfaces\" />
   </ItemGroup>
 
 </Project>
