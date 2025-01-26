@@ -18,6 +18,7 @@ using ProgressusWebApi.Models.CategoriasMerch;
 using System.Collections.Generic;
 using ProgressusWebApi.Models.NotificacionesModel;
 using ProgressusWebApi.Models.AlimentosModels;
+using ProgressusWebApi.Models.PlanNutricional;
 
 
 namespace ProgressusWebApi.DataContext
@@ -56,6 +57,11 @@ namespace ProgressusWebApi.DataContext
 	public DbSet<EstadoNotificacion> EstadosNotificaciones { get; set; }
 	public DbSet<PlantillaNotificacion> PlantillasNotificaciones { get; set; }
 	public DbSet<Models.NotificacionesModel.Notificacion> NotificacionesUsuarios { get; set; }
+
+        public DbSet<PlanNutricional> PlanesNutricionales { get; set; }
+        public DbSet<DiaPlan> DiasPlan { get; set; }
+        public DbSet<Comida> Comidas { get; set; }
+        public DbSet<AlimentoComida> AlimentosComida { get; set; }
 
         public DbSet<Alimento> Alimento { get; set; }
 
@@ -178,6 +184,38 @@ namespace ProgressusWebApi.DataContext
 
             modelBuilder.Entity<Alimento>()
              .ToTable("AlimentosCalculo");
+
+
+            // Configurar nombres de tablas
+            modelBuilder.Entity<PlanNutricional>().ToTable("PlanNutricional");
+            modelBuilder.Entity<DiaPlan>().ToTable("DiaPlan");
+            modelBuilder.Entity<Comida>().ToTable("Comida");
+            modelBuilder.Entity<AlimentoComida>().ToTable("AlimentoComida");
+ 
+            // Configurar relaciones
+            modelBuilder.Entity<PlanNutricional>()
+                .HasMany(p => p.Dias)
+                .WithOne(d => d.PlanNutricional)
+                .HasForeignKey(d => d.PlanNutricionalId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<DiaPlan>()
+                .HasMany(d => d.Comidas)
+                .WithOne(c => c.DiaPlan)
+                .HasForeignKey(c => c.DiaPlanId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Comida>()
+                .HasMany(c => c.Alimentos)
+                .WithOne(a => a.Comida)
+                .HasForeignKey(a => a.ComidaId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<AlimentoComida>()
+                .HasOne(a => a.Alimento)
+                .WithMany()
+                .HasForeignKey(a => a.AlimentoId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
