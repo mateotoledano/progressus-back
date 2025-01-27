@@ -52,7 +52,7 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
                                             })
                                             .ToList() ?? new List<AlimentoComida>(), // Si Alimentos es nulo, usar una lista vacía
                                 })
-                                .ToList() ?? new List<Comida>(), // Si Comidas es nulo, usar una lista vacía
+                                .ToList() ?? new List<Comida>() // Si Comidas es nulo, usar una lista vacía
                     })
                     .ToList(),
             };
