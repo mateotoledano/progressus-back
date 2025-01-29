@@ -52,7 +52,7 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
                                             })
                                             .ToList() ?? new List<AlimentoComida>(), // Si Alimentos es nulo, usar una lista vacía
                                 })
-                                .ToList() ?? new List<Comida>() // Si Comidas es nulo, usar una lista vacía
+                                .ToList() ?? new List<Comida>(), // Si Comidas es nulo, usar una lista vacía
                     })
                     .ToList(),
             };
@@ -107,6 +107,53 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
             };
 
             return Ok(planDto);
+        }
+
+        [HttpGet("obtener-planes")]
+        public async Task<IActionResult> ObtenerTodosLosPlanes()
+        {
+            var planes = await _context
+                .PlanesNutricionales.Include(p => p.Dias)
+                .ThenInclude(d => d.Comidas)
+                .ThenInclude(c => c.Alimentos)
+                .ThenInclude(a => a.Alimento)
+                .ToListAsync();
+
+            if (planes == null || !planes.Any())
+            {
+                return NotFound();
+            }
+
+            var planesDto = planes
+                .Select(plan => new PlanNutricionalDto
+                {
+                    Id = plan.Id,
+                    Nombre = plan.Nombre,
+                    Dias = plan
+                        .Dias.Select(d => new DiaPlanDto
+                        {
+                            Dia = d.Dia,
+                            Comidas = d
+                                .Comidas.Select(c => new ComidaDto
+                                {
+                                    TipoComida = c.TipoComida,
+                                    Alimentos = c
+                                        .Alimentos.Select(a => new AlimentoComidaDto
+                                        {
+                                            AlimentoId = a.AlimentoId,
+                                            AlimentoNombre = a.Alimento.Nombre,
+                                            Cantidad = a.Cantidad,
+                                            Medida = a.Medida,
+                                        })
+                                        .ToList(),
+                                })
+                                .ToList(),
+                        })
+                        .ToList(),
+                })
+                .ToList();
+
+            return Ok(planesDto);
         }
 
         [HttpPut("actualizar-plan/{id}")]
