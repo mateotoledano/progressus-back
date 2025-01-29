@@ -64,7 +64,9 @@ namespace ProgressusWebApi.DataContext
         public DbSet<AlimentoComida> AlimentosComida { get; set; }
 
         public DbSet<Alimento> Alimento { get; set; }
+        public DbSet<AsignacionPlanNutricional> AsignacionesPlanNutricional { get; set; }
 
+        public DbSet<Paciente> Pacientes { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -216,6 +218,26 @@ namespace ProgressusWebApi.DataContext
                 .WithMany()
                 .HasForeignKey(a => a.AlimentoId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+
+
+            // Configurar la tabla de asignaciones
+            modelBuilder.Entity<AsignacionPlanNutricional>()
+                .HasKey(a => a.Id);
+
+            // Relación con AspNetUsers
+            modelBuilder.Entity<AsignacionPlanNutricional>()
+                .HasOne(a => a.Usuario)
+                .WithMany()
+                .HasForeignKey(a => a.UsuarioId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Relación con PlanNutricional
+            modelBuilder.Entity<AsignacionPlanNutricional>()
+                .HasOne(a => a.PlanNutricional)
+                .WithMany()
+                .HasForeignKey(a => a.PlanNutricionalId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
