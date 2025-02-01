@@ -67,6 +67,13 @@ namespace ProgressusWebApi.DataContext
         public DbSet<AsignacionPlanNutricional> AsignacionesPlanNutricional { get; set; }
 
         public DbSet<Paciente> Pacientes { get; set; }
+
+        public DbSet<Carrito> Carrito { get; set; }
+
+        public DbSet<CarritoItem> CarritoItem { get; set; }
+
+        public DbSet<Pedido> Pedido { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -238,6 +245,17 @@ namespace ProgressusWebApi.DataContext
                 .WithMany()
                 .HasForeignKey(a => a.PlanNutricionalId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+
+            // Configurar la clave primaria para CarritoItem
+            modelBuilder.Entity<CarritoItem>()
+                .HasKey(ci => ci.Id);
+
+
+            modelBuilder.Entity<Carrito>()
+      .HasMany(c => c.Items)
+      .WithOne()
+      .HasForeignKey(ci => ci.CarritoId); // Asegúrate de que CarritoItem tenga una propiedad CarritoId
         }
     }
 }

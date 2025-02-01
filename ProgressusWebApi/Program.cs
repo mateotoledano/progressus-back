@@ -38,6 +38,7 @@ using ProgressusWebApi.Services.MerchServices.Interfaces;
 using ProgressusWebApi.Repositories.NotificacionesRepositories.Interfaces;
 using ProgressusWebApi.Repositories.NotificacionesRepositories;
 using ProgressusWebApi.Services.AlimentoServices;
+using ProgressusWebApi.Services.CarritoServices;
 
 var builder = WebApplication.CreateBuilder(args);
 // Configuración de CORS para aceptar peticiones de cualquier origen
@@ -127,6 +128,8 @@ builder.Services.AddScoped<IReservaService, ReservaService>();
 builder.Services.AddScoped<IInventarioService, InventarioService>();
 builder.Services.AddScoped<INotificacionesService, NotificacionesService>();
 builder.Services.AddScoped<IMerchService, MerchService>();
+// Registrar servicios
+builder.Services.AddScoped<ICarritoService, CarritoService>();
 
 //Notificaciones services - repository
 builder.Services.AddScoped<INotificacionesUsuariosService,NotificacionesUsuariosService>();

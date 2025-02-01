@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using ProgressusWebApi.DataContext;
 using ProgressusWebApi.Dtos.PlanesNutricionalesDtos;
 using ProgressusWebApi.Models.PlanNutricional;
 using ProgressusWebApi.Services.ReservaService.cs.interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProgressusWebApi.Controllers.PlanNutricionalController
 {
@@ -11,8 +11,9 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
     {
         private readonly ProgressusDataContext _context;
 
-        public PlanNutricionalController(ProgressusDataContext context)
+        public PlanNutricionalController( ProgressusDataContext context)
         {
+       
             _context = context;
         }
 
@@ -35,26 +36,20 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
             var plan = new PlanNutricional
             {
                 Nombre = planDto.Nombre,
-                Dias = planDto
-                    .Dias.Select(d => new DiaPlan
+                Dias = planDto.Dias.Select(d => new DiaPlan
+                {
+                    Dia = d.Dia ?? "Día no especificado", // Validar que el día no sea nulo
+                    Comidas = d.Comidas?.Select(c => new Comida
                     {
-                        Dia = d.Dia ?? "Día no especificado", // Validar que el día no sea nulo
-                        Comidas =
-                            d.Comidas?.Select(c => new Comida
-                                {
-                                    TipoComida = c.TipoComida ?? "Comida no especificada", // Validar que el tipo de comida no sea nulo
-                                    Alimentos =
-                                        c.Alimentos?.Select(a => new AlimentoComida
-                                            {
-                                                AlimentoId = a.AlimentoId,
-                                                Cantidad = a.Cantidad,
-                                                Medida = a.Medida ?? "Medida no especificada", // Validar que la medida no sea nula
-                                            })
-                                            .ToList() ?? new List<AlimentoComida>(), // Si Alimentos es nulo, usar una lista vacía
-                                })
-                                .ToList() ?? new List<Comida>(), // Si Comidas es nulo, usar una lista vacía
-                    })
-                    .ToList(),
+                        TipoComida = c.TipoComida ?? "Comida no especificada", // Validar que el tipo de comida no sea nulo
+                        Alimentos = c.Alimentos?.Select(a => new AlimentoComida
+                        {
+                            AlimentoId = a.AlimentoId,
+                            Cantidad = a.Cantidad,
+                            Medida = a.Medida ?? "Medida no especificada" // Validar que la medida no sea nula
+                        }).ToList() ?? new List<AlimentoComida>() // Si Alimentos es nulo, usar una lista vacía
+                    }).ToList() ?? new List<Comida>() // Si Comidas es nulo, usar una lista vacía
+                }).ToList()
             };
 
             // Guardar el plan en la base de datos
@@ -67,11 +62,11 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
         [HttpGet("obtener-plan/{id}")]
         public async Task<IActionResult> ObtenerPlanNutricional(int id)
         {
-            var plan = await _context
-                .PlanesNutricionales.Include(p => p.Dias)
-                .ThenInclude(d => d.Comidas)
-                .ThenInclude(c => c.Alimentos)
-                .ThenInclude(a => a.Alimento)
+            var plan = await _context.PlanesNutricionales
+                .Include(p => p.Dias)
+                    .ThenInclude(d => d.Comidas)
+                        .ThenInclude(c => c.Alimentos)
+                            .ThenInclude(a => a.Alimento)
                 .FirstOrDefaultAsync(p => p.Id == id);
 
             if (plan == null)
@@ -83,27 +78,21 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
             {
                 Id = plan.Id,
                 Nombre = plan.Nombre,
-                Dias = plan
-                    .Dias.Select(d => new DiaPlanDto
+                Dias = plan.Dias.Select(d => new DiaPlanDto
+                {
+                    Dia = d.Dia,
+                    Comidas = d.Comidas.Select(c => new ComidaDto
                     {
-                        Dia = d.Dia,
-                        Comidas = d
-                            .Comidas.Select(c => new ComidaDto
-                            {
-                                TipoComida = c.TipoComida,
-                                Alimentos = c
-                                    .Alimentos.Select(a => new AlimentoComidaDto
-                                    {
-                                        AlimentoId = a.AlimentoId,
-                                        AlimentoNombre = a.Alimento.Nombre,
-                                        Cantidad = a.Cantidad,
-                                        Medida = a.Medida,
-                                    })
-                                    .ToList(),
-                            })
-                            .ToList(),
-                    })
-                    .ToList(),
+                        TipoComida = c.TipoComida,
+                        Alimentos = c.Alimentos.Select(a => new AlimentoComidaDto
+                        {
+                            AlimentoId = a.AlimentoId,
+                            AlimentoNombre = a.Alimento.Nombre,
+                            Cantidad = a.Cantidad,
+                            Medida = a.Medida
+                        }).ToList()
+                    }).ToList()
+                }).ToList()
             };
 
             return Ok(planDto);
@@ -112,11 +101,11 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
         [HttpGet("obtener-planes")]
         public async Task<IActionResult> ObtenerTodosLosPlanes()
         {
-            var planes = await _context
-                .PlanesNutricionales.Include(p => p.Dias)
-                .ThenInclude(d => d.Comidas)
-                .ThenInclude(c => c.Alimentos)
-                .ThenInclude(a => a.Alimento)
+            var planes = await _context.PlanesNutricionales
+                .Include(p => p.Dias)
+                    .ThenInclude(d => d.Comidas)
+                        .ThenInclude(c => c.Alimentos)
+                            .ThenInclude(a => a.Alimento)
                 .ToListAsync();
 
             if (planes == null || !planes.Any())
@@ -124,43 +113,32 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
                 return NotFound();
             }
 
-            var planesDto = planes
-                .Select(plan => new PlanNutricionalDto
+            var planesDto = planes.Select(plan => new PlanNutricionalDto
+            {
+                Id = plan.Id,
+                Nombre = plan.Nombre,
+                Dias = plan.Dias.Select(d => new DiaPlanDto
                 {
-                    Id = plan.Id,
-                    Nombre = plan.Nombre,
-                    Dias = plan
-                        .Dias.Select(d => new DiaPlanDto
+                    Dia = d.Dia,
+                    Comidas = d.Comidas.Select(c => new ComidaDto
+                    {
+                        TipoComida = c.TipoComida,
+                        Alimentos = c.Alimentos.Select(a => new AlimentoComidaDto
                         {
-                            Dia = d.Dia,
-                            Comidas = d
-                                .Comidas.Select(c => new ComidaDto
-                                {
-                                    TipoComida = c.TipoComida,
-                                    Alimentos = c
-                                        .Alimentos.Select(a => new AlimentoComidaDto
-                                        {
-                                            AlimentoId = a.AlimentoId,
-                                            AlimentoNombre = a.Alimento.Nombre,
-                                            Cantidad = a.Cantidad,
-                                            Medida = a.Medida,
-                                        })
-                                        .ToList(),
-                                })
-                                .ToList(),
-                        })
-                        .ToList(),
-                })
-                .ToList();
+                            AlimentoId = a.AlimentoId,
+                            AlimentoNombre = a.Alimento.Nombre,
+                            Cantidad = a.Cantidad,
+                            Medida = a.Medida
+                        }).ToList()
+                    }).ToList()
+                }).ToList()
+            }).ToList();
 
             return Ok(planesDto);
         }
 
         [HttpPut("actualizar-plan/{id}")]
-        public async Task<IActionResult> ActualizarPlanNutricional(
-            int id,
-            [FromBody] PlanNutricionalDto planDto
-        )
+        public async Task<IActionResult> ActualizarPlanNutricional(int id, [FromBody] PlanNutricionalDto planDto)
         {
             // Validar que el DTO no sea nulo
             if (planDto == null)
@@ -169,10 +147,10 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
             }
 
             // Buscar el plan existente en la base de datos
-            var planExistente = await _context
-                .PlanesNutricionales.Include(p => p.Dias)
-                .ThenInclude(d => d.Comidas)
-                .ThenInclude(c => c.Alimentos)
+            var planExistente = await _context.PlanesNutricionales
+                .Include(p => p.Dias)
+                    .ThenInclude(d => d.Comidas)
+                        .ThenInclude(c => c.Alimentos)
                 .FirstOrDefaultAsync(p => p.Id == id);
 
             if (planExistente == null)
@@ -187,26 +165,20 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
             _context.DiasPlan.RemoveRange(planExistente.Dias);
 
             // Agregar los nuevos días
-            planExistente.Dias = planDto
-                .Dias.Select(d => new DiaPlan
+            planExistente.Dias = planDto.Dias.Select(d => new DiaPlan
+            {
+                Dia = d.Dia ?? "Día no especificado",
+                Comidas = d.Comidas?.Select(c => new Comida
                 {
-                    Dia = d.Dia ?? "Día no especificado",
-                    Comidas =
-                        d.Comidas?.Select(c => new Comida
-                            {
-                                TipoComida = c.TipoComida ?? "Comida no especificada",
-                                Alimentos =
-                                    c.Alimentos?.Select(a => new AlimentoComida
-                                        {
-                                            AlimentoId = a.AlimentoId,
-                                            Cantidad = a.Cantidad,
-                                            Medida = a.Medida ?? "Medida no especificada",
-                                        })
-                                        .ToList() ?? new List<AlimentoComida>(),
-                            })
-                            .ToList() ?? new List<Comida>(),
-                })
-                .ToList();
+                    TipoComida = c.TipoComida ?? "Comida no especificada",
+                    Alimentos = c.Alimentos?.Select(a => new AlimentoComida
+                    {
+                        AlimentoId = a.AlimentoId,
+                        Cantidad = a.Cantidad,
+                        Medida = a.Medida ?? "Medida no especificada"
+                    }).ToList() ?? new List<AlimentoComida>()
+                }).ToList() ?? new List<Comida>()
+            }).ToList();
 
             // Guardar los cambios en la base de datos
             await _context.SaveChangesAsync();
@@ -218,10 +190,10 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
         public async Task<IActionResult> EliminarPlanNutricional(int id)
         {
             // Buscar el plan existente en la base de datos
-            var planExistente = await _context
-                .PlanesNutricionales.Include(p => p.Dias)
-                .ThenInclude(d => d.Comidas)
-                .ThenInclude(c => c.Alimentos)
+            var planExistente = await _context.PlanesNutricionales
+                .Include(p => p.Dias)
+                    .ThenInclude(d => d.Comidas)
+                        .ThenInclude(c => c.Alimentos)
                 .FirstOrDefaultAsync(p => p.Id == id);
 
             if (planExistente == null)
@@ -237,5 +209,6 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
 
             return NoContent(); // 204 No Content
         }
+
     }
 }
