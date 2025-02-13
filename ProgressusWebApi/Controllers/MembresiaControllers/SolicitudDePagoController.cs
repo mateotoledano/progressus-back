@@ -116,7 +116,7 @@ public class SolicitudDePagoController : ControllerBase
     public async Task<IActionResult> ObtenerPagosEfectivoConfirmadosUsuario()
     {
         var pagosEfectivo = await _context.SolicitudDePagos
-              .Where(s => s.TipoDePagoId == 1) // Filtra por pagos en efectivo
+           //   .Where(s => s.TipoDePagoId == 1) // Filtra por pagos en efectivo
               .Join(
                   _context.HistorialSolicitudDePagos,
                   solicitud => solicitud.Id,
@@ -255,7 +255,16 @@ public class SolicitudDePagoController : ControllerBase
 
         return Ok(solicitudesPorMes);
     }
-
+    [HttpGet("ObtenerSolicitudesDePagoDeUnSocio")]
+    public async Task<IActionResult> ObtenerSolicitudesDePagoDeSocio(string identityUserId)
+    {
+        var solicitudes = await _solicitudDePagoService.ObtenerSolicitudesDePagoDeSocio(identityUserId);
+        if (solicitudes == null || !solicitudes.Any())
+        {
+            return NotFound("No se encontraron solicitudes de pago para el socio especificado.");
+        }
+        return Ok(solicitudes);
+    }
     [HttpGet("balance-ingresos")]
     public async Task<IActionResult> ObtenerBalanceDeIngresosPorTodosLosMesesAsync()
     {

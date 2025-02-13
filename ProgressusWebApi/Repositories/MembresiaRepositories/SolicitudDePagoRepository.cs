@@ -34,7 +34,17 @@ namespace ProgressusWebApi.Repositories.MembresiaRepositories
             await _context.SaveChangesAsync();
             return solicitud;
         }
-
+        public async Task<List<SolicitudDePago>> ObtenerSolicitudesDePagoDeSocio(string identityUserId)
+        {
+            return await _context.SolicitudDePagos
+                .Where(s => s.IdentityUserId == identityUserId)
+                .Include(s => s.Membresia) // Incluir la membresía
+                .Include(s => s.TipoDePago) // Incluir el tipo de pago
+                .Include(s => s.HistorialSolicitudDePagos) // Incluir el historial
+                    .ThenInclude(h => h.EstadoSolicitud) // Incluir el estado de solicitud dentro del historial
+                .OrderByDescending(s => s.FechaCreacion) // Ordenar por fecha de creación (más reciente primero)
+                .ToListAsync();
+        }
         public async Task<SolicitudDePago> ObtenerSolicitudDePagoPorIdAsync(int solicitudId)
         {
             return await _context.SolicitudDePagos

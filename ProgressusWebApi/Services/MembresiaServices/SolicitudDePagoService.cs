@@ -23,6 +23,10 @@ namespace ProgressusWebApi.Services.MembresiaServices
             _repository = repository;
             _mercadoPagoRepository = mercadoPagoRepository;
         }
+        public async Task<List<SolicitudDePago>> ObtenerSolicitudesDePagoDeSocio(string identityUserId)
+        {
+            return await _repository.ObtenerSolicitudesDePagoDeSocio(identityUserId);
+        }
 
         public async Task<SolicitudDePago> CrearSolicitudDePago(CrearSolicitudDePagoDto dto)
         {
