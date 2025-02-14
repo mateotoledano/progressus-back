@@ -14,7 +14,10 @@ public class SolicitudDePagoController : ControllerBase
     private readonly ISolicitudDePagoService _solicitudDePagoService;
     private readonly ProgressusDataContext _context;
 
-    public SolicitudDePagoController(ISolicitudDePagoService solicitudDePagoService, ProgressusDataContext context)
+    public SolicitudDePagoController(
+        ISolicitudDePagoService solicitudDePagoService,
+        ProgressusDataContext context
+    )
     {
         _solicitudDePagoService = solicitudDePagoService;
         _context = context;
@@ -30,7 +33,9 @@ public class SolicitudDePagoController : ControllerBase
     [HttpPut("RegistrarPagoEnEfectivo")]
     public async Task<IActionResult> RegistrarPagoEnEfectivo(int idSolicitudDePago)
     {
-        var solicitudExistente = await _solicitudDePagoService.RegistrarPagoEnEfectivo(idSolicitudDePago);
+        var solicitudExistente = await _solicitudDePagoService.RegistrarPagoEnEfectivo(
+            idSolicitudDePago
+        );
         if (solicitudExistente == null)
             return NotFound(); // Retornar 404 si no se encuentra la solicitud
         return Ok(solicitudExistente); // Retornar la solicitud actualizada
@@ -39,7 +44,9 @@ public class SolicitudDePagoController : ControllerBase
     [HttpPut("RegistrarPagoConMercadoPago")]
     public async Task<IActionResult> RegistrarPagoConMercadoPago(int idSolicitudDePago)
     {
-        var solicitud = await _solicitudDePagoService.RegistrarPagoConMercadoPago(idSolicitudDePago);
+        var solicitud = await _solicitudDePagoService.RegistrarPagoConMercadoPago(
+            idSolicitudDePago
+        );
         if (solicitud == null)
             return NotFound(); // Retornar 404 si no se encuentra la solicitud
         return Ok(solicitud); // Retornar la solicitud actualizada
@@ -48,7 +55,9 @@ public class SolicitudDePagoController : ControllerBase
     [HttpPut("CancelarSolicitudDePago")]
     public async Task<IActionResult> CancelarSolicitudDePago(int idSolicitudDePago)
     {
-        var solicitudExistente = await _solicitudDePagoService.CancelarSolicitudDePago(idSolicitudDePago);
+        var solicitudExistente = await _solicitudDePagoService.CancelarSolicitudDePago(
+            idSolicitudDePago
+        );
         if (solicitudExistente == null)
             return NotFound(); // Retornar 404 si no se encuentra la solicitud
         return Ok(solicitudExistente); // Retornar la solicitud cancelada
@@ -57,13 +66,17 @@ public class SolicitudDePagoController : ControllerBase
     [HttpGet("ObtenerEstadoActualDeSolicitud")]
     public async Task<IActionResult> ObtenerEstadoActualDeSolicitud(int idSolicitudDePago)
     {
-        return new OkObjectResult(_solicitudDePagoService.ObtenerEstadoActualDeSolicitud(idSolicitudDePago).Result);
+        return new OkObjectResult(
+            _solicitudDePagoService.ObtenerEstadoActualDeSolicitud(idSolicitudDePago).Result
+        );
     }
 
     [HttpGet("ObtenerSolicitudDePagoDeSocio")]
     public async Task<IActionResult> ObtenerSolicitudDePagoDeSocio(string IdentityUserId)
     {
-        return new OkObjectResult(_solicitudDePagoService.ObtenerSolicitudDePagoDeSocio(IdentityUserId).Result);
+        return new OkObjectResult(
+            _solicitudDePagoService.ObtenerSolicitudDePagoDeSocio(IdentityUserId).Result
+        );
     }
 
     [HttpGet("ObtenerTiposDePagos")]
@@ -75,20 +88,24 @@ public class SolicitudDePagoController : ControllerBase
     [HttpGet("ConsultarVigenciaDeMembresia")]
     public async Task<IActionResult> ConsultarVigenciaDeMembresia(string identityUserId)
     {
-        return new OkObjectResult(await _solicitudDePagoService.ConsultarVigenciaDeMembresia(identityUserId));
+        return new OkObjectResult(
+            await _solicitudDePagoService.ConsultarVigenciaDeMembresia(identityUserId)
+        );
     }
 
     [HttpGet("ObtenerTodasLasSolicitudesDeUnSocio")]
     public async Task<IActionResult> ObtenerTodasLasSolicitudesDeUnSocio(string identityUserId)
     {
-        return new OkObjectResult(await _solicitudDePagoService.ObtenerTodasLasSolicitudesDeUnSocio(identityUserId));
+        return new OkObjectResult(
+            await _solicitudDePagoService.ObtenerTodasLasSolicitudesDeUnSocio(identityUserId)
+        );
     }
 
     [HttpGet("pagos-efectivo-confirmados")]
     public async Task<IActionResult> ObtenerPagosEfectivoConfirmadosAsync()
     {
-        var pagosEfectivo = await _context.SolicitudDePagos
-            .Where(s => s.TipoDePagoId == 1) // Filtra por pagos en efectivo
+        var pagosEfectivo = await _context
+            .SolicitudDePagos.Where(s => s.TipoDePagoId == 1) // Filtra por pagos en efectivo
             .Join(
                 _context.HistorialSolicitudDePagos,
                 solicitud => solicitud.Id,
@@ -99,7 +116,7 @@ public class SolicitudDePagoController : ControllerBase
             .Select(joined => new PagoEfectivoConfirmadoDto
             {
                 TipoMembresiaId = joined.solicitud.MembresiaId,
-                FechaPago = joined.historial.FechaCambioEstado
+                FechaPago = joined.historial.FechaCambioEstado,
             })
             .ToListAsync();
 
@@ -111,53 +128,55 @@ public class SolicitudDePagoController : ControllerBase
         return Ok(pagosEfectivo);
     }
 
-
     [HttpGet("pagos-efectivo-Usuario")]
     public async Task<IActionResult> ObtenerPagosEfectivoConfirmadosUsuario()
     {
-        var pagosEfectivo = await _context.SolicitudDePagos
-           //   .Where(s => s.TipoDePagoId == 1) // Filtra por pagos en efectivo
-              .Join(
-                  _context.HistorialSolicitudDePagos,
-                  solicitud => solicitud.Id,
-                  historial => historial.SolicitudDePagoId,
-                  (solicitud, historial) => new { solicitud, historial }
-              )
-              .Join(
-                  _context.Socios, // Tabla de Socios
-                  joined => joined.solicitud.IdentityUserId,
-                  socio => socio.UserId, // Relación entre UserId de SolicitudDePagos y Socio
-                  (joined, socio) => new
-                  {
-                      joined.solicitud,
-                      joined.historial,
-                      socio
-                  }
-              )
-              .Join(
-                  _context.Membresias, // Tabla de Membresías
-                  joined => joined.solicitud.MembresiaId,
-                  membresia => membresia.Id, // Relación entre MembresiaId
-                  (joined, membresia) => new
-                  {
-                      joined.solicitud,
-                      joined.historial,
-                      joined.socio,
-                      membresia
-                  }
-              )
-              .Where(joined => joined.historial.EstadoSolicitudId == 2) // Filtra por estado confirmado
-              .Select(joined => new PagoEfectivoUserConfirmadoDto
-              {
-                  TipoMembresiaId = joined.solicitud.MembresiaId,
-                  NombreMembresia = joined.membresia.Nombre, // Nombre de la membresía
-                  PrecioMembresia = joined.membresia.Precio, // Precio de la membresía
-                  FechaPago = joined.historial.FechaCambioEstado,
-                  IdentityUserId = joined.socio.UserId,
-                  Nombre = joined.socio.Nombre,
-                  Apellido = joined.socio.Apellido
-              })
-              .ToListAsync();
+        var pagosEfectivo = await _context
+            .SolicitudDePagos
+            //   .Where(s => s.TipoDePagoId == 1) // Filtra por pagos en efectivo
+            .Join(
+                _context.HistorialSolicitudDePagos,
+                solicitud => solicitud.Id,
+                historial => historial.SolicitudDePagoId,
+                (solicitud, historial) => new { solicitud, historial }
+            )
+            .Join(
+                _context.Socios, // Tabla de Socios
+                joined => joined.solicitud.IdentityUserId,
+                socio => socio.UserId, // Relación entre UserId de SolicitudDePagos y Socio
+                (joined, socio) =>
+                    new
+                    {
+                        joined.solicitud,
+                        joined.historial,
+                        socio,
+                    }
+            )
+            .Join(
+                _context.Membresias, // Tabla de Membresías
+                joined => joined.solicitud.MembresiaId,
+                membresia => membresia.Id, // Relación entre MembresiaId
+                (joined, membresia) =>
+                    new
+                    {
+                        joined.solicitud,
+                        joined.historial,
+                        joined.socio,
+                        membresia,
+                    }
+            )
+            .Where(joined => joined.historial.EstadoSolicitudId == 2) // Filtra por estado confirmado
+            .Select(joined => new PagoEfectivoUserConfirmadoDto
+            {
+                TipoMembresiaId = joined.solicitud.MembresiaId,
+                NombreMembresia = joined.membresia.Nombre, // Nombre de la membresía
+                PrecioMembresia = joined.membresia.Precio, // Precio de la membresía
+                FechaPago = joined.historial.FechaCambioEstado,
+                IdentityUserId = joined.socio.UserId,
+                Nombre = joined.socio.Nombre,
+                Apellido = joined.socio.Apellido,
+            })
+            .ToListAsync();
 
         if (!pagosEfectivo.Any())
         {
@@ -177,29 +196,27 @@ public class SolicitudDePagoController : ControllerBase
 
         // Diccionario para los valores por TipoMembresiaId
         var membresiaValores = new Dictionary<int, decimal>
-    {
-        { 9, 10000 },
-        { 10, 27000 },
-        { 11, 50000 },
-        { 12, 90000 }
-    };
+        {
+            { 9, 10000 },
+            { 10, 27000 },
+            { 11, 50000 },
+            { 12, 90000 },
+        };
 
         // Filtrar los datos relevantes desde la base de datos
-        var ingresosDb = await _context.SolicitudDePagos
-            .Join(
+        var ingresosDb = await _context
+            .SolicitudDePagos.Join(
                 _context.HistorialSolicitudDePagos,
                 solicitud => solicitud.Id,
                 historial => historial.SolicitudDePagoId,
                 (solicitud, historial) => new { solicitud, historial }
             )
             .Where(joined =>
-                joined.historial.EstadoSolicitudId == 2 && // Pagos confirmados
+                joined.historial.EstadoSolicitudId == 2
+                && // Pagos confirmados
                 joined.historial.FechaCambioEstado.Month == mes // Filtrar por mes
             )
-            .Select(joined => new
-            {
-                TipoMembresiaId = joined.solicitud.MembresiaId
-            })
+            .Select(joined => new { TipoMembresiaId = joined.solicitud.MembresiaId })
             .ToListAsync();
 
         // Filtrar los registros relevantes y calcular el monto en memoria
@@ -212,19 +229,15 @@ public class SolicitudDePagoController : ControllerBase
             return NotFound($"No se encontraron ingresos confirmados para el mes {mes}.");
         }
 
-        return Ok(new
-        {
-            Mes = mes,
-            MontoTotal = montoTotal
-        });
+        return Ok(new { Mes = mes, MontoTotal = montoTotal });
     }
 
     [HttpGet("solicitudes-confirmadas-por-mes")]
     public async Task<IActionResult> ObtenerSolicitudesConfirmadasPorMesAsync()
     {
         // Obtener las solicitudes en estado confirmado y agruparlas por mes
-        var solicitudesPorMes = await _context.SolicitudDePagos
-            .Join(
+        var solicitudesPorMes = await _context
+            .SolicitudDePagos.Join(
                 _context.HistorialSolicitudDePagos,
                 solicitud => solicitud.Id,
                 historial => historial.SolicitudDePagoId,
@@ -237,13 +250,13 @@ public class SolicitudDePagoController : ControllerBase
                 {
                     joined.solicitud.Id,
                     TipoMembresiaId = joined.solicitud.MembresiaId,
-                    FechaPago = joined.historial.FechaCambioEstado
+                    FechaPago = joined.historial.FechaCambioEstado,
                 }
             )
             .Select(grupo => new
             {
                 Mes = grupo.Key, // Mes
-                Solicitudes = grupo.ToList() // Lista de solicitudes del mes
+                Solicitudes = grupo.ToList(), // Lista de solicitudes del mes
             })
             .OrderBy(grupo => grupo.Mes) // Ordenar por mes
             .ToListAsync();
@@ -255,31 +268,35 @@ public class SolicitudDePagoController : ControllerBase
 
         return Ok(solicitudesPorMes);
     }
+
     [HttpGet("ObtenerSolicitudesDePagoDeUnSocio")]
     public async Task<IActionResult> ObtenerSolicitudesDePagoDeSocio(string identityUserId)
     {
-        var solicitudes = await _solicitudDePagoService.ObtenerSolicitudesDePagoDeSocio(identityUserId);
+        var solicitudes = await _solicitudDePagoService.ObtenerSolicitudesDePagoDeSocio(
+            identityUserId
+        );
         if (solicitudes == null || !solicitudes.Any())
         {
             return NotFound("No se encontraron solicitudes de pago para el socio especificado.");
         }
         return Ok(solicitudes);
     }
+
     [HttpGet("balance-ingresos")]
     public async Task<IActionResult> ObtenerBalanceDeIngresosPorTodosLosMesesAsync()
     {
         // Diccionario para los valores por TipoMembresiaId
         var membresiaValores = new Dictionary<int, decimal>
- {
-     { 9, 10000 },
-     { 10, 27000 },
-     { 11, 50000 },
-     { 12, 90000 }
- };
+        {
+            { 9, 10000 },
+            { 10, 27000 },
+            { 11, 50000 },
+            { 12, 90000 },
+        };
 
         // Filtrar los datos relevantes desde la base de datos
-        var ingresosDb = await _context.SolicitudDePagos
-            .Join(
+        var ingresosDb = await _context
+            .SolicitudDePagos.Join(
                 _context.HistorialSolicitudDePagos,
                 solicitud => solicitud.Id,
                 historial => historial.SolicitudDePagoId,
@@ -291,7 +308,7 @@ public class SolicitudDePagoController : ControllerBase
             .Select(joined => new
             {
                 TipoMembresiaId = joined.solicitud.MembresiaId,
-                Mes = joined.historial.FechaCambioEstado.Month
+                Mes = joined.historial.FechaCambioEstado.Month,
             })
             .ToListAsync();
 
@@ -302,16 +319,17 @@ public class SolicitudDePagoController : ControllerBase
             .Select(grupo => new
             {
                 Mes = grupo.Key,
-                MontoTotal = grupo.Sum(ingreso => membresiaValores[ingreso.TipoMembresiaId]) // Sumar los valores
+                MontoTotal = grupo.Sum(ingreso => membresiaValores[ingreso.TipoMembresiaId]), // Sumar los valores
             })
             .ToList();
 
         // Agregar meses sin ingresos con monto 0
-        var todosLosMeses = Enumerable.Range(1, 12)
+        var todosLosMeses = Enumerable
+            .Range(1, 12)
             .Select(mes => new
             {
                 Mes = mes,
-                MontoTotal = ingresosPorMes.FirstOrDefault(i => i.Mes == mes)?.MontoTotal ?? 0
+                MontoTotal = ingresosPorMes.FirstOrDefault(i => i.Mes == mes)?.MontoTotal ?? 0,
             })
             .OrderBy(m => m.Mes)
             .ToList();
@@ -319,9 +337,25 @@ public class SolicitudDePagoController : ControllerBase
         return Ok(todosLosMeses);
     }
 
+    [HttpGet("ObtenerMembresiaNutricional/{identityUserId}")]
+    public async Task<IActionResult> ObtenerMembresiaNutricional(string identityUserId)
+    {
+        // Buscar la solicitud de pago con membresía nutricional para el socio
+        var membresiaNutricional = await _context
+            .SolicitudDePagos.Where(s => s.IdentityUserId == identityUserId) // Filtrar por el socio
+            .Include(s => s.Membresia) // Incluir la membresía
+            .Include(s => s.TipoDePago) // Incluir el tipo de pago
+            .Include(s => s.HistorialSolicitudDePagos) // Incluir el historial
+            .ThenInclude(h => h.EstadoSolicitud) // Incluir el estado de solicitud dentro del historial
+            .FirstOrDefaultAsync(s => s.Membresia.Id == 15); // Filtrar por tipo de membresía "Nutricional"
 
+        // Si no se encuentra la membresía, devolver un error 404
+        if (membresiaNutricional == null)
+        {
+            return NotFound("No se encontró una membresía nutricional para el socio especificado.");
+        }
 
-
-
-
+        // Devolver la membresía nutricional encontrada
+        return Ok(membresiaNutricional);
+    }
 }
