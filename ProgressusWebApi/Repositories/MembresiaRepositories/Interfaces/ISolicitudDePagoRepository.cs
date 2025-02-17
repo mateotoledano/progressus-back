@@ -9,6 +9,7 @@ namespace ProgressusWebApi.Repositories.MembresiaRepositories.Interfaces
         Task<SolicitudDePago> CrearSolicitudDePagoAsync(SolicitudDePago solicitud);
         Task<SolicitudDePago> ModificarSolicitudDePagoAsync(SolicitudDePago solicitud);
         Task<SolicitudDePago> ObtenerSolicitudDePagoPorIdAsync(int solicitudId);
+        Task<List<SolicitudDePago>> ObtenerSolicitudesDePagoDeSocio(string identityUserId);
 
         // Métodos para TipoDePago
         Task<TipoDePago> ObtenerTipoDePagoPorNombreAsync(string nombre);

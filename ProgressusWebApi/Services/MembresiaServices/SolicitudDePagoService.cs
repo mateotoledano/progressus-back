@@ -28,6 +28,10 @@ namespace ProgressusWebApi.Services.MembresiaServices
             _notificacionesUsuarios = notificaciones;
             _membresiaRepository = membresiaRepository;
         }
+        public async Task<List<SolicitudDePago>> ObtenerSolicitudesDePagoDeSocio(string identityUserId)
+        {
+            return await _repository.ObtenerSolicitudesDePagoDeSocio(identityUserId);
+        }
 
         public async Task<SolicitudDePago> CrearSolicitudDePago(CrearSolicitudDePagoDto dto)
         {

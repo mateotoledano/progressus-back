@@ -12,6 +12,7 @@ namespace ProgressusWebApi.Services.MembresiaServices.Interfaces
         Task<IActionResult> CancelarSolicitudDePago(int idSolicitudDePago);
         Task<IActionResult> ObtenerEstadoActualDeSolicitud(int idSolicitudDePago);
         Task<SolicitudDePago> ObtenerSolicitudDePagoDeSocio(string solicitudDePago);
+        Task<List<SolicitudDePago>> ObtenerSolicitudesDePagoDeSocio(string identityUserId);
 
         Task<SolicitudDePago> ConfirmarPagoConMercadoPago(int solicitudDePagoId);
         Task<IActionResult> ConsultarVigenciaDeMembresia(string userId);
