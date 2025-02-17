@@ -46,5 +46,23 @@ namespace ProgressusWebApi.Controllers.NotificacionControllers
 			var result = await _notificacionesService.EliminarNotificacionAsync(notificacionId);
 			return result ? Ok(new { Message = "Notificación eliminada correctamente" }) : BadRequest(new { Message = "Error al eliminar la notificación" });
 		}
-	}
+
+        [HttpPut]
+        public async Task<IActionResult> EnviarNotificacionesPendientes()
+        {
+            var result = await _notificacionesService.EnviarNotificacionesPendientes();
+            
+			return result ? Ok(new { Message = "Notificaciones enviadas correctamente" }) : BadRequest(new { Message = "Error al enviar las notificaciones" });
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> CrearNotificacionMasiva([FromBody] InsertNotificacionDto request)
+        {
+            var result = await _notificacionesService.CrearNotificacionMasivaAsync(request.PlantillaNotificacionId);
+
+            return result ? Ok(new { Message = "Notificaciones masiva creada correctamente" }) : BadRequest(new { Message = "Error al crear la notificación" });
+        }
+
+    }
 }

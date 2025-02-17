@@ -4,8 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProgressusWebApi.Dtos.MembresiaDtos;
 using ProgressusWebApi.Models.MembresiaModels;
+using ProgressusWebApi.Repositories.Interfaces;
 using ProgressusWebApi.Repositories.MembresiaRepositories.Interfaces;
 using ProgressusWebApi.Services.MembresiaServices.Interfaces;
+using ProgressusWebApi.Services.NotificacionesServices.Interfaces;
 using WebApiMercadoPago.Repositories;
 using WebApiMercadoPago.Repositories.Interface;
 
@@ -15,13 +17,16 @@ namespace ProgressusWebApi.Services.MembresiaServices
     {
         private readonly ISolicitudDePagoRepository _repository;
         private readonly IMercadoPagoRepository _mercadoPagoRepository;
-      
+        private readonly INotificacionesUsuariosService _notificacionesUsuarios;
+        private readonly IMembresiaRepository _membresiaRepository;
 
-
-        public SolicitudDePagoService(ISolicitudDePagoRepository repository, IMercadoPagoRepository mercadoPagoRepository)
+        public SolicitudDePagoService(ISolicitudDePagoRepository repository, IMercadoPagoRepository mercadoPagoRepository, INotificacionesUsuariosService notificaciones,
+            IMembresiaRepository membresiaRepository)
         {
             _repository = repository;
             _mercadoPagoRepository = mercadoPagoRepository;
+            _notificacionesUsuarios = notificaciones;
+            _membresiaRepository = membresiaRepository;
         }
 
         public async Task<SolicitudDePago> CrearSolicitudDePago(CrearSolicitudDePagoDto dto)
@@ -103,6 +108,15 @@ namespace ProgressusWebApi.Services.MembresiaServices
         public async Task<SolicitudDePago> ObtenerSolicitudDePagoDeSocio(string identityUserId)
         {
             SolicitudDePago solicitud = await _repository.ObtenerSolicitudDePagoDeSocio(identityUserId);
+
+            var fechaVencimiento = solicitud.FechaCreacion.AddMonths(solicitud.Membresia.MesesDuracion);
+            if ( fechaVencimiento <= DateTime.Now.AddDays(-7))
+            {
+                var planes = _membresiaRepository.GetAll().Result.Take(3).Select(m => $"{m.Nombre} -  ${m.Precio} : {m.Descripcion}").ToList();
+                await _notificacionesUsuarios.NotificarMembresiaPorVencer(identityUserId, fechaVencimiento.ToString("dd/MM/yyyy"), planes);
+            }
+
+
             return solicitud;
         }
 
