@@ -143,6 +143,8 @@ builder.Services.AddScoped<IPlantillaRepository, PlantillaRepository>();
 builder.Services.AddScoped<ITipoNotificacionRepository, TipoNotificacionRepository>();
 
 
+
+
 // Construir la aplicación con todas las configuraciones y servicios definidos en el objeto builder
 var app = builder.Build();
 
