@@ -45,13 +45,13 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
             return CreatedAtAction("ObtenerPacientePorId", new { id = paciente.Id }, paciente);
         }
 
-        // PUT: api/Pacientes/Actualizar/5
         [HttpPut("ActualizarPaciente/{id}")]
-        public async Task<IActionResult> ActualizarPaciente(int id, Paciente paciente)
+        public async Task<IActionResult> ActualizarPaciente(int id, [FromBody] Paciente paciente)
         {
             if (id != paciente.Id)
             {
-                return BadRequest();
+            //    _logger.LogWarning("El ID de la URL ({Id}) no coincide con el del objeto ({PacienteId})", id, paciente.Id);
+                return BadRequest("ID en la URL no coincide con el del paciente.");
             }
 
             _context.Entry(paciente).State = EntityState.Modified;
@@ -59,22 +59,24 @@ namespace ProgressusWebApi.Controllers.PlanNutricionalController
             try
             {
                 await _context.SaveChangesAsync();
+             //   _logger.LogInformation("Paciente {Id} actualizado correctamente.", id);
             }
             catch (DbUpdateConcurrencyException)
             {
                 if (!PacienteExists(id))
                 {
-                    return NotFound();
+              //      _logger.LogError("Intento de actualizar paciente {Id}, pero no existe en la base de datos.", id);
+                    return NotFound("Paciente no encontrado.");
                 }
                 else
                 {
+                  //  _logger.LogError("Error de concurrencia al actualizar paciente {Id}.", id);
                     throw;
                 }
             }
 
             return NoContent();
         }
-
         // DELETE: api/Pacientes/Eliminar/5
         [HttpDelete("EliminarPaciente/{id}")]
         public async Task<IActionResult> EliminarPaciente(int id)

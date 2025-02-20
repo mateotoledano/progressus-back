@@ -23,6 +23,21 @@ public class MembresiaController : ControllerBase
         return Ok(membresias);
     }
 
+
+    [HttpGet("ObtenerTodasParaPagar")]
+    public async Task<IActionResult> ObtenerTodasParaPagar()
+    {
+        var membresias = await _membresiaService.GetAll();
+        var membresiasParaPagar = membresias?.Where(m => new[] { 9, 10, 11, 12, 13 }.Contains(m.Id)).ToList();
+
+        if (membresiasParaPagar == null || membresiasParaPagar.Count == 0)
+            return NotFound();
+
+        return Ok(membresiasParaPagar);
+    }
+
+
+
     [HttpGet("ObtenerMembresiaPorId")]
     public async Task<IActionResult> ObtenerPorId(int id)
     {
