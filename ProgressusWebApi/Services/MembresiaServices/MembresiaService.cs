@@ -27,6 +27,20 @@ namespace ProgressusWebApi.Services.MembresiaServices
             }).ToList();
         }
 
+        public async Task<List<Membresia>> GetAllComun()
+        {
+            var membresias = await _repository.GetAll();
+            return membresias.Select(m => new Membresia
+            {
+                Id = m.Id,
+                Nombre = m.Nombre,
+                MesesDuracion = m.MesesDuracion,
+                Precio = m.Precio,
+                Descripcion = m.Descripcion
+            }).ToList();
+        }
+
+
         public async Task<CrearMembresiaDto> GetById(int id)
         {
             var membresia = await _repository.GetById(id);

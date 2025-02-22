@@ -37,7 +37,7 @@ namespace ProgressusWebApi.Repositories.MembresiaRepositories
         public async Task<List<SolicitudDePago>> ObtenerSolicitudesDePagoDeSocio(string identityUserId)
         {
             return await _context.SolicitudDePagos
-                .Where(s => s.IdentityUserId == identityUserId)
+        .Where(s => s.IdentityUserId == identityUserId && s.MembresiaId != 15) // Filtrar por IdentityUserId y excluir MembresiaId = 15
                 .Include(s => s.Membresia) // Incluir la membresía
                 .Include(s => s.TipoDePago) // Incluir el tipo de pago
                 .Include(s => s.HistorialSolicitudDePagos) // Incluir el historial
@@ -102,17 +102,28 @@ namespace ProgressusWebApi.Repositories.MembresiaRepositories
             return  _context.TipoDePagos.FirstOrDefaultAsync(tp => tp.Id == id);
         }
 
-        public async Task<SolicitudDePago> ObtenerSolicitudDePagoDeSocio(string identityUserId)
-        {
-            SolicitudDePago? solicitud = await _context.SolicitudDePagos
-                .Include(s => s.HistorialSolicitudDePagos) // Incluye el historial completo
-                .ThenInclude(h => h.EstadoSolicitud)    // Incluye también el EstadoSolicitud de cada historial
-                .OrderByDescending(h => h.FechaCreacion)
-                .FirstOrDefaultAsync(tp => tp.IdentityUserId == identityUserId);
-            solicitud.TipoDePago = this.ObtenerTipoDePagoPorIdAsync(solicitud.TipoDePagoId).Result;
-            solicitud.Membresia =  _membresiaRepository.GetById(solicitud.MembresiaId).Result;
-            return solicitud;
-        }
+     public async Task<SolicitudDePago> ObtenerSolicitudDePagoDeSocio(string identityUserId)
+{
+    // Obtener la solicitud de pago más reciente del socio, excluyendo las que tienen MembresiaId = 15
+    SolicitudDePago? solicitud = await _context.SolicitudDePagos
+        .Where(s => s.IdentityUserId == identityUserId && s.MembresiaId != 15) // Filtrar por IdentityUserId y excluir MembresiaId = 15
+        .Include(s => s.HistorialSolicitudDePagos) // Incluye el historial completo
+        .ThenInclude(h => h.EstadoSolicitud)       // Incluye también el EstadoSolicitud de cada historial
+        .OrderByDescending(s => s.FechaCreacion)   // Ordenar por fecha de creación descendente
+        .FirstOrDefaultAsync();                    // Obtener la primera coincidencia
+
+    // Si no se encuentra ninguna solicitud, devolver null
+    if (solicitud == null)
+    {
+        return null;
+    }
+
+    // Cargar el TipoDePago y la Membresia de manera asíncrona
+    solicitud.TipoDePago = await this.ObtenerTipoDePagoPorIdAsync(solicitud.TipoDePagoId);
+    solicitud.Membresia = await _membresiaRepository.GetById(solicitud.MembresiaId);
+
+    return solicitud;
+}
 
         public async Task<IActionResult> ObtenerTiposDePagos()
         {
@@ -160,7 +171,8 @@ namespace ProgressusWebApi.Repositories.MembresiaRepositories
             return new OkObjectResult(vigenciaDto);
         }
 
-        public async Task<IActionResult> ObtenerTodasLasSolicitudesDeUnSocio(string identityUserId)
+    
+    public async Task<IActionResult> ObtenerTodasLasSolicitudesDeUnSocio(string identityUserId)
         {
             var solicitudes = await _context.SolicitudDePagos
                 .Where(s => s.IdentityUserId == identityUserId.ToString() &&

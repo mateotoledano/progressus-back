@@ -18,6 +18,8 @@ namespace ProgressusWebApi.Services.MembresiaServices.Interfaces
         Task<IActionResult> ConsultarVigenciaDeMembresia(string userId);
         Task<IActionResult> ObtenerTiposDePago();
         Task<IActionResult> ObtenerTodasLasSolicitudesDeUnSocio(string identityUserId);
+
+       // Task<SolicitudDePago> ObtenerSolicitudDePagoDeSocioSinNutricional(string identityUserId);
     }
 
 

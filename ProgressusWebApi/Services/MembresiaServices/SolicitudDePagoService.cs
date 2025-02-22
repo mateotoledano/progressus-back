@@ -104,7 +104,7 @@ namespace ProgressusWebApi.Services.MembresiaServices
         public async Task<IActionResult> ObtenerEstadoActualDeSolicitud(int idSolicitudDePago)
         {
             HistorialSolicitudDePago historialSolicitudDePago = _repository.ObtenerUltimoHistorialDeUnaSolicitudAsync(idSolicitudDePago).Result;
-            EstadoSolicitud estadoActual =  _repository.ObtenerEstadoSolicitudPorIdAsync(historialSolicitudDePago.EstadoSolicitudId).Result;
+            EstadoSolicitud estadoActual = _repository.ObtenerEstadoSolicitudPorIdAsync(historialSolicitudDePago.EstadoSolicitudId).Result;
             SolicitudDePago solicitudActual = _repository.ObtenerSolicitudDePagoPorIdAsync(historialSolicitudDePago.SolicitudDePagoId).Result;
             historialSolicitudDePago.SolicitudDePago = solicitudActual;
             historialSolicitudDePago.EstadoSolicitud = estadoActual;
@@ -151,12 +151,17 @@ namespace ProgressusWebApi.Services.MembresiaServices
             //solicitud.preferenceIdMercadoPago = pref.Id;
             if (solicitud != null)
             {
-               await _repository.ActualizarSolicitud(solicitud);
+                await _repository.ActualizarSolicitud(solicitud);
             }
-            
+
             return new OkObjectResult(pref);
 
-       }
+        }
+
+
+     
+
+
 
         public async Task<IActionResult> ObtenerTodasLasSolicitudesDeUnSocio(string identityUserId)
         {
