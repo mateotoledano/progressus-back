@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProgressusWebApi.Dtos.NotificacionDtos;
+using ProgressusWebApi.Models.NotificacionesModel;
 using ProgressusWebApi.Request;
 using ProgressusWebApi.Services.NotificacionesServices.Interfaces;
 
@@ -47,7 +48,7 @@ namespace ProgressusWebApi.Controllers.NotificacionControllers
 			return result ? Ok(new { Message = "Notificación eliminada correctamente" }) : BadRequest(new { Message = "Error al eliminar la notificación" });
 		}
 
-        [HttpPut]
+        [HttpPut("EnviarNotificacionesPendientes")]
         public async Task<IActionResult> EnviarNotificacionesPendientes()
         {
             var result = await _notificacionesService.EnviarNotificacionesPendientes();
@@ -56,10 +57,11 @@ namespace ProgressusWebApi.Controllers.NotificacionControllers
         }
 
 
-        [HttpPost]
-        public async Task<IActionResult> CrearNotificacionMasiva([FromBody] InsertNotificacionDto request)
+        
+        [HttpPost ("CrearNotificacionMasiva")]        
+        public async Task<IActionResult> CrearNotificacionMasiva([FromBody] NotificacionMasiva request)
         {
-            var result = await _notificacionesService.CrearNotificacionMasivaAsync(request.PlantillaNotificacionId);
+            var result = await _notificacionesService.CrearNotificacionMasivaAsync(request);
 
             return result ? Ok(new { Message = "Notificaciones masiva creada correctamente" }) : BadRequest(new { Message = "Error al crear la notificación" });
         }

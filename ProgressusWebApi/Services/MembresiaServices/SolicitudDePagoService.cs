@@ -8,6 +8,7 @@ using ProgressusWebApi.Repositories.Interfaces;
 using ProgressusWebApi.Repositories.MembresiaRepositories.Interfaces;
 using ProgressusWebApi.Services.MembresiaServices.Interfaces;
 using ProgressusWebApi.Services.NotificacionesServices.Interfaces;
+using ProgressusWebApi.Services.ReservaService.cs.interfaces;
 using WebApiMercadoPago.Repositories;
 using WebApiMercadoPago.Repositories.Interface;
 
@@ -19,14 +20,16 @@ namespace ProgressusWebApi.Services.MembresiaServices
         private readonly IMercadoPagoRepository _mercadoPagoRepository;
         private readonly INotificacionesUsuariosService _notificacionesUsuarios;
         private readonly IMembresiaRepository _membresiaRepository;
+        private readonly IReservaService _reservaService;
 
         public SolicitudDePagoService(ISolicitudDePagoRepository repository, IMercadoPagoRepository mercadoPagoRepository, INotificacionesUsuariosService notificaciones,
-            IMembresiaRepository membresiaRepository)
+            IMembresiaRepository membresiaRepository, IReservaService reservas)
         {
             _repository = repository;
             _mercadoPagoRepository = mercadoPagoRepository;
             _notificacionesUsuarios = notificaciones;
             _membresiaRepository = membresiaRepository;
+            _reservaService = reservas;
         }
         public async Task<List<SolicitudDePago>> ObtenerSolicitudesDePagoDeSocio(string identityUserId)
         {
@@ -117,9 +120,14 @@ namespace ProgressusWebApi.Services.MembresiaServices
             if ( fechaVencimiento <= DateTime.Now.AddDays(-7))
             {
                 var planes = _membresiaRepository.GetAll().Result.Take(3).Select(m => $"{m.Nombre} -  ${m.Precio} : {m.Descripcion}").ToList();
-                await _notificacionesUsuarios.NotificarMembresiaPorVencer(identityUserId, fechaVencimiento.ToString("dd/MM/yyyy"), planes);
+                await _notificacionesUsuarios.NotificarMembresiaPorVencer(identityUserId, fechaVencimiento.ToString("dd/MM/yyyy"), planes);                
             }
 
+            var debeNotificar = _reservaService.TodasLasReservasSonAntiguas(identityUserId).Result;
+            if(debeNotificar)
+            {
+                await _notificacionesUsuarios.NotificarReservasAntiguas(identityUserId);
+            }
 
             return solicitud;
         }

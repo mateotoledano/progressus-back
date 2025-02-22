@@ -75,6 +75,9 @@ namespace ProgressusWebApi.Repositories.NotificacionesRepositories
 			// (si falla una noti el resto quedaría enviada)
 			try
 			{
+				if (!idNotificaciones.Any())
+					return true;
+
 				var notificaciones = _context.NotificacionesUsuarios.Where(n => idNotificaciones.Contains(n.Id)).ToList();
 				if (!notificaciones.Any())
 					return false;

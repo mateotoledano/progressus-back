@@ -1,4 +1,5 @@
 ﻿using ProgressusWebApi.Dtos.NotificacionDtos;
+using ProgressusWebApi.Models.NotificacionesModel;
 
 namespace ProgressusWebApi.Services.NotificacionesServices.Interfaces
 {
@@ -17,7 +18,9 @@ namespace ProgressusWebApi.Services.NotificacionesServices.Interfaces
 
 		Task<bool> NotificarMembresiaPorVencer(string usuarioId, string fechaVencimiento, List<string> planes);
 
-		Task<bool> CrearNotificacionMasivaAsync(int plantillaId);
+		Task<bool> CrearNotificacionMasivaAsync(NotificacionMasiva plantillaId);
 
+
+        Task<bool> NotificarReservasAntiguas(string usuarioId);
     }
 }

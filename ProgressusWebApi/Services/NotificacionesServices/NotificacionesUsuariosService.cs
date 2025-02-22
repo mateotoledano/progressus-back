@@ -58,7 +58,7 @@ namespace ProgressusWebApi.Services.NotificacionesServices
             return await GuardarNotificacion(usuarioId, plantilla, cuerpoPersonalizado);
 		}
 
-		private Task<bool> GuardarNotificacion(string usuario, PlantillaNotificacion plantilla, string cuerpo)
+		private Task<bool> GuardarNotificacion(string usuario, PlantillaNotificacion plantilla, string cuerpo, string titulo = null)
 		{
 
             var estadoPendiente = _estadoNotificacionRepository
@@ -75,7 +75,7 @@ namespace ProgressusWebApi.Services.NotificacionesServices
                 UsuarioId = usuario,
                 EstadoNotificacionId = estadoPendiente.Id,
                 FechaCreacion = DateTime.UtcNow,
-                Titulo = plantilla.Titulo,
+                Titulo = titulo ?? plantilla.Titulo,
                 Cuerpo = cuerpo
             };
 
@@ -131,8 +131,9 @@ namespace ProgressusWebApi.Services.NotificacionesServices
             if (pendiente == null)
                 return false;
 
-            var diaActual = mapeoDias.FirstOrDefault(d => d.Id == (int)DateTime.Now.DayOfWeek)?.Nombre;
-            var idNotificaciones = notificaciones.Where(n => n.PlantillaNotificacion.DiaSemana == diaActual)
+            var diaActual = mapeoDias.FirstOrDefault(d => d.Id == (int)DateTime.Now.DayOfWeek)?.Nombre;           
+            var idNotificaciones = notificaciones
+                                    .Where(n => string.IsNullOrEmpty(n.PlantillaNotificacion.DiaSemana) || n.PlantillaNotificacion.DiaSemana?.ToLower() == diaActual.ToLower())
                                     .Where(n => string.IsNullOrEmpty(n.PlantillaNotificacion.MomentoDia) || n.PlantillaNotificacion.MomentoDia == momentoDia)
                                     .Where(n => n.EstadoNotificacionId == pendiente.Id)
                                     .Select(n => n.Id)
@@ -145,7 +146,7 @@ namespace ProgressusWebApi.Services.NotificacionesServices
 
         public async Task<bool> NotificarActualizacionPlan(List<string> usuariosId)
         {
-			var plantilla = _plantillaRepository.ObtenerPlantillaPorIdAsync(5);
+			var plantilla = await _plantillaRepository.ObtenerPlantillaPorIdAsync(5);
 			if (plantilla == null)
 				return false;
 			
@@ -194,7 +195,9 @@ namespace ProgressusWebApi.Services.NotificacionesServices
                 if (plantilla == null)
                     return false;
 
-                var usuario = _context.Users.FirstOrDefault(u => u.Id == usuarioId).UserName;
+                var usuario = _context.Users.FirstOrDefault(u => u.Id == usuarioId)?.UserName;
+                if (usuario == null)
+                    return false;
 
                 string cuerpo = plantilla.Cuerpo.Replace("[Nombre]", usuario);
                 cuerpo = cuerpo.Replace("[Vencimiento]", fechaVencimiento);
@@ -229,22 +232,68 @@ namespace ProgressusWebApi.Services.NotificacionesServices
 
         }
 
-        public async Task<bool> CrearNotificacionMasivaAsync(int plantillaId)
+        public async Task<bool> NotificarReservasAntiguas(string usuarioId)
         {
-            var plantilla = await _plantillaRepository.ObtenerPlantillaPorIdAsync(plantillaId);
-            if (plantilla == null)
-                throw new Exception("Plantilla no encontrada");
-
-            var usuarios = _context.Users.Where(u => u.EmailConfirmed).Select(u => new { u.UserName, u.Id });
-            foreach (var usuario in usuarios)
+            try
             {
-                string cuerpoPersonalizado = plantilla.Cuerpo
-                        .Replace("[Nombre]", usuario.UserName ?? "Usuario");
+                var plantilla = _plantillaRepository.ObtenerPlantillaPorIdAsync(8).Result;
+                if (plantilla == null)
+                    return false;
 
-                await GuardarNotificacion(usuario.Id, plantilla, cuerpoPersonalizado);
+                var usuario = _context.Users.FirstOrDefault(u => u.Id == usuarioId)?.UserName;
+                if (usuario == null)
+                    return false;
+
+                string cuerpo = plantilla.Cuerpo.Replace("[Nombre]", usuario);
+                await GuardarNotificacion(usuarioId, plantilla, cuerpo);
+
+                return true;
             }
+            catch
+            {
+                return false;
+            }
+        }
 
-            return true;
+        public async Task<bool> CrearNotificacionMasivaAsync(NotificacionMasiva notificacion)
+        {
+            try
+            {
+                if (notificacion == null) return false;
+
+                PlantillaNotificacion plantilla;
+
+
+                if (!notificacion.PlantillaId.HasValue)
+                    notificacion.PlantillaId = 0;
+
+                plantilla = await _plantillaRepository.ObtenerPlantillaPorIdAsync(notificacion.PlantillaId.Value);
+                if (plantilla == null)
+                    throw new Exception("Plantilla no encontrada");
+
+                string cuerpo = notificacion.Cuerpo ?? "";
+                if (!string.IsNullOrEmpty(plantilla.Cuerpo))
+                    cuerpo = plantilla.Cuerpo;
+
+                string titulo = notificacion.Titulo;
+                if (!string.IsNullOrEmpty(plantilla.Titulo))
+                    titulo = plantilla.Titulo;
+
+                var usuarios = _context.Users.Where(u => u.EmailConfirmed).Select(u => new { u.UserName, u.Id }).ToList();
+                foreach (var usuario in usuarios)
+                {
+                    string cuerpoPersonalizado = cuerpo.Replace("[Nombre]", usuario.UserName ?? "Usuario");
+
+                    var _ = GuardarNotificacion(usuario.Id, plantilla, cuerpoPersonalizado, titulo).Result;
+                }
+
+                return true;
+            }
+            catch 
+            {
+                return false;
+            }
+            
         }
     }
 

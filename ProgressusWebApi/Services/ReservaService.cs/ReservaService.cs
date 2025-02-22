@@ -9,16 +9,19 @@ using ProgressusWebApi.Services.ReservaService.cs.interfaces;
 using Microsoft.EntityFrameworkCore;
 using MercadoPago.Resource.User;
 using ProgressusWebApi.Models.AsistenciaModels;
+using ProgressusWebApi.Services.NotificacionesServices.Interfaces;
 
 namespace ProgressusWebApi.Services.ReservaServices
 {
     public class ReservaService : IReservaService
     {
         private readonly ProgressusDataContext _context;
+        private readonly INotificacionesUsuariosService _notificaciones;
 
-        public ReservaService(ProgressusDataContext context)
+        public ReservaService(ProgressusDataContext context, INotificacionesUsuariosService notificaciones)
         {
             _context = context;
+            _notificaciones = notificaciones;
         }
 
         public async Task<IActionResult> CrearReservaAsync(RerservaDto reservaDto)
@@ -69,14 +72,14 @@ namespace ProgressusWebApi.Services.ReservaServices
         public async Task<IActionResult> ObtenerReservasPorHorarioAsync(DateTime fecha, TimeSpan horaInicio)
         {
             var reservas = await _context.Reservas
-                .Where(r => r.FechaReserva == fecha && r.HoraInicio == horaInicio)
+                .Where(r => r.FechaReserva == fecha)
                 .ToListAsync();
 
             if (!reservas.Any())
             {
                 return new NotFoundObjectResult("No se encontraron reservas para la fecha y hora especificadas.");
             }
-
+           
             return new OkObjectResult(reservas);
         }
         public async Task<bool> RegistrarAsistenciaAsync(string userId)
@@ -306,6 +309,10 @@ namespace ProgressusWebApi.Services.ReservaServices
             return asistenciasPorMesYDia;
         }
 
+        public async Task<bool> TodasLasReservasSonAntiguas(string userId)
+        {            
+            return await _context.Reservas.Where(r => r.UserId == userId).AllAsync(r => r.FechaReserva < DateTime.Now.AddDays(-4));
+        }
 
 
 
