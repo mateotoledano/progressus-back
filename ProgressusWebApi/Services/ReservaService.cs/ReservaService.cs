@@ -72,7 +72,7 @@ namespace ProgressusWebApi.Services.ReservaServices
         public async Task<IActionResult> ObtenerReservasPorHorarioAsync(DateTime fecha, TimeSpan horaInicio)
         {
             var reservas = await _context.Reservas
-                .Where(r => r.FechaReserva == fecha)
+                .Where(r => r.FechaReserva == fecha && r.HoraInicio == horaInicio)
                 .ToListAsync();
 
             if (!reservas.Any())
