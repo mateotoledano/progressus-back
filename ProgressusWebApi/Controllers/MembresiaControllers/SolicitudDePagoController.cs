@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProgressusWebApi.DataContext;
+using ProgressusWebApi.Dtos.AuthDtos;
 using ProgressusWebApi.Dtos.MembresiaDtos;
 using ProgressusWebApi.Models.MembresiaModels;
 using ProgressusWebApi.Repositories.MembresiaRepositories;
@@ -17,15 +19,18 @@ public class SolicitudDePagoController : ControllerBase
     private readonly ProgressusDataContext _context;
     private readonly IMembresiaRepository _membresiaRepository; // Declarar el campo
     private readonly ISolicitudDePagoRepository _solicitudDePagoRepository;
+    private readonly UserManager<IdentityUser> _userManager;
 
     public SolicitudDePagoController(
         ISolicitudDePagoService solicitudDePagoService,
+        UserManager<IdentityUser> userManager,
         ProgressusDataContext context,
         IMembresiaRepository membresiaRepository,
         ISolicitudDePagoRepository solicitudDePagoRepository
     )
     {
         _solicitudDePagoService = solicitudDePagoService;
+        _userManager = userManager;
 
         _solicitudDePagoRepository = solicitudDePagoRepository;
         _context = context;
@@ -319,6 +324,32 @@ public class SolicitudDePagoController : ControllerBase
         return Ok(solicitudes);
     }
 
+    [HttpGet("ObtenerMembresiaNutricional/{identityUserId}")]
+    public async Task<IActionResult> ObtenerMembresiaNutricional(string identityUserId)
+    {
+        // Buscar la solicitud de pago con membresía nutricional para el socio
+        var membresiaNutricional = await _context
+            .SolicitudDePagos.Where(s => s.IdentityUserId == identityUserId) // Filtrar por el socio
+            .Include(s => s.Membresia) // Incluir la membresía
+            .Include(s => s.TipoDePago) // Incluir el tipo de pago
+            .Include(s => s.HistorialSolicitudDePagos) // Incluir el historial
+            .ThenInclude(h => h.EstadoSolicitud) // Incluir el estado de solicitud dentro del historial
+            .FirstOrDefaultAsync(s =>
+                s.Membresia.Id == 15
+                && // Filtrar por tipo de membresía "Nutricional"
+                s.HistorialSolicitudDePagos.Any(h => h.EstadoSolicitud.Id == 2)
+            ); // Filtrar por estado de solicitud = 2
+
+        // Si no se encuentra la membresía, devolver un error 404
+        if (membresiaNutricional == null)
+        {
+            return NotFound("No se encontró una membresía nutricional para el socio especificado.");
+        }
+
+        // Devolver la membresía nutricional encontrada
+        return Ok(membresiaNutricional);
+    }
+
     [HttpGet("ObtenerUsuariosConMembresiaNutricionalConfirmada")]
     public async Task<IActionResult> ObtenerUsuariosConMembresiaNutricionalConfirmada()
     {
@@ -439,31 +470,5 @@ public class SolicitudDePagoController : ControllerBase
             .ToList();
 
         return Ok(todosLosMeses);
-    }
-
-    [HttpGet("ObtenerMembresiaNutricional/{identityUserId}")]
-    public async Task<IActionResult> ObtenerMembresiaNutricional(string identityUserId)
-    {
-        // Buscar la solicitud de pago con membresía nutricional para el socio
-        var membresiaNutricional = await _context
-            .SolicitudDePagos.Where(s => s.IdentityUserId == identityUserId) // Filtrar por el socio
-            .Include(s => s.Membresia) // Incluir la membresía
-            .Include(s => s.TipoDePago) // Incluir el tipo de pago
-            .Include(s => s.HistorialSolicitudDePagos) // Incluir el historial
-            .ThenInclude(h => h.EstadoSolicitud) // Incluir el estado de solicitud dentro del historial
-            .FirstOrDefaultAsync(s =>
-                s.Membresia.Id == 15
-                && // Filtrar por tipo de membresía "Nutricional"
-                s.HistorialSolicitudDePagos.Any(h => h.EstadoSolicitud.Id == 2)
-            ); // Filtrar por estado de solicitud = 2
-
-        // Si no se encuentra la membresía, devolver un error 404
-        if (membresiaNutricional == null)
-        {
-            return NotFound("No se encontró una membresía nutricional para el socio especificado.");
-        }
-
-        // Devolver la membresía nutricional encontrada
-        return Ok(membresiaNutricional);
     }
 }
