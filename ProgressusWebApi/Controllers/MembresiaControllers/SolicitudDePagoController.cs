@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProgressusWebApi.DataContext;
+using ProgressusWebApi.Dtos.AuthDtos;
 using ProgressusWebApi.Dtos.MembresiaDtos;
 using ProgressusWebApi.Models.MembresiaModels;
 using ProgressusWebApi.Repositories.MembresiaRepositories;
@@ -17,15 +19,18 @@ public class SolicitudDePagoController : ControllerBase
     private readonly ProgressusDataContext _context;
     private readonly IMembresiaRepository _membresiaRepository; // Declarar el campo
     private readonly ISolicitudDePagoRepository _solicitudDePagoRepository;
+    private readonly UserManager<IdentityUser> _userManager;
 
     public SolicitudDePagoController(
         ISolicitudDePagoService solicitudDePagoService,
+        UserManager<IdentityUser> userManager,
         ProgressusDataContext context,
         IMembresiaRepository membresiaRepository,
         ISolicitudDePagoRepository solicitudDePagoRepository
     )
     {
         _solicitudDePagoService = solicitudDePagoService;
+        _userManager = userManager;
 
         _solicitudDePagoRepository = solicitudDePagoRepository;
         _context = context;
@@ -319,6 +324,99 @@ public class SolicitudDePagoController : ControllerBase
         return Ok(solicitudes);
     }
 
+    [HttpGet("ObtenerMembresiaNutricional/{identityUserId}")]
+    public async Task<IActionResult> ObtenerMembresiaNutricional(string identityUserId)
+    {
+        // Buscar la solicitud de pago con membresía nutricional para el socio
+        var membresiaNutricional = await _context
+            .SolicitudDePagos.Where(s => s.IdentityUserId == identityUserId) // Filtrar por el socio
+            .Include(s => s.Membresia) // Incluir la membresía
+            .Include(s => s.TipoDePago) // Incluir el tipo de pago
+            .Include(s => s.HistorialSolicitudDePagos) // Incluir el historial
+            .ThenInclude(h => h.EstadoSolicitud) // Incluir el estado de solicitud dentro del historial
+            .FirstOrDefaultAsync(s =>
+                s.Membresia.Id == 15
+                && // Filtrar por tipo de membresía "Nutricional"
+                s.HistorialSolicitudDePagos.Any(h => h.EstadoSolicitud.Id == 2)
+            ); // Filtrar por estado de solicitud = 2
+
+        // Si no se encuentra la membresía, devolver un error 404
+        if (membresiaNutricional == null)
+        {
+            return NotFound("No se encontró una membresía nutricional para el socio especificado.");
+        }
+
+        // Devolver la membresía nutricional encontrada
+        return Ok(membresiaNutricional);
+    }
+
+    [HttpGet("ObtenerUsuariosConMembresiaNutricionalConfirmada")]
+    public async Task<IActionResult> ObtenerUsuariosConMembresiaNutricionalConfirmada()
+    {
+        try
+        {
+            // Obtener todos los usuarios con detalles
+            var usuarios = await _context.Users.ToListAsync();
+            var socios = await _context.Socios.ToListAsync();
+
+            // Lista para almacenar los usuarios con membresía nutricional confirmada
+            var usuariosConMembresiaNutricionalConfirmada = new List<DatosUsuarioDto>();
+
+            foreach (var user in usuarios)
+            {
+                // Buscar el socio correspondiente (si existe)
+                var socio = socios.FirstOrDefault(s => s.UserId == user.Id);
+
+                // Verificar si el usuario tiene una membresía nutricional confirmada
+                var membresiaNutricionalConfirmada = await _context
+                    .SolicitudDePagos.Where(s => s.IdentityUserId == user.Id) // Filtrar por el usuario
+                    .Include(s => s.Membresia) // Incluir la membresía
+                    .Include(s => s.HistorialSolicitudDePagos) // Incluir el historial
+                    .ThenInclude(h => h.EstadoSolicitud) // Incluir el estado de solicitud dentro del historial
+                    .AnyAsync(s =>
+                        s.Membresia != null
+                        && // Verificar que la membresía no sea null
+                        s.Membresia.Id == 15
+                        && // Filtrar por tipo de membresía "Nutricional"
+                        s.HistorialSolicitudDePagos != null
+                        && // Verificar que el historial no sea null
+                        s.HistorialSolicitudDePagos.Any(h =>
+                            h.EstadoSolicitud != null
+                            && // Verificar que el estado no sea null
+                            h.EstadoSolicitud.Id == 2
+                        )
+                    ); // Filtrar por estado de solicitud = 2
+
+                // Si el usuario tiene una membresía nutricional confirmada, agregarlo a la lista
+                if (membresiaNutricionalConfirmada)
+                {
+                    // Obtener roles del usuario
+                    var roles = (await _userManager.GetRolesAsync(user)).ToList();
+
+                    // Crear el DTO del usuario
+                    usuariosConMembresiaNutricionalConfirmada.Add(
+                        new DatosUsuarioDto
+                        {
+                            IdentityUserId = user.Id,
+                            Email = user.Email,
+                            Roles = roles,
+                            Nombre = socio?.Nombre, // Usar el operador ?. para evitar NullReferenceException
+                            Apellido = socio?.Apellido,
+                            Telefono = socio?.Telefono,
+                        }
+                    );
+                }
+            }
+
+            // Devolver la lista de usuarios con membresía nutricional confirmada
+            return new OkObjectResult(usuariosConMembresiaNutricionalConfirmada);
+        }
+        catch (Exception ex)
+        {
+            return new BadRequestObjectResult(ex.Message);
+        }
+    }
+
     [HttpGet("balance-ingresos")]
     public async Task<IActionResult> ObtenerBalanceDeIngresosPorTodosLosMesesAsync()
     {
@@ -372,31 +470,5 @@ public class SolicitudDePagoController : ControllerBase
             .ToList();
 
         return Ok(todosLosMeses);
-    }
-
-    [HttpGet("ObtenerMembresiaNutricional/{identityUserId}")]
-    public async Task<IActionResult> ObtenerMembresiaNutricional(string identityUserId)
-    {
-        // Buscar la solicitud de pago con membresía nutricional para el socio
-        var membresiaNutricional = await _context
-            .SolicitudDePagos.Where(s => s.IdentityUserId == identityUserId) // Filtrar por el socio
-            .Include(s => s.Membresia) // Incluir la membresía
-            .Include(s => s.TipoDePago) // Incluir el tipo de pago
-            .Include(s => s.HistorialSolicitudDePagos) // Incluir el historial
-            .ThenInclude(h => h.EstadoSolicitud) // Incluir el estado de solicitud dentro del historial
-            .FirstOrDefaultAsync(s =>
-                s.Membresia.Id == 15
-                && // Filtrar por tipo de membresía "Nutricional"
-                s.HistorialSolicitudDePagos.Any(h => h.EstadoSolicitud.Id == 2)
-            ); // Filtrar por estado de solicitud = 2
-
-        // Si no se encuentra la membresía, devolver un error 404
-        if (membresiaNutricional == null)
-        {
-            return NotFound("No se encontró una membresía nutricional para el socio especificado.");
-        }
-
-        // Devolver la membresía nutricional encontrada
-        return Ok(membresiaNutricional);
     }
 }
