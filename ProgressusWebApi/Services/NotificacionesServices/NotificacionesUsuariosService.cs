@@ -127,18 +127,20 @@ namespace ProgressusWebApi.Services.NotificacionesServices
                 }
             };
             var momentoDia = DateTime.Now.Hour <= 12 ? "Mañana" : "Tarde";
-            var pendiente = _estadoNotificacionRepository.ObtenerEstadosNotificacionesAsync().ContinueWith(n => n.Result.FirstOrDefault(p => p.Nombre == "Pendiente"))?.Result;
+            var estados = await _estadoNotificacionRepository.ObtenerEstadosNotificacionesAsync();
+            var pendiente = estados.FirstOrDefault(p => p.Nombre == "Pendiente");
             if (pendiente == null)
                 return false;
 
             var diaActual = mapeoDias.FirstOrDefault(d => d.Id == (int)DateTime.Now.DayOfWeek)?.Nombre;           
             var idNotificaciones = notificaciones
-                                    .Where(n => string.IsNullOrEmpty(n.PlantillaNotificacion.DiaSemana) || n.PlantillaNotificacion.DiaSemana?.ToLower() == diaActual.ToLower())
+                                    .Where(n => string.IsNullOrEmpty(n.PlantillaNotificacion.DiaSemana) || n.PlantillaNotificacion.DiaSemana?.ToLower() == diaActual?.ToLower())
                                     .Where(n => string.IsNullOrEmpty(n.PlantillaNotificacion.MomentoDia) || n.PlantillaNotificacion.MomentoDia == momentoDia)
                                     .Where(n => n.EstadoNotificacionId == pendiente.Id)
                                     .Select(n => n.Id)
                                     .ToList();
 
+            var enviada = estados.FirstOrDefault(p => p.Nombre == "Enviada");
             var ok = await _notificacionRepository.CambiarEstadoNotifiacionesMasivo(idNotificaciones, pendiente.Id);
 
             return ok;

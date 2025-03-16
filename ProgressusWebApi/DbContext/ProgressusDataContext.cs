@@ -247,15 +247,37 @@ namespace ProgressusWebApi.DataContext
                 .OnDelete(DeleteBehavior.Cascade);
 
 
-            // Configurar la clave primaria para CarritoItem
-            modelBuilder.Entity<CarritoItem>()
-                .HasKey(ci => ci.Id);
+            modelBuilder.Entity<Carrito>()
+                        .HasMany(c => c.Items)
+                        .WithOne(ci => ci.Carrito)
+                        .HasForeignKey(ci => ci.CarritoId)
+                        .OnDelete(DeleteBehavior.Cascade);
 
+
+            modelBuilder.Entity<CarritoItem>()
+                .HasOne(ci => ci.Merch)
+                .WithMany()  
+                .HasForeignKey(ci => ci.ProductoId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            
+            modelBuilder.Entity<Pedido>()
+                .HasOne(p => p.Carrito)
+                .WithOne()
+                .HasForeignKey<Pedido>(p => p.CarritoId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Carrito>()
-      .HasMany(c => c.Items)
-      .WithOne()
-      .HasForeignKey(ci => ci.CarritoId); // Asegúrate de que CarritoItem tenga una propiedad CarritoId
+                .HasOne(c => c.Usuario) 
+                .WithMany()
+                .HasForeignKey(c => c.UsuarioId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Pedido>()
+                .HasOne(c => c.Usuario) 
+                .WithMany()
+                .HasForeignKey(p => p.UsuarioId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
