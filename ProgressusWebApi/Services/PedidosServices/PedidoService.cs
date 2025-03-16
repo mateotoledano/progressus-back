@@ -65,9 +65,10 @@ namespace ProgressusWebApi.Services.PedidosServices
 
             _context.Carrito.Add(carrito);
 
+            var pedidoId = Guid.NewGuid().ToString();
             var pedido = new Pedido
             {
-                Id = Guid.NewGuid().ToString(),
+                Id = pedidoId,
                 UsuarioId = usuarioId,
                 CarritoId = carrito.Id,
                 FechaCreacion = DateTime.Now,
@@ -81,7 +82,9 @@ namespace ProgressusWebApi.Services.PedidosServices
 
             _context.SaveChanges();
 
-            return pedido;
+            // Lo busco nuevamente para tener disponible las descripciones del merch
+            var nuevo = _context.Pedido.Include(p => p.Carrito.Items).ThenInclude(p => p.Merch).FirstOrDefault(p => p.Id == pedidoId);
+            return nuevo;
         }
 
         public async Task<bool> RegistrarPago(string pedidoId)

@@ -140,7 +140,7 @@ namespace ProgressusWebApi.Controllers.MembresiaControllers
                 else
                 {
                     Console.WriteLine($"Error en la solicitud: {estado}");
-                    return BadRequest() ;
+                    return Ok();
                 }
             }
             catch (Exception ex)

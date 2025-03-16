@@ -87,7 +87,8 @@ namespace WebApiMercadoPago.Repositories
                 Title = item.Merch?.Nombre, 
                 Quantity = item.Cantidad,
                 CurrencyId = "ARS",
-                UnitPrice = item.PrecioUnitario
+                UnitPrice = item.PrecioUnitario,
+                Description = item.Merch?.Nombre                
             }).ToList();
 
             var request = new PreferenceRequest
@@ -101,6 +102,7 @@ namespace WebApiMercadoPago.Repositories
                 },
                 NotificationUrl = "https://progressuscenter.azurewebsites.net/api/AAMercadoPago/NotificarPedidoCompletado/" + pedidoId ,
                 AutoReturn = "approved",
+                
                 Expires = true,
                 ExpirationDateFrom = DateTime.Now,
                 ExpirationDateTo = DateTime.Now.AddHours(1),
