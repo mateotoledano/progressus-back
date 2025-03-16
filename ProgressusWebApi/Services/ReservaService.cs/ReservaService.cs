@@ -104,6 +104,36 @@ namespace ProgressusWebApi.Services.ReservaServices
 
             return true;
         }
+
+        public async Task<bool> IngresoConClaveAsync(string userId, string clave)
+        {
+            const string claveCorrecta = "miClaveSecreta"; // Clave hardcodeada
+
+            if (clave != claveCorrecta)
+            {
+                // Clave incorrecta
+                return false;
+            }
+
+            var hoy = DateTime.Now.AddHours(-3).Date; // Fecha de hoy con la corrección horaria
+
+            // Buscar si hay alguna reserva para el usuario en el día actual
+            var reserva = await _context.Reservas
+                .Where(r => r.UserId == userId && r.FechaReserva.Date == hoy)
+                .FirstOrDefaultAsync();
+
+            if (reserva == null)
+            {
+                // No hay reservas válidas para hoy
+                return false;
+            }
+
+            // Registrar el log de asistencia
+            await RegistrarLogDeAsistenciaAsync(userId, reserva.Id);
+
+            return true;
+        }
+
         // Obtener asistencias por usuario
         public async Task<List<AsistenciaLog>> ObtenerAsistenciasPorUsuarioAsync(string userId)
         {

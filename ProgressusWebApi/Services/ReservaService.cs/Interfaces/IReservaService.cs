@@ -21,6 +21,7 @@ namespace ProgressusWebApi.Services.ReservaService.cs.interfaces
 
         // Método para registrar la asistencia de un usuario
         Task<bool> RegistrarAsistenciaAsync(string userId);
+        Task<bool> IngresoConClaveAsync(string userId, string clave);
 
         // Método para registrar el log de asistencia
         Task RegistrarLogDeAsistenciaAsync(string userId, int reservaId);

@@ -91,6 +91,20 @@ namespace ProgressusWebApi.Controllers
 
             return Ok("Asistencia registrada con éxito.");
         }
+
+        [HttpPost("ingresoConClave/{userId}/{clave}")]
+        public async Task<IActionResult> IngresoConClave(string userId, string clave)
+        {
+            var resultado = await _reservaService.IngresoConClaveAsync(userId, clave);
+
+            if (!resultado)
+            {
+                return BadRequest("Clave incorrecta o no se encontró una reserva válida para este día.");
+            }
+
+            return Ok("Asistencia registrada con éxito.");
+        }
+
         [HttpGet("EstadisticasPorMes")]
         public async Task<IActionResult> ObtenerEstadisticasReservas()
         {
