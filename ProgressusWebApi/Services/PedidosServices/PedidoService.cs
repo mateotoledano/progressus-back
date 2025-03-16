@@ -26,9 +26,10 @@ namespace ProgressusWebApi.Services.PedidosServices
 
             var itemIds = items.Select(p => p.Id).ToList();
 
-            var merchItems = _context.Merch.Where(m => itemIds.Contains(m.Id) && m.Stock > 0).ToList();
+            // Uso AsNoTracking así el cambio en el stock solo se guarda después del pago
+            var merchItems = _context.Merch.AsNoTracking().Where(m => itemIds.Contains(m.Id) && m.Stock > 0).ToList();
 
-            // Si falta algún merchitem o alguno no tiene stock
+            // Si falta algún merch item o alguno no tiene stock
             if (merchItems.Count != itemIds.Count)
                 return null;
 
@@ -48,6 +49,10 @@ namespace ProgressusWebApi.Services.PedidosServices
                         Cantidad = item.Cantidad,
                         PrecioUnitario = merch.Precio,                        
                     });
+
+                // Recordenoms que esto no se tiene que guardar en la BD
+                // Lo hago por si llegara algún item repetido
+                merch.Stock -= item.Cantidad;
             }
 
             var carrito = new Carrito()
@@ -83,13 +88,22 @@ namespace ProgressusWebApi.Services.PedidosServices
         {
             try
             {
-                var pedido = _context.Pedido.FirstOrDefault(p => p.Id == pedidoId);
+                var pedido = _context.Pedido.Include(p => p.Carrito.Items).ThenInclude(p => p.Merch)
+                                .FirstOrDefault(p => p.Id == pedidoId);
+                
                 if (pedido == null)
                     return false;
+
+                if (pedido.Estado == "Pagado") // por si MP manda + de 1 vez el request
+                    return true;
 
 
                 pedido.Estado = "Pagado";
                 pedido.FechaActualizacion = DateTime.Now;
+
+                pedido.Carrito.Items.ForEach(p => {
+                    p.Merch.Stock -= p.Cantidad;                
+                });
                 
                 _context.SaveChanges();
 

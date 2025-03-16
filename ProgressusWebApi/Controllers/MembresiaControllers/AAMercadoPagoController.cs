@@ -127,7 +127,7 @@ namespace ProgressusWebApi.Controllers.MembresiaControllers
 
                 var paymentId = req!.data!.id;
 
-                var estado = "approved";// await _mercadoPagoService.ConsultarEstadoPreferencia(paymentId);
+                var estado = "approved";//await _mercadoPagoService.ConsultarEstadoPreferencia(paymentId);
                                 
                 if (estado == "approved")
                 {
