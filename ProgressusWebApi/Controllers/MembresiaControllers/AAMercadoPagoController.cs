@@ -14,8 +14,10 @@ using ProgressusWebApi.Models.MembresiaModels;
 using ProgressusWebApi.Services.AuthServices.Interfaces;
 using ProgressusWebApi.Services.InventarioServices.Interfaces;
 using ProgressusWebApi.Services.MembresiaServices.Interfaces;
+using ProgressusWebApi.Services.PedidosServices.Interfaces;
 using System.Net.Http;
 using System.Text.Json;
+using WebApiMercadoPago.Services.Interface;
 
 namespace ProgressusWebApi.Controllers.MembresiaControllers
 {
@@ -28,13 +30,18 @@ namespace ProgressusWebApi.Controllers.MembresiaControllers
         private readonly ISolicitudDePagoService _solicituDePagoService;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IInventarioService _inventarioService;
+        private readonly IMercadoPagoService _mercadoPagoService;
+        private readonly IPedidoService _pedidoService;
 
-        public AAMercadoPagoController(IHttpClientFactory httpClientFactory, ISolicitudDePagoService solicitudDePagoService, UserManager<IdentityUser> userManager, IInventarioService inventarioService)
+        public AAMercadoPagoController(IHttpClientFactory httpClientFactory, ISolicitudDePagoService solicitudDePagoService, UserManager<IdentityUser> userManager, IInventarioService inventarioService
+            , IMercadoPagoService mp, IPedidoService pedido)
         {
             _httpClientFactory = httpClientFactory;
             _solicituDePagoService = solicitudDePagoService;
             _userManager = userManager;
             _inventarioService = inventarioService;
+            _mercadoPagoService = mp;
+            _pedidoService = pedido;
 
         }
 
@@ -108,6 +115,41 @@ namespace ProgressusWebApi.Controllers.MembresiaControllers
                 return StatusCode(500, "Error interno del servidor.");
             }
         }
-    
+
+        
+        [HttpPost("NotificarPedidoCompletado/{pedidoId}")]
+        public async Task<IActionResult> NotificarPedidoCompletado([FromBody] NotificationDto req, string pedidoId)
+        {
+            try
+            {
+                if(req == null || string.IsNullOrEmpty(pedidoId) || req.data?.id == null)
+                    return BadRequest();
+
+                var paymentId = req!.data!.id;
+
+                var estado = await _mercadoPagoService.ConsultarEstadoPreferencia(paymentId);
+                                
+                if (estado == "approved")
+                {
+                    var registradoOK = await _pedidoService.RegistrarPago(pedidoId);
+                    if(!registradoOK)
+                        return BadRequest();
+
+                    return Ok();
+                }
+                else
+                {
+                    Console.WriteLine($"Error en la solicitud: {estado}");
+                    return Ok();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"Error: {ex.Message}");
+                return StatusCode(500, "Error interno del servidor.");
+            }
+        }
+
+
     }
 }

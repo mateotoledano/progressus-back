@@ -6,6 +6,7 @@ using MercadoPago.Resource.Preference;
 using Microsoft.AspNetCore.Identity;
 using ProgressusWebApi.DataContext;
 using ProgressusWebApi.Models.MembresiaModels;
+using ProgressusWebApi.Models.MerchModels;
 using ProgressusWebApi.Services.AuthServices.Interfaces;
 using WebApiMercadoPago.Repositories.Interface;
 
@@ -21,7 +22,7 @@ namespace WebApiMercadoPago.Repositories
             _context = dataContext;
             _userManager = userManager;
 
-            
+
         }
 
         public async Task<Preference> CreatePreferenceAsync(SolicitudDePago solicitud)
@@ -49,7 +50,7 @@ namespace WebApiMercadoPago.Repositories
                     Name = usuario.UserName,
                     Email = usuario.Email,
                 },
-                
+
                 //Redirección del usuario según resultado del pago
                 BackUrls = new PreferenceBackUrlsRequest
                 {
@@ -77,5 +78,38 @@ namespace WebApiMercadoPago.Repositories
             Preference result = await client.CreateAsync(request);
             return result;
         }
+
+
+        public async Task<Preference> CrearPreferenciaDeCarritoAsync(Carrito carrito, string pedidoId)
+        {
+            var items = carrito.Items.Select(item => new PreferenceItemRequest
+            {
+                Title = item.Merch?.Nombre, 
+                Quantity = item.Cantidad,
+                CurrencyId = "ARS",
+                UnitPrice = item.PrecioUnitario,
+                Description = item.Merch?.Nombre                
+            }).ToList();
+
+            var request = new PreferenceRequest
+            {
+                Items = items,
+                BackUrls = new PreferenceBackUrlsRequest
+                {
+                    Success = "https://pages-mp.vercel.app/success",
+                    Failure = "https://pages-mp.vercel.app/failure",
+                    Pending = "https://pages-mp.vercel.app/pending"
+                },
+                NotificationUrl = "https://progressuscenter.azurewebsites.net/api/AAMercadoPago/NotificarPedidoCompletado/" + pedidoId ,
+                AutoReturn = "approved",
+                
+                Expires = true,
+                ExpirationDateFrom = DateTime.Now,
+                ExpirationDateTo = DateTime.Now.AddHours(1),
+            };
+            var client = new PreferenceClient();
+            return await client.CreateAsync(request);
+        }
+
     }
 }

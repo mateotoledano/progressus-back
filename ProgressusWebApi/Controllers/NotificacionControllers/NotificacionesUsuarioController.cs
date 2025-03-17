@@ -57,7 +57,8 @@ namespace ProgressusWebApi.Controllers.NotificacionControllers
         }
 
 
-        
+        // Esta se usa para Descuentos y Promociones
+		// También para Motivacional
         [HttpPost ("CrearNotificacionMasiva")]        
         public async Task<IActionResult> CrearNotificacionMasiva([FromBody] NotificacionMasiva request)
         {

@@ -39,6 +39,8 @@ using ProgressusWebApi.Repositories.NotificacionesRepositories.Interfaces;
 using ProgressusWebApi.Repositories.NotificacionesRepositories;
 using ProgressusWebApi.Services.AlimentoServices;
 using ProgressusWebApi.Services.CarritoServices;
+using ProgressusWebApi.Services.PedidosServices.Interfaces;
+using ProgressusWebApi.Services.PedidosServices;
 
 var builder = WebApplication.CreateBuilder(args);
 // Configuración de CORS para aceptar peticiones de cualquier origen
@@ -77,7 +79,7 @@ builder.Services.AddScoped<ISerieDeEjercicioRepository, SerieDeEjercicioReposito
 builder.Services.AddScoped<IObjetivoDelPlanService, ObjetivoDelPlanService>();
 builder.Services.AddScoped<IAsignacionDePlanRepository, AsignacionDePlanRepository>();
 builder.Services.AddScoped<IAsignacionDePlanService, AsignacionDePlanService>();
-
+builder.Services.AddScoped<IPedidoService, PedidoService>();
 builder.Services.AddScoped<IMembresiaRepository, MembresiaRepository>();
 builder.Services.AddScoped<IMembresiaService, MembresiaService>();
 builder.Services.AddScoped<ISolicitudDePagoRepository, SolicitudDePagoRepository>();

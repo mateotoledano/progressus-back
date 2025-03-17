@@ -1,5 +1,6 @@
 ﻿using ProgressusWebApi.Models.MerchModels;
 using System.Collections.Concurrent;
+using WebApiMercadoPago.Repositories.Interface;
 
 namespace ProgressusWebApi.Services.CarritoServices
 {
@@ -36,8 +37,11 @@ namespace ProgressusWebApi.Services.CarritoServices
 
         public async Task EliminarItemDelCarritoAsync(string usuarioId, string productoId)
         {
+            if (!int.TryParse(productoId, out int proId))
+                return;
+
             var carrito = await ObtenerCarritoAsync(usuarioId);
-            var itemExistente = carrito.Items.FirstOrDefault(i => i.ProductoId == productoId);
+            var itemExistente = carrito.Items.FirstOrDefault(i => i.ProductoId == proId);
 
             if (itemExistente != null)
             {
