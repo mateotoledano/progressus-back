@@ -115,9 +115,11 @@ namespace ProgressusWebApi.Services.MembresiaServices
         public async Task<SolicitudDePago> ObtenerSolicitudDePagoDeSocio(string identityUserId)
         {
             SolicitudDePago solicitud = await _repository.ObtenerSolicitudDePagoDeSocio(identityUserId);
+            if(solicitud == null)
+                return null;
 
             var fechaVencimiento = solicitud.FechaCreacion.AddMonths(solicitud.Membresia.MesesDuracion);
-            if ( fechaVencimiento <= DateTime.Now.AddDays(-7))
+            if (fechaVencimiento > DateTime.Now && fechaVencimiento <= DateTime.Now.AddDays(-7))
             {
                 var planes = _membresiaRepository.GetAll().Result.Take(3).Select(m => $"{m.Nombre} -  ${m.Precio} : {m.Descripcion}").ToList();
                 await _notificacionesUsuarios.NotificarMembresiaPorVencer(identityUserId, fechaVencimiento.ToString("dd/MM/yyyy"), planes);                
