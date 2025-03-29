@@ -141,7 +141,7 @@ namespace ProgressusWebApi.Services.NotificacionesServices
                                     .ToList();
 
             var enviada = estados.FirstOrDefault(p => p.Nombre == "Enviada");
-            var ok = await _notificacionRepository.CambiarEstadoNotifiacionesMasivo(idNotificaciones, pendiente.Id);
+            var ok = await _notificacionRepository.CambiarEstadoNotifiacionesMasivo(idNotificaciones, enviada.Id);
 
             return ok;
         }
