@@ -221,6 +221,18 @@ namespace ProgressusWebApi.Services.NotificacionesServices
                 cuerpo = cuerpo.Replace("[*for]", "");
                 cuerpo = cuerpo.Replace("[*end]", "");
 
+                
+                var notisUsuario = ObtenerNotificacionesPorUsuarioAsync(usuarioId)?.Result;
+                if(notisUsuario != null)
+                {
+                    var yaSeNotifico = notisUsuario.Where(n => n.Titulo == plantilla.Titulo)
+                                        .Where(n => n.FechaCreacion <= DateTime.Now.AddDays(-1))
+                                        .Any();
+                    if (yaSeNotifico)
+                        return true;
+
+                }
+
                 await GuardarNotificacion(usuarioId, plantilla, cuerpo);
 
 
