@@ -41,6 +41,8 @@ using ProgressusWebApi.Services.AlimentoServices;
 using ProgressusWebApi.Services.CarritoServices;
 using ProgressusWebApi.Services.PedidosServices.Interfaces;
 using ProgressusWebApi.Services.PedidosServices;
+using ProgressusWebApi.Repositories.QrCodeRepositories;
+using ProgressusWebApi.Services.QrCodeServices;
 
 var builder = WebApplication.CreateBuilder(args);
 // Configuración de CORS para aceptar peticiones de cualquier origen
@@ -85,6 +87,8 @@ builder.Services.AddScoped<IMembresiaService, MembresiaService>();
 builder.Services.AddScoped<ISolicitudDePagoRepository, SolicitudDePagoRepository>();
 builder.Services.AddScoped<ISolicitudDePagoService, SolicitudDePagoService>();
 builder.Services.AddScoped<AlimentoCalculoService>();
+builder.Services.AddScoped<QrCodeRepository>();
+builder.Services.AddScoped<QrCodeService>();
 
 builder.Services.AddMemoryCache();
 

@@ -19,6 +19,7 @@ using System.Collections.Generic;
 using ProgressusWebApi.Models.NotificacionesModel;
 using ProgressusWebApi.Models.AlimentosModels;
 using ProgressusWebApi.Models.PlanNutricional;
+using ProgressusWebApi.Models.CodigoQRModels;
 
 
 namespace ProgressusWebApi.DataContext
@@ -57,6 +58,8 @@ namespace ProgressusWebApi.DataContext
 	public DbSet<EstadoNotificacion> EstadosNotificaciones { get; set; }
 	public DbSet<PlantillaNotificacion> PlantillasNotificaciones { get; set; }
 	public DbSet<Models.NotificacionesModel.Notificacion> NotificacionesUsuarios { get; set; }
+
+		public DbSet<CodigoQR> CodigosQR { get; set; }
 
         public DbSet<PlanNutricional> PlanesNutricionales { get; set; }
         public DbSet<DiaPlan> DiasPlan { get; set; }
