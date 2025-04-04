@@ -7,6 +7,8 @@ namespace ProgressusWebApi.Repositories.NotificacionesRepositories.Interfaces
 	{
 		Task<List<PlantillaNotificacion>> ObtenerPlantillasAsync();
 		Task<PlantillaNotificacion> ObtenerPlantillaPorIdAsync(int plantillaId);
+
+
 		Task<bool> CrearPlantillaAsync(PlantillaNotificacion plantilla);
 		Task<bool> ActualizarPlantillaAsync(PlantillaNotificacion plantilla);
 		Task<bool> EliminarPlantillaAsync(int plantillaId);

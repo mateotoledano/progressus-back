@@ -12,9 +12,18 @@ namespace ProgressusWebApi.Services.CarritoServices
         {
             if (_carritos.TryGetValue(usuarioId, out var carrito))
             {
+                // Calcular el total sumando los subtotales de todos los items
+                carrito.Total = carrito.Items.Sum(item => item.Subtotal);
                 return carrito;
             }
-            return new Carrito { UsuarioId = usuarioId };
+
+            // Si no existe, crear un nuevo carrito vacío
+            return new Carrito
+            {
+                UsuarioId = usuarioId,
+                Items = new List<CarritoItem>(),
+                Total = 0
+            };
         }
 
         public async Task AgregarItemAlCarritoAsync(string usuarioId, CarritoItem item)

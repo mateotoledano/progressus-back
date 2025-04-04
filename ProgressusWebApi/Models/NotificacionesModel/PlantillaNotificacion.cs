@@ -11,6 +11,8 @@ namespace ProgressusWebApi.Models.NotificacionesModel
 		public string Cuerpo { get; set; }
 		public string? DiaSemana { get; set; }
 		public string? MomentoDia { get; set; }
+
+
 		public DateTime FechaCreacion { get; set; } = DateTime.UtcNow;
 
 		public TipoNotificacion TipoNotificacion { get; set; }

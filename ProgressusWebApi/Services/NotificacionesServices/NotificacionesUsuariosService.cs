@@ -165,29 +165,32 @@ namespace ProgressusWebApi.Services.NotificacionesServices
         {
             try
             {
-                var plantilla = _plantillaRepository.ObtenerPlantillaPorIdAsync(6).Result;
+                var plantilla = await _plantillaRepository.ObtenerPlantillaPorIdAsync(6);
                 if (plantilla == null)
                     return false;
 
-                string cuerpo = plantilla.Cuerpo.Replace("[Maquina]", maquina);
-                cuerpo = cuerpo.Replace("[Dias]", dias.ToString());
+                string cuerpo = plantilla.Cuerpo
+                    .Replace("[Maquina]", maquina)
+                    .Replace("[Dias]", dias.ToString())
+                    .Replace("[Motivo]", motivo); // Reemplazo de [Motivo]
 
                 var usuarios = _context.Users.Where(u => usuariosId.Contains(u.Id)).ToList();
 
                 foreach (var usuario in usuarios)
                 {
-                    await GuardarNotificacion(usuario.Id, plantilla, cuerpo.Replace("[Nombre]", usuario.UserName));
+                    string cuerpoFinal = cuerpo.Replace("[Nombre]", usuario.UserName);
+                    string titulo = $"Mantenimiento de {maquina}"; // Puedes personalizar este título
+                    await GuardarNotificacion(usuario.Id, plantilla, cuerpoFinal, titulo);
                 }
-
-
 
                 return true;
             }
             catch
             {
                 return false;
-            }            
+            }
         }
+
 
         public async Task<bool> NotificarMembresiaPorVencer(string usuarioId, string fechaVencimiento, List<string> planes)
         {

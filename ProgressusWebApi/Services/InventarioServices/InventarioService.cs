@@ -89,8 +89,8 @@ namespace ProgressusWebApi.Services.InventarioServices
 
                 var entrenadores = usuariosEntrenadores.Select(u => u.IdentityUserId).ToList();
 
-                // necesitamos tirar error? no creo
-                var _ = await _notificacionesService.NotificarMaquinaEnMantenimiento(entrenadores, inventario.Nombre, 0, "");
+                // necesitamos tirar error? no creo  	Task<bool> NotificarMaquinaEnMantenimiento(List<string> usuariosId, string maquina, int dias, string motivo);
+                var _ = await _notificacionesService.NotificarMaquinaEnMantenimiento(entrenadores, inventario.Nombre, 0, inventario.Descripcion);
             }
 
             return new OkObjectResult(inventario);

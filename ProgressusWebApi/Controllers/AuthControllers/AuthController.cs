@@ -60,6 +60,20 @@ namespace ProgressusWebApi.Controllers.AuthControllers
             return await _usuarioService.ConfirmarCorreo(codigoDeVerificacion);
         }
 
+        [HttpGet("ObtenerUsuariosEntrenadores")]
+        public async Task<ActionResult<List<DatosUsuarioDto>>> ObtenerUsuariosEntrenadores()
+        {
+            try
+            {
+                var entrenadores = await _usuarioService.ObtenerUsuariosEntrenadoresAsync();
+                return Ok(entrenadores);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error al obtener los usuarios entrenadores: {ex.Message}");
+            }
+        }
+
 
         [HttpGet("ObtenerDatosDelUsuario")]
         public async Task<IActionResult> ObtenerDatosDelUsuario(string email)
@@ -84,6 +98,7 @@ namespace ProgressusWebApi.Controllers.AuthControllers
         {
             return await _usuarioService.ObtenerTodosLosUsuarios();
         }
+
 
         [HttpPut("usuario/{userId}")]
         public async Task<IActionResult> ActualizarUsuario(string userId, [FromBody] ActualizarUsuarioDto actualizarUsuarioDto)

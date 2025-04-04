@@ -142,6 +142,50 @@ public class SolicitudDePagoController : ControllerBase
         return Ok(pagosEfectivo);
     }
 
+
+
+
+    [HttpGet("membresias-por-tipo")]
+    public async Task<IActionResult> ObtenerMembresiasPorTipo()
+    {
+        var membresiasPorTipo = await _context
+            .SolicitudDePagos
+            .Join(
+                _context.HistorialSolicitudDePagos,
+                solicitud => solicitud.Id,
+                historial => historial.SolicitudDePagoId,
+                (solicitud, historial) => new { solicitud, historial }
+            )
+            .Join(
+                _context.Membresias,
+                joined => joined.solicitud.MembresiaId,
+                membresia => membresia.Id,
+                (joined, membresia) => new { joined.solicitud, joined.historial, membresia }
+            )
+            .Where(joined => joined.historial.EstadoSolicitudId == 2) // Solo confirmadas
+            .GroupBy(
+                joined => new {
+                    Id = joined.membresia.Id,
+                    Nombre = joined.membresia.Nombre
+                },
+                (key, group) => new MembresiasPorTipoDto
+                {
+                    TipoMembresiaId = key.Id,
+                    NombreMembresia = key.Nombre,
+                    Cantidad = group.Count()
+                }
+            )
+            .OrderByDescending(result => result.Cantidad)
+            .ToListAsync();
+
+        if (!membresiasPorTipo.Any())
+        {
+            return NotFound("No se encontraron membresías confirmadas.");
+        }
+
+        return Ok(membresiasPorTipo);
+    }
+
     [HttpGet("pagos-efectivo-Usuario")]
     public async Task<IActionResult> ObtenerPagosEfectivoConfirmadosUsuario()
     {

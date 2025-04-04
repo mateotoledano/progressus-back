@@ -21,6 +21,8 @@ namespace ProgressusWebApi.Services.AuthServices.Interfaces
         Task<IActionResult> RegistrarSocio(string email, string nombre, string apellido);
         Task<IActionResult> RegistrarEntrenador(string email, string nombre, string apellido);
         Task<IActionResult> ObtenerTodosLosUsuarios();
+
+    
         Task<List<DatosUsuarioDto>> ObtenerUsuariosEntrenadoresAsync();
         Task<IActionResult> ActualizarUsuario(string userId, string nuevoRol);
         Task<IActionResult> EliminarUsuario(string userId);
