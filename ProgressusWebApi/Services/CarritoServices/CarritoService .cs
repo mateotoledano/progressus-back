@@ -18,6 +18,7 @@ namespace ProgressusWebApi.Services.CarritoServices
             }
 
             // Si no existe, crear un nuevo carrito vacío
+            // return new Carrito { UsuarioId = usuarioId };
             return new Carrito
             {
                 UsuarioId = usuarioId,
