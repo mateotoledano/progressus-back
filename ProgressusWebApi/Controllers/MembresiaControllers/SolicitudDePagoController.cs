@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -367,7 +367,58 @@ public class SolicitudDePagoController : ControllerBase
         }
         return Ok(solicitudes);
     }
+    [HttpGet("status-by-user/{identityUserId}")]
+    public async Task<IActionResult> GetMembershipStatusByUser(string identityUserId)
+    {
+        // Obtener la última solicitud de pago válida (excluyendo MembresiaId = 15)
+        var lastPaymentRequest = await _context.SolicitudDePagos
+            .Where(s => s.IdentityUserId == identityUserId && s.MembresiaId != 15)
+            .OrderByDescending(s => s.FechaCreacion)
+            .FirstOrDefaultAsync();
 
+        if (lastPaymentRequest == null)
+        {
+            return NotFound("No se encontraron solicitudes de pago de membresía para este usuario");
+        }
+
+        // Determinar la duración según el tipo de membresía
+        int durationInMonths = lastPaymentRequest.MembresiaId switch
+        {
+            9 => 1,    // Mensual
+            10 => 3,   // Trimestral
+            11 => 6,   // Semestral
+            12 => 12,  // Anual
+            13 => 1,   // PRUEBA (1 mes)
+            _ => 1     // Valor por defecto para otros casos
+        };
+
+        // Calcular fechas de vigencia usando FechaCreacion
+        var startDate = lastPaymentRequest.FechaCreacion;
+        var expirationDate = startDate.AddMonths(durationInMonths);
+
+        // Determinar estado actual
+        var currentDate = DateTime.Now;
+        bool isActive = currentDate <= expirationDate;
+        int daysRemaining = isActive ? (int)(expirationDate - currentDate).TotalDays : 0;
+
+        // Obtener nombre de la membresía
+        var membershipName = await _context.Membresias
+            .Where(m => m.Id == lastPaymentRequest.MembresiaId)
+            .Select(m => m.Nombre)
+            .FirstOrDefaultAsync();
+
+        return Ok(new
+        {
+            userId = identityUserId,
+            membershipId = lastPaymentRequest.MembresiaId,
+            membershipName = membershipName ?? "Desconocida",
+            startDate = startDate.ToString("yyyy-MM-dd"),
+            expirationDate = expirationDate.ToString("yyyy-MM-dd"),
+            isActive,
+            daysRemaining,
+            isTrial = lastPaymentRequest.MembresiaId == 13 // PRUEBA
+        });
+    }
     [HttpGet("ObtenerMembresiaNutricional/{identityUserId}")]
     public async Task<IActionResult> ObtenerMembresiaNutricional(string identityUserId)
     {
