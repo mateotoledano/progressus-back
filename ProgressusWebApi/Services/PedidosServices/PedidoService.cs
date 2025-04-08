@@ -19,7 +19,7 @@ namespace ProgressusWebApi.Services.PedidosServices
         {
             _context = context;
         }
-        public async Task<Pedido> RegistrarPedidoAsync(string usuarioId, List<ItemCarritoDto> items)
+        public async Task<Pedido> RegistrarPedidoAsync(string usuarioId, List<ItemCarritoDto> items, string estado)
         {
             if(items == null || items.Count == 0)
                 return null;
@@ -75,7 +75,7 @@ namespace ProgressusWebApi.Services.PedidosServices
                 FechaActualizacion = DateTime.Now,
                 Carrito = carrito,
                 Total = carrito.Total,
-                Estado = "pagado" // Acá debería ir a buscar el estado a algún lado pero el campo es un NVARCHAR de 100 :/ 
+                Estado = estado // Acá debería ir a buscar el estado a algún lado pero el campo es un NVARCHAR de 100 :/ 
             };
 
             _context.Pedido.Add(pedido);
