@@ -142,15 +142,11 @@ public class SolicitudDePagoController : ControllerBase
         return Ok(pagosEfectivo);
     }
 
-
-
-
     [HttpGet("membresias-por-tipo")]
     public async Task<IActionResult> ObtenerMembresiasPorTipo()
     {
         var membresiasPorTipo = await _context
-            .SolicitudDePagos
-            .Join(
+            .SolicitudDePagos.Join(
                 _context.HistorialSolicitudDePagos,
                 solicitud => solicitud.Id,
                 historial => historial.SolicitudDePagoId,
@@ -160,20 +156,24 @@ public class SolicitudDePagoController : ControllerBase
                 _context.Membresias,
                 joined => joined.solicitud.MembresiaId,
                 membresia => membresia.Id,
-                (joined, membresia) => new { joined.solicitud, joined.historial, membresia }
+                (joined, membresia) =>
+                    new
+                    {
+                        joined.solicitud,
+                        joined.historial,
+                        membresia,
+                    }
             )
             .Where(joined => joined.historial.EstadoSolicitudId == 2) // Solo confirmadas
             .GroupBy(
-                joined => new {
-                    Id = joined.membresia.Id,
-                    Nombre = joined.membresia.Nombre
-                },
-                (key, group) => new MembresiasPorTipoDto
-                {
-                    TipoMembresiaId = key.Id,
-                    NombreMembresia = key.Nombre,
-                    Cantidad = group.Count()
-                }
+                joined => new { Id = joined.membresia.Id, Nombre = joined.membresia.Nombre },
+                (key, group) =>
+                    new MembresiasPorTipoDto
+                    {
+                        TipoMembresiaId = key.Id,
+                        NombreMembresia = key.Nombre,
+                        Cantidad = group.Count(),
+                    }
             )
             .OrderByDescending(result => result.Cantidad)
             .ToListAsync();
@@ -251,7 +251,7 @@ public class SolicitudDePagoController : ControllerBase
     {
         // Obtener la solicitud de pago más reciente del socio, excluyendo las que tienen MembresiaId = 15
         SolicitudDePago? solicitud = await _context
-            .SolicitudDePagos.Where(s => s.IdentityUserId == identityUserId && s.MembresiaId != 15)
+            .SolicitudDePagos.Where(s => s.IdentityUserId == identityUserId)
             .Include(s => s.HistorialSolicitudDePagos)
             .ThenInclude(h => h.EstadoSolicitud)
             .OrderByDescending(s => s.FechaCreacion)
@@ -367,12 +367,13 @@ public class SolicitudDePagoController : ControllerBase
         }
         return Ok(solicitudes);
     }
+
     [HttpGet("status-by-user/{identityUserId}")]
     public async Task<IActionResult> GetMembershipStatusByUser(string identityUserId)
     {
         // Obtener la última solicitud de pago válida (excluyendo MembresiaId = 15)
-        var lastPaymentRequest = await _context.SolicitudDePagos
-            .Where(s => s.IdentityUserId == identityUserId && s.MembresiaId != 15)
+        var lastPaymentRequest = await _context
+            .SolicitudDePagos.Where(s => s.IdentityUserId == identityUserId && s.MembresiaId != 15)
             .OrderByDescending(s => s.FechaCreacion)
             .FirstOrDefaultAsync();
 
@@ -384,12 +385,12 @@ public class SolicitudDePagoController : ControllerBase
         // Determinar la duración según el tipo de membresía
         int durationInMonths = lastPaymentRequest.MembresiaId switch
         {
-            9 => 1,    // Mensual
-            10 => 3,   // Trimestral
-            11 => 6,   // Semestral
-            12 => 12,  // Anual
-            13 => 1,   // PRUEBA (1 mes)
-            _ => 1     // Valor por defecto para otros casos
+            9 => 1, // Mensual
+            10 => 3, // Trimestral
+            11 => 6, // Semestral
+            12 => 12, // Anual
+            13 => 1, // PRUEBA (1 mes)
+            _ => 1, // Valor por defecto para otros casos
         };
 
         // Calcular fechas de vigencia usando FechaCreacion
@@ -402,23 +403,26 @@ public class SolicitudDePagoController : ControllerBase
         int daysRemaining = isActive ? (int)(expirationDate - currentDate).TotalDays : 0;
 
         // Obtener nombre de la membresía
-        var membershipName = await _context.Membresias
-            .Where(m => m.Id == lastPaymentRequest.MembresiaId)
+        var membershipName = await _context
+            .Membresias.Where(m => m.Id == lastPaymentRequest.MembresiaId)
             .Select(m => m.Nombre)
             .FirstOrDefaultAsync();
 
-        return Ok(new
-        {
-            userId = identityUserId,
-            membershipId = lastPaymentRequest.MembresiaId,
-            membershipName = membershipName ?? "Desconocida",
-            startDate = startDate.ToString("yyyy-MM-dd"),
-            expirationDate = expirationDate.ToString("yyyy-MM-dd"),
-            isActive,
-            daysRemaining,
-            isTrial = lastPaymentRequest.MembresiaId == 13 // PRUEBA
-        });
+        return Ok(
+            new
+            {
+                userId = identityUserId,
+                membershipId = lastPaymentRequest.MembresiaId,
+                membershipName = membershipName ?? "Desconocida",
+                startDate = startDate.ToString("yyyy-MM-dd"),
+                expirationDate = expirationDate.ToString("yyyy-MM-dd"),
+                isActive,
+                daysRemaining,
+                isTrial = lastPaymentRequest.MembresiaId == 13, // PRUEBA
+            }
+        );
     }
+
     [HttpGet("ObtenerMembresiaNutricional/{identityUserId}")]
     public async Task<IActionResult> ObtenerMembresiaNutricional(string identityUserId)
     {
