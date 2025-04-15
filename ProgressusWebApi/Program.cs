@@ -147,7 +147,7 @@ builder.Services.Configure<GmailSetter>(builder.Configuration.GetSection("GmailS
 builder.Services.AddScoped<IMercadoPagoRepository, MercadoPagoRepository>();
 builder.Services.AddScoped<IMercadoPagoService, MercadoPagoService>();
 MercadoPagoConfig.AccessToken =
-    "APP_USR-2278733141716614-062815-583c9779901a7bbf32c8e8a73971e44c-1878150528";
+    "APP_USR-8561091671920007-062802-878c7cba462bc355cb6143df2a4634f3-1070425524";
 builder.Services.AddScoped<IReservaService, ReservaService>();
 builder.Services.AddScoped<IInventarioService, InventarioService>();
 builder.Services.AddScoped<INotificacionesService, NotificacionesService>();
