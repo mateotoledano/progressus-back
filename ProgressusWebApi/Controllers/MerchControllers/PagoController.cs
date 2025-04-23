@@ -193,14 +193,18 @@ namespace ProgressusWebApi.Controllers.MerchControllers
                 pedido.Estado = "Pagado";
                 pedido.FechaActualizacion = DateTime.UtcNow;
 
+                _context.Pedido.Update(pedido);
+                await _context.SaveChangesAsync();
+
+                // return Ok(pedido);
+
+                var registradoOK = await _pedidoService.RegistrarPago(pedidoId);
+
                 pedido.Carrito.Items.ForEach(p =>
                 {
                     p.Merch.Stock -= p.Cantidad;
                 });
-
-                _context.Pedido.Update(pedido);
                 await _context.SaveChangesAsync();
-
                 return Ok(pedido);
             }
             catch (Exception ex)
