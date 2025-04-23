@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ProgressusWebApi.DataContext;
 using ProgressusWebApi.Dtos.MerchDtos;
 using ProgressusWebApi.Models.MerchModels;
 using ProgressusWebApi.Services.CarritoServices;
 using ProgressusWebApi.Services.PedidosServices.Interfaces;
 using WebApiMercadoPago.Services.Interface;
-using Microsoft.EntityFrameworkCore;
+
 namespace ProgressusWebApi.Controllers.MerchControllers
 {
     [Route("api/[controller]")]
@@ -16,16 +17,25 @@ namespace ProgressusWebApi.Controllers.MerchControllers
         private readonly IPedidoService _pedidoService;
         private readonly ICarritoService _carritoService;
         private readonly ProgressusDataContext _context;
-        public PagoController(IMercadoPagoService mercadoPagoService, IPedidoService
-        pedidoService, ICarritoService carritoService, ProgressusDataContext context)
+
+        public PagoController(
+            IMercadoPagoService mercadoPagoService,
+            IPedidoService pedidoService,
+            ICarritoService carritoService,
+            ProgressusDataContext context
+        )
         {
             _mercadoPagoService = mercadoPagoService;
             _pedidoService = pedidoService;
             _carritoService = carritoService;
             _context = context;
         }
+
         [HttpPost("CrearPago/{usuarioId}")]
-        public async Task<IActionResult> CrearPago(string usuarioId, [FromBody] List<ItemCarritoDto>? items)
+        public async Task<IActionResult> CrearPago(
+            string usuarioId,
+            [FromBody] List<ItemCarritoDto>? items
+        )
         {
             try
             {
@@ -33,10 +43,16 @@ namespace ProgressusWebApi.Controllers.MerchControllers
                 var pedido = await _pedidoService.RegistrarPedidoAsync(usuarioId, items, estado);
                 if (pedido == null)
                 {
-                    return StatusCode(500, "No se encontró su pedido u ocurrió un error al buscarlo.");
+                    return StatusCode(
+                        500,
+                        "No se encontró su pedido u ocurrió un error al buscarlo."
+                    );
                 }
 
-                var preferencia = await _mercadoPagoService.CrearPreferenciaDePagoCarritoAsync(pedido.Carrito, pedido.Id);
+                var preferencia = await _mercadoPagoService.CrearPreferenciaDePagoCarritoAsync(
+                    pedido.Carrito,
+                    pedido.Id
+                );
                 if (preferencia == null)
                 {
                     return StatusCode(500, "Ocurrió un error al crear la preferencia de pago");
@@ -44,16 +60,18 @@ namespace ProgressusWebApi.Controllers.MerchControllers
 
                 return Ok(new { Preference = preferencia, PedidoId = pedido.Id });
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
                 return StatusCode(500, "Ocurrió un error al procesar el pedido.");
             }
-            
         }
 
         [HttpPost("CrearPedido/{usuarioId}")]
-        public async Task<IActionResult> CrearPedido(string usuarioId, [FromBody] List<ItemCarritoDto>? items)
+        public async Task<IActionResult> CrearPedido(
+            string usuarioId,
+            [FromBody] List<ItemCarritoDto>? items
+        )
         {
             try
             {
@@ -61,7 +79,10 @@ namespace ProgressusWebApi.Controllers.MerchControllers
                 var pedido = await _pedidoService.RegistrarPedidoAsync(usuarioId, items, estado);
                 if (pedido == null)
                 {
-                    return StatusCode(500, "No se encontró su pedido u ocurrió un error al buscarlo.");
+                    return StatusCode(
+                        500,
+                        "No se encontró su pedido u ocurrió un error al buscarlo."
+                    );
                 }
 
                 return Ok(new { PedidoId = pedido.Id });
@@ -71,15 +92,15 @@ namespace ProgressusWebApi.Controllers.MerchControllers
                 Console.WriteLine(ex.ToString());
                 return StatusCode(500, "Ocurrió un error al procesar el pedido.");
             }
-
         }
+
         [HttpGet("ObtenerPedidos")]
         public async Task<IActionResult> ObtenerPedidos()
         {
             try
             {
-                var pedidos = await _context.Pedido
-                    .Include(p => p.Carrito)
+                var pedidos = await _context
+                    .Pedido.Include(p => p.Carrito)
                     .ThenInclude(c => c.Items)
                     .ToListAsync();
 
@@ -97,8 +118,8 @@ namespace ProgressusWebApi.Controllers.MerchControllers
         {
             try
             {
-                var pedido = await _context.Pedido
-                    .Include(p => p.Carrito)
+                var pedido = await _context
+                    .Pedido.Include(p => p.Carrito)
                     .ThenInclude(c => c.Items)
                     .FirstOrDefaultAsync(p => p.Id == pedidoId);
 
@@ -121,8 +142,8 @@ namespace ProgressusWebApi.Controllers.MerchControllers
         {
             try
             {
-                var pedidos = await _context.Pedido
-                    .Include(p => p.Carrito)
+                var pedidos = await _context
+                    .Pedido.Include(p => p.Carrito)
                     .ThenInclude(c => c.Items)
                     .Where(p => p.UsuarioId == usuarioId)
                     .ToListAsync();
@@ -132,7 +153,10 @@ namespace ProgressusWebApi.Controllers.MerchControllers
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
-                return StatusCode(500, $"Ocurrió un error al obtener los pedidos del usuario {usuarioId}");
+                return StatusCode(
+                    500,
+                    $"Ocurrió un error al obtener los pedidos del usuario {usuarioId}"
+                );
             }
         }
 
@@ -141,10 +165,7 @@ namespace ProgressusWebApi.Controllers.MerchControllers
         {
             try
             {
-                var estados = await _context.Pedido
-                    .Select(p => p.Estado)
-                    .Distinct()
-                    .ToListAsync();
+                var estados = await _context.Pedido.Select(p => p.Estado).Distinct().ToListAsync();
 
                 return Ok(estados);
             }
@@ -156,7 +177,10 @@ namespace ProgressusWebApi.Controllers.MerchControllers
         }
 
         [HttpPut("ActualizarEstadoPedido/{pedidoId}")]
-        public async Task<IActionResult> ActualizarEstadoPedido(string pedidoId, [FromBody] string nuevoEstado)
+        public async Task<IActionResult> ActualizarEstadoPedido(
+            string pedidoId,
+            [FromBody] string nuevoEstado
+        )
         {
             try
             {
@@ -166,10 +190,11 @@ namespace ProgressusWebApi.Controllers.MerchControllers
                     return NotFound($"No se encontró el pedido con ID {pedidoId}");
                 }
 
-                pedido.Estado = nuevoEstado;
+                pedido.Estado = "Pagado";
                 pedido.FechaActualizacion = DateTime.UtcNow;
 
-                pedido.Carrito.Items.ForEach(p => {
+                pedido.Carrito.Items.ForEach(p =>
+                {
                     p.Merch.Stock -= p.Cantidad;
                 });
 
@@ -181,12 +206,11 @@ namespace ProgressusWebApi.Controllers.MerchControllers
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
-                return StatusCode(500, $"Ocurrió un error al actualizar el estado del pedido {pedidoId}");
+                return StatusCode(
+                    500,
+                    $"Ocurrió un error al actualizar el estado del pedido {pedidoId}"
+                );
             }
         }
     }
-
-
-
 }
-
